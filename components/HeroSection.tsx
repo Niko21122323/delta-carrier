@@ -3,6 +3,7 @@ import { heroValues } from "@/ts/data";
 import starIconWhite from "../public/assets/icons/star-white.svg";
 import heroImage from "../public/assets/pohots/hero-cta/hero.jpg";
 import PrimaryButton from "./PrimaryButton";
+import SecondaryButton from "./SecondaryButton";
 
 const HeroSection = () => {
 	return (
@@ -44,9 +45,16 @@ const HeroSection = () => {
 									reliability. As a 100% owner-operator company, we bring
 									hands-on service and trusted performance to every mile.
 								</p>
-								<div className="flex gap-4">
+								<div className="flex max-[450px]:flex-col gap-3 sm:gap-4">
 									<div className="w-full sm:w-fit">
 										<PrimaryButton text="Ship With Us" link="/contact" />
+									</div>
+									<div className="w-full sm:w-fit">
+										<SecondaryButton
+											text="Learn More"
+											link="/about"
+											color="light"
+										/>
 									</div>
 								</div>
 							</div>

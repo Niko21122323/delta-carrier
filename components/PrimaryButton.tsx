@@ -7,7 +7,7 @@ const PrimaryButton = ({ link, text }: PrimaryButtonProps) => {
 	return (
 		<a
 			href={link}
-			className="relative flex items-center justify-center w-full gap-2.5 sm:gap-4 p-2 rounded-lg primary-button-gradient overflow-hidden border border-accent-dark group"
+			className="relative flex items-center justify-center w-full gap-2.5 sm:gap-4 p-2 rounded-lg primary-button-gradient overflow-hidden border border-accent-dark hover:border-white transition-colors duration-300 ease-in-out group"
 		>
 			<span className="relative text-white text-lg font-semibold pl-3 z-10 group-hover:text-accent-light transition-colors duration-300 ease-in-out">
 				{text}
