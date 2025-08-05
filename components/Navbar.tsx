@@ -69,7 +69,7 @@ const Navbar = () => {
 	return (
 		<>
 			<nav
-				className={`fixed w-full bg-transparent transition-transform duration-300 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+				className={`fixed w-full bg-transparent transition-transform duration-300 ease-in-out z-[999] ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
 			>
 				<div className="container mx-auto px-4 lg:px-6">
 					<div className="flex items-center justify-between py-4 lg:py-8">

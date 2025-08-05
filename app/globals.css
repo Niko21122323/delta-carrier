@@ -12,3 +12,43 @@
 body {
 	font-family: "Inter", sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.1;
+}
+
+p {
+	font-size: 18px;
+}
+@media (max-width: 1280px) {
+	p {
+		font-size: 16px;
+	}
+}
+@media (max-width: 640px) {
+	p {
+		font-size: 14px;
+	}
+}
+
+.hero-gradient {
+	background: #000000;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 0, 0, 1) 80%
+	);
+}
+.primary-button-gradient {
+	background: #e24854;
+	background: linear-gradient(
+		90deg,
+		rgba(226, 72, 84, 1) 0%,
+		rgba(209, 60, 72, 1) 90%
+	);
+}
