@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import Logo from "../public/assets/logo/logo.png";
+import PrimaryButton from "./PrimaryButton";
 
 const Navbar = () => {
 	const [isVisible, setIsVisible] = useState(true);
@@ -80,7 +81,7 @@ const Navbar = () => {
 								className="max-w-[52px] md:max-w-[70px] xl:max-w-[100px] h-auto"
 							/>
 						</Link>
-						<div className="flex items-center gap-8 xl:gap-12 max-lg:hidden">
+						<div className="flex items-center gap-6 xl:gap-12 max-lg:hidden">
 							{navLink.map((link) => (
 								<Link
 									href={link.href}
@@ -90,6 +91,9 @@ const Navbar = () => {
 									{link.label}
 								</Link>
 							))}
+							<div className="w-fit">
+								<PrimaryButton text="Contact Us" link="/contact" />
+							</div>
 						</div>
 
 						<div className="lg:hidden">
@@ -114,7 +118,7 @@ const Navbar = () => {
 			</nav>
 
 			<div
-				className={`h-full bg-dark absolute top-0 left-0 lg:hidden transition-all duration-300 ease-in-out z-50 ${isMobileMebuOpen ? "w-[90%] translate-x-0 opacity-100" : "-translate-x-full opacity-0"} overflow-hidden`}
+				className={`h-full bg-dark absolute top-0 left-0 lg:hidden transition-all duration-300 ease-in-out z-[99999] ${isMobileMebuOpen ? "w-[420px] translate-x-0 opacity-100" : "-translate-x-full opacity-0"} overflow-hidden`}
 			>
 				<div className="flex gap-10 px-6 py-10 items-center justify-between">
 					<Image
@@ -143,7 +147,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div
-				className={`absolute left-0 top-0 w-full h-full bg-white/10 backdrop-blur-xl ${isMobileMebuOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-300 ease-in-out`}
+				className={`absolute left-0 top-0 w-full h-full bg-white/10 backdrop-blur-xl z-[9999] ${isMobileMebuOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-300 ease-in-out`}
 			></div>
 		</>
 	);

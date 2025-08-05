@@ -9,6 +9,14 @@
 	--color-accent-dark: #d13c48;
 }
 
+@layer components {
+	@media (min-width: 1536px) {
+		.container {
+			max-width: 1720px !important;
+		}
+	}
+}
+
 body {
 	font-family: "Inter", sans-serif;
 }
@@ -50,5 +58,14 @@ p {
 		90deg,
 		rgba(226, 72, 84, 1) 0%,
 		rgba(209, 60, 72, 1) 90%
+	);
+}
+
+.hero-value-gradient {
+	background: #ffffff;
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0) 75%,
+		rgba(255, 255, 255, 0.08) 100%
 	);
 }
