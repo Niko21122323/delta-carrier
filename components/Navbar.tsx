@@ -10,6 +10,7 @@ import PrimaryButton from "./PrimaryButton";
 
 const Navbar = () => {
 	const [isVisible, setIsVisible] = useState(true);
+	const [isAtTop, setIsAtTop] = useState(true);
 	const [isMobileMebuOpen, setIsMobileMenuOpen] = useState(false);
 	const pathname = usePathname();
 
@@ -18,6 +19,8 @@ const Navbar = () => {
 
 		const controlNavbar = () => {
 			const currentScrollY = window.scrollY;
+
+			setIsAtTop(currentScrollY < 10);
 
 			if (currentScrollY > lastScrollY && currentScrollY > 100) {
 				setIsVisible(false);
@@ -31,6 +34,12 @@ const Navbar = () => {
 		window.addEventListener("scroll", controlNavbar);
 		return () => window.removeEventListener("scroll", controlNavbar);
 	}, []);
+
+	const getBackgroundClass = () => {
+		if (isAtTop) return "bg-transparent";
+		if (isVisible && !isAtTop) return "bg-dark/30 backdrop-blur-xl";
+		return "bg-transparent";
+	};
 
 	const navLink = [
 		{
@@ -70,7 +79,9 @@ const Navbar = () => {
 	return (
 		<>
 			<nav
-				className={`fixed w-full bg-transparent transition-transform duration-300 ease-in-out z-[999] ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+				className={`fixed w-full transition-transform duration-300 ease-in-out z-[999] ${
+					isVisible ? "translate-y-0" : "-translate-y-full"
+				} ${getBackgroundClass()}`}
 			>
 				<div className="container mx-auto px-4 lg:px-6">
 					<div className="flex items-center justify-between py-4 lg:py-8">
@@ -86,7 +97,7 @@ const Navbar = () => {
 								<Link
 									href={link.href}
 									key={link.href}
-									className={`text-white/90 hover:text-white text-base  transition-colors duration-300 ease-in-out ${pathname === link.href ? "text-white font-semibold" : ""}`}
+									className={`text-white/90 hover:text-white text-base transition-colors duration-300 ease-in-out ${pathname === link.href ? "text-white font-semibold" : ""}`}
 								>
 									{link.label}
 								</Link>

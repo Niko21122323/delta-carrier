@@ -7,3 +7,10 @@ export interface PrimaryButtonProps {
 export interface SvgProps {
 	color: string;
 }
+
+export interface TitleProps {
+	title: string;
+	subtitle: string;
+	variant?: string;
+	position?: string;
+}
