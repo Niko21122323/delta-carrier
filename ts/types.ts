@@ -14,3 +14,8 @@ export interface TitleProps {
 	variant?: string;
 	position?: string;
 }
+
+export interface footerLinkProps {
+	link?: string;
+	label: string;
+}
