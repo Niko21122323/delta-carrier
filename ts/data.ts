@@ -11,6 +11,8 @@ import serviceImg1 from "../public/assets/pohots/home/02.jpg";
 import serviceImg2 from "../public/assets/pohots/home/03.jpg";
 import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 
+import type { FooterLinkProps } from "./types";
+
 export const heroValues = [
 	{
 		id: 1,
@@ -87,71 +89,84 @@ export const socials = [
 	},
 ];
 
-export const quickLinks = [
+export const quickLinks: FooterLinkProps[] = [
 	{
+		id: 1,
 		link: "/",
 		label: "Home",
 	},
 	{
+		id: 2,
 		link: "/about-us",
 		label: "About Us",
 	},
 	{
+		id: 3,
 		link: "/videos",
 		label: "Videos",
 	},
 	{
+		id: 4,
 		link: "/divisions",
 		label: "Divisions",
 	},
 	{
+		id: 5,
 		link: "/jobs",
 		label: "Jobs",
 	},
 	{
+		id: 6,
 		link: "/blog",
 		label: "Blog",
 	},
 	{
+		id: 7,
 		link: "/resources",
 		label: "Resources",
 	},
 ];
 
-export const serviceLinksFooter = [
+export const serviceLinksFooter: FooterLinkProps[] = [
 	{
+		id: 1,
 		link: "/",
 		label: "Dry Van Freight",
 	},
 	{
+		id: 2,
 		link: "",
 		label: "Flatbed Freight",
 	},
 	{
+		id: 3,
 		link: "",
 		label: "Step Deck & Conestoga",
 	},
 	{
+		id: 4,
 		link: "",
 		label: "Conestoga Trailers",
 	},
 ];
 
-export const findUsLinksFooter = [
+export const findUsLinksFooter: FooterLinkProps[] = [
 	{
-		link: "",
-		label: "",
+		id: 1,
+		link: "tel:17087464448",
+		label: "1-708-746-4448",
 	},
 	{
+		id: 2,
 		link: "",
-		label: "",
+		label: "1032 Moen Ave (2nd Floor) Suite# 2, Rockdale, IL 60436",
 	},
 	{
-		link: "",
-		label: "",
+		id: 3,
+		label: "Mon - Fri : 07:00 - 17:00",
 	},
 	{
-		link: "",
-		label: "",
+		id: 4,
+		label: "MC# 814259 - DOT#2372907",
 	},
 ];

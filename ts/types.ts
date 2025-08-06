@@ -15,7 +15,8 @@ export interface TitleProps {
 	position?: string;
 }
 
-export interface footerLinkProps {
+export interface FooterLinkProps {
 	link?: string;
 	label: string;
+	id: number;
 }
