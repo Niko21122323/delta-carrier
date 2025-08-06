@@ -2,6 +2,9 @@ import HeadsetIcon from "@/components/svgComponents/HeadsetIcon";
 import HeartIcon from "@/components/svgComponents/HeartIcon";
 import MedalIcon from "@/components/svgComponents/MedalIcon";
 import TrophyIcon from "@/components/svgComponents/TrophyIcon";
+import serviceImg1 from "../public/assets/pohots/home/02.jpg";
+import serviceImg2 from "../public/assets/pohots/home/03.jpg";
+import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 
 export const heroValues = [
 	{
@@ -27,5 +30,26 @@ export const heroValues = [
 		icon: HeartIcon,
 		title: "Respect for the Road",
 		text: "No forced dispatch. No hidden fees. Just the freedom to drive your way.",
+	},
+];
+
+export const services = [
+	{
+		id: 1,
+		image: serviceImg1,
+		title: "Dry Van Freight",
+		text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
+	},
+	{
+		id: 2,
+		image: serviceImg2,
+		title: "Flatbed Freight",
+		text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
+	},
+	{
+		id: 3,
+		image: serviceImg3,
+		title: "Step Deck & Conestoga",
+		text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
 	},
 ];
