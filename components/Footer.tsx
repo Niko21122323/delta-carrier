@@ -10,15 +10,17 @@ import {
 } from "@/ts/data";
 import type { FooterLinkProps } from "@/ts/types";
 import logo from "../public/assets/logo/logo.png";
+import CtaSection from "./CtaSection";
 import PrimaryButton from "./PrimaryButton";
 
 const Footer = () => {
 	const pathname = usePathname();
 
 	return (
-		<footer className="relative overflow-hidden">
+		<footer className="relative overflow-hidden max-md:bg-dark">
 			<div className="relative container mx-auto px-4 lg:px-6 z-20">
-				<div className="flex flex-col lg:flex-row items-start lg:justify-between pt-16 pb-10 border-b border-white/30 gap-12 lg:gap-20">
+				<CtaSection />
+				<div className="flex flex-col lg:flex-row items-start lg:justify-between pt-8 md:pt-16 pb-10 border-b border-white/30 gap-12 lg:gap-20">
 					<div className="">
 						<Image src={logo} alt="company logo" className="max-w-20 h-auto" />
 						<p className="text-white/70 lg:max-w-[300px] xl:max-w-[604px] pt-6">
@@ -118,7 +120,7 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<div className="absolute bottom-0 left-0 w-full h-full bg-dark"></div>
+			<div className="absolute bottom-0 left-0 w-full h-[80%] lg:h-[70%] bg-dark max-md:hidden"></div>
 		</footer>
 	);
 };
