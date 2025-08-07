@@ -20,3 +20,10 @@ export interface FooterLinkProps {
 	label: string;
 	id: number;
 }
+
+export interface WhyUsProps {
+	title: string;
+	text: string;
+	id: number;
+	gridClass: string;
+}

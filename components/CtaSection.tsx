@@ -6,7 +6,7 @@ import TitleComponent from "./TitleComponent";
 
 const CtaSection = () => {
 	return (
-		<div className="relative overflow-hidden rounded-2xl max-md:pt-6 md:py-16 z-30">
+		<section className="relative overflow-hidden rounded-2xl max-md:pt-6 md:py-16 z-30">
 			<div className="absolute left-0 top-0 w-full h-full z-10 cta-gradient max-md:hidden"></div>
 			<div className="absolute top-0 left-0 h-full w-full max-md:hidden">
 				<Image
@@ -15,7 +15,7 @@ const CtaSection = () => {
 					className="h-full w-full object-cover"
 				/>
 			</div>
-			<div className="relative z-20 flex md:items-center md:justify-end md:pr-16">
+			<div className="relative z-20 flex md:items-center md:justify-end md:px-6 lg:pr-16">
 				<div className="p-4 sm:p-6 lg:p-12 rounded-xl bg-white/5 backdrop-blur-lg border border-white/30 lg:max-w-[604px]">
 					<TitleComponent
 						title="Ready to Take the Wheel?"
@@ -41,7 +41,7 @@ const CtaSection = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

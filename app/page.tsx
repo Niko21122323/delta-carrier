@@ -4,6 +4,7 @@ import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
 import PrimaryButtonArrow from "@/components/svgComponents/PrimaryButtonArrow";
 import TitleComponent from "@/components/TitleComponent";
+import WhyUsSection from "@/components/WhyUsSection";
 import { services } from "@/ts/data";
 import downloadIcon from "../public/assets/icons/downlaod.svg";
 import aboutImcage from "../public/assets/pohots/home/01.jpg";
@@ -46,7 +47,7 @@ export default function Home() {
 								<div className="w-[60%] mx-auto sm:hidden bg-black/15 h-[1px]"></div>
 								<div className="w-full sm:w-fit xl:pl-4 max-sm:pt-3">
 									<a
-										href="#"
+										href="/download"
 										className="flex items-center justify-center w-full gap-3 px-5 py-2 rounded-lg border border-black/15 bg-white hover:bg-light transition-colors duration-300 ease-in-out"
 									>
 										<span className="text-lg text-body font-medium">
@@ -172,6 +173,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+			<WhyUsSection />
 		</main>
 	);
 }

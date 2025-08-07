@@ -11,7 +11,7 @@ import serviceImg1 from "../public/assets/pohots/home/02.jpg";
 import serviceImg2 from "../public/assets/pohots/home/03.jpg";
 import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 
-import type { FooterLinkProps } from "./types";
+import type { FooterLinkProps, WhyUsProps } from "./types";
 
 export const heroValues = [
 	{
@@ -168,5 +168,80 @@ export const findUsLinksFooter: FooterLinkProps[] = [
 	{
 		id: 4,
 		label: "MC# 814259 - DOT#2372907",
+	},
+];
+
+export const whyUsData: WhyUsProps[] = [
+	{
+		id: 1,
+		gridClass: "col-start-1 row-start-3",
+		title: "Transparent Communication",
+		text: "We keep you in the loop at every step—no guesswork, no radio silence. Just proactive updates and a team that’s easy to reach.",
+	},
+	{
+		id: 2,
+		gridClass: "col-start-2 row-start-2 xl:border-l xl:rounded-tl-lg",
+		title: "Real-Time Load Tracking",
+		text: "We equip every shipment with GPS tracking, giving you full visibility and updates from pickup to delivery—no need to chase down your freight.",
+	},
+	{
+		id: 3,
+		gridClass: "col-start-2 row-start-3",
+		title: "Experienced, Professional Drivers",
+		text: "Our vetted, independent owner-operators take pride in every mile. You get skilled professionals who value safety, punctuality, and service.",
+	},
+	{
+		id: 4,
+		gridClass: "xl:col-start-3 row-start-2 xl:row-start-1 xl:border-l",
+		title: "24/5 Dispatch Availability",
+		text: "Our responsive dispatch team is available five days a week, with extended Saturday support.",
+	},
+	{
+		id: 5,
+		gridClass: "col-start-3 row-start-2 border-r-0",
+		title: "24/7 Fleet Maintenance",
+		text: "Our in-house maintenance team keeps our fleet in peak condition, reducing delays and breakdowns to keep your cargo moving reliably.",
+	},
+	{
+		id: 6,
+		gridClass: "row-start-3 border-r-0",
+		title: "Tailored Shipping Solutions",
+		text: "No two shipments are the same. We work closely with you to match your freight needs with the right trailer, schedule, and route",
+	},
+	{
+		id: 7,
+		gridClass: "col-start-1 row-start-3",
+		title: "Transparent Communication",
+		text: "We keep you in the loop at every step—no guesswork, no radio silence. Just proactive updates and a team that’s easy to reach.",
+	},
+	{
+		id: 8,
+		gridClass: "col-start-2 row-start-2 xl:border-l xl:rounded-tl-lg",
+		title: "Real-Time Load Tracking",
+		text: "We equip every shipment with GPS tracking, giving you full visibility and updates from pickup to delivery—no need to chase down your freight.",
+	},
+	{
+		id: 9,
+		gridClass: "col-start-2 row-start-3",
+		title: "Experienced, Professional Drivers",
+		text: "Our vetted, independent owner-operators take pride in every mile. You get skilled professionals who value safety, punctuality, and service.",
+	},
+	{
+		id: 10,
+		gridClass: "xl:col-start-3 row-start-2 xl:row-start-1 xl:border-l",
+		title: "24/5 Dispatch Availability",
+		text: "Our responsive dispatch team is available five days a week, with extended Saturday support.",
+	},
+	{
+		id: 11,
+		gridClass: "col-start-3 row-start-2 border-r-0",
+		title: "24/7 Fleet Maintenance",
+		text: "Our in-house maintenance team keeps our fleet in peak condition, reducing delays and breakdowns to keep your cargo moving reliably.",
+	},
+	{
+		id: 12,
+		gridClass: "row-start-3 border-r-0",
+		title: "Tailored Shipping Solutions",
+		text: "No two shipments are the same. We work closely with you to match your freight needs with the right trailer, schedule, and route",
 	},
 ];
