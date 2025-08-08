@@ -10,8 +10,9 @@ import ytIcon from "../public/assets/icons/yt.svg";
 import serviceImg1 from "../public/assets/pohots/home/02.jpg";
 import serviceImg2 from "../public/assets/pohots/home/03.jpg";
 import serviceImg3 from "../public/assets/pohots/home/04.jpg";
+import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
-import type { FooterLinkProps, WhyUsProps } from "./types";
+import type { FooterLinkProps, TestimonialsProps, WhyUsProps } from "./types";
 
 export const heroValues = [
 	{
@@ -243,5 +244,104 @@ export const whyUsData: WhyUsProps[] = [
 		gridClass: "row-start-3 border-r-0",
 		title: "Tailored Shipping Solutions",
 		text: "No two shipments are the same. We work closely with you to match your freight needs with the right trailer, schedule, and route",
+	},
+];
+
+export const testimonials: TestimonialsProps[] = [
+	{
+		image: testimonialImage1,
+		id: 1,
+		reviews:
+			"The support system at Delta is solid. I’m earning well, staying busy, and finally feel like I’m driving for a company that gets it.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 2,
+		reviews:
+			"Delta gives me the freedom I want and the support I need. I make over $3,000 a week and choose my own schedule.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 3,
+		reviews:
+			"I’ve worked with a lot of companies, but Delta actually delivers on what they promise. Straight forward, no fluff",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 4,
+		reviews:
+			"Dispatch always has my back, and I never feel pressured. I pick my loads, run my routes, and stay in control of my time.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 5,
+		reviews:
+			"Delta gives me the freedom I want and the support I need. I make over $3,000 a week and choose my own schedule.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 6,
+		reviews:
+			"Delta gives me the freedom I want and the support I need. I make over $3,000 a week and choose my own schedule.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 7,
+		reviews:
+			"The support system at Delta is solid. I’m earning well, staying busy, and finally feel like I’m driving for a company that gets it.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 8,
+		reviews:
+			"Delta gives me the freedom I want and the support I need. I make over $3,000 a week and choose my own schedule.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 9,
+		reviews:
+			"I’ve worked with a lot of companies, but Delta actually delivers on what they promise. Straight forward, no fluff",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 10,
+		reviews:
+			"Dispatch always has my back, and I never feel pressured. I pick my loads, run my routes, and stay in control of my time.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 11,
+		reviews:
+			"Delta gives me the freedom I want and the support I need. I make over $3,000 a week and choose my own schedule.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
+	},
+	{
+		image: testimonialImage1,
+		id: 12,
+		reviews:
+			"Delta gives me the freedom I want and the support I need. I make over $3,000 a week and choose my own schedule.",
+		name: "Verified Owner-Operator",
+		job: "Dsipatcher",
 	},
 ];

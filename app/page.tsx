@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
 import PrimaryButtonArrow from "@/components/svgComponents/PrimaryButtonArrow";
+import TestimonialsSectionWhite from "@/components/TestimonialsSectionWhite";
 import TitleComponent from "@/components/TitleComponent";
 import WhyUsSection from "@/components/WhyUsSection";
 import { services } from "@/ts/data";
@@ -174,6 +175,7 @@ export default function Home() {
 				</div>
 			</section>
 			<WhyUsSection />
+			<TestimonialsSectionWhite />
 		</main>
 	);
 }

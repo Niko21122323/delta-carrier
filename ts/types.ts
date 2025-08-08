@@ -1,3 +1,5 @@
+import type { StaticImageData } from "next/image";
+
 export interface PrimaryButtonProps {
 	link: string;
 	text?: string;
@@ -26,4 +28,12 @@ export interface WhyUsProps {
 	text: string;
 	id: number;
 	gridClass: string;
+}
+
+export interface TestimonialsProps {
+	id: number;
+	reviews: string;
+	name: string;
+	job: string;
+	image: string | StaticImageData;
 }
