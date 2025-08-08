@@ -37,3 +37,9 @@ export interface TestimonialsProps {
 	job: string;
 	image: string | StaticImageData;
 }
+
+export interface JobRequirementsProps {
+	id: number;
+	title: string;
+	text: string;
+}

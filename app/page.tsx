@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import PrimaryButton from "@/components/PrimaryButton";
+import RequirementsSection from "@/components/RequirementsSection";
 import SecondaryButton from "@/components/SecondaryButton";
 import PrimaryButtonArrow from "@/components/svgComponents/PrimaryButtonArrow";
 import TestimonialsSectionWhite from "@/components/TestimonialsSectionWhite";
@@ -176,6 +177,7 @@ export default function Home() {
 			</section>
 			<WhyUsSection />
 			<TestimonialsSectionWhite />
+			<RequirementsSection />
 		</main>
 	);
 }

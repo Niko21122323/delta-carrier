@@ -12,7 +12,12 @@ import serviceImg2 from "../public/assets/pohots/home/03.jpg";
 import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
-import type { FooterLinkProps, TestimonialsProps, WhyUsProps } from "./types";
+import type {
+	FooterLinkProps,
+	jobRequirementsProps,
+	TestimonialsProps,
+	WhyUsProps,
+} from "./types";
 
 export const heroValues = [
 	{
@@ -343,5 +348,33 @@ export const testimonials: TestimonialsProps[] = [
 			"Delta gives me the freedom I want and the support I need. I make over $3,000 a week and choose my own schedule.",
 		name: "Verified Owner-Operator",
 		job: "Dsipatcher",
+	},
+];
+
+export const jobRequirements: jobRequirementsProps = [
+	{
+		id: 1,
+		title: "2+ years of CDL-A Experience",
+		text: "We require at least two years of verified CDL-A driving experience.",
+	},
+	{
+		id: 2,
+		title: "Clean MVR (Last 24 Months)",
+		text: "No major violations in the past 24 months.",
+	},
+	{
+		id: 3,
+		title: "DOT Drug Test (SAP Not Accepted)",
+		text: "Applicants must pass a DOT drug screening. We do not accept drivers from the SAP program.",
+	},
+	{
+		id: 4,
+		title: "Solo Drivers Only",
+		text: "We’re currently onboarding solo Owner-Operators only—no team drivers at this time",
+	},
+	{
+		id: 5,
+		title: "Operate Across the Lower 48 States",
+		text: "Must be willing to run loads across all 48 states.",
 	},
 ];
