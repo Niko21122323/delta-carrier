@@ -55,8 +55,8 @@ const TestimonialsSectionWhite = () => {
 								key={testimonial.id}
 								className="!h-auto group select-none"
 							>
-								<div className="relative overflow-hidden rounded-2xl border border-black/5 h-full min-h-[458px] md:min-h-[582px] flex items-end">
-									<div className="relative flex flex-col justify-between gap-10 bg-light h-full group-[.swiper-slide-active]:h-[45%] sm:group-[.swiper-slide-active]:h-1/2 lg:group-[.swiper-slide-active]:h-[55%] p-6 rounded-0 group-[.swiper-slide-active]:rounded-2xl z-20 transition-all duration-300 ease-in-out">
+								<div className="relative overflow-hidden rounded-2xl border border-black/5 h-full min-h-[458px] md:min-h-[582px] flex flex-col justify-end">
+									<div className="relative flex flex-col justify-between gap-10 bg-light h-full group-[.swiper-slide-active]:h-[55%] p-6 rounded-0 group-[.swiper-slide-active]:rounded-2xl z-20 transition-all duration-300 ease-in-out">
 										<div className="">
 											<div className="flex items-center gap-2 bg-white py-1.5 px-3 rounded-sm w-fit">
 												<span className="text-dark text-[12px]">5.0</span>
