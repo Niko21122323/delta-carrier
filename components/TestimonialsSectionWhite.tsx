@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonials } from "@/ts/data";
 import type { TestimonialsProps } from "@/ts/types";
 import googleIcon from "../public/assets/icons/google.svg";
+import quotesIcon from "../public/assets/icons/quotes-icon-white.svg";
 import starIcon from "../public/assets/icons/star.svg";
 import TitleComponent from "./TitleComponent";
 
@@ -49,6 +51,7 @@ const TestimonialsSectionWhite = () => {
 								slidesPerView: 4,
 							},
 						}}
+						modules={[Autoplay]}
 						autoplay={{
 							delay: 3000,
 						}}
@@ -60,7 +63,10 @@ const TestimonialsSectionWhite = () => {
 							>
 								<div className="relative overflow-hidden rounded-2xl border border-black/5 h-full min-h-[458px] md:min-h-[582px] flex flex-col justify-end">
 									<div className="relative flex flex-col justify-between gap-10 bg-light h-full group-[.swiper-slide-active]:h-[55%] p-6 rounded-0 group-[.swiper-slide-active]:rounded-2xl z-20 transition-all duration-300 ease-in-out">
-										<div className="">
+										<div className="absolute bottom-0 right-0">
+											<Image src={quotesIcon} alt="quotes icon" />
+										</div>
+										<div className="relative z-10">
 											<div className="flex items-center gap-2 bg-white py-1.5 px-3 rounded-sm w-fit">
 												<span className="text-dark text-[12px]">5.0</span>
 												<div className="flex items-center gap-0.5">
@@ -75,7 +81,7 @@ const TestimonialsSectionWhite = () => {
 												{testimonial.reviews}
 											</p>
 										</div>
-										<div className="flex items-center gap-3">
+										<div className="relative flex items-center gap-3 z-10">
 											<div className="flex items-center justify-center rounded-md bg-white border border-black/20 size-14">
 												<Image src={googleIcon} alt="google icon" />
 											</div>
