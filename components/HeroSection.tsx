@@ -14,6 +14,8 @@ const HeroSection = () => {
 						src={heroImage}
 						alt="hero image"
 						className="h-full w-full object-cover"
+						placeholder="blur"
+						priority
 					/>
 				</div>
 				<div className="absolute top-0 left-0 w-full h-full hero-gradient z-10"></div>
