@@ -14,7 +14,7 @@ import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
 import type {
 	FooterLinkProps,
-	jobRequirementsProps,
+	JobRequirementsProps,
 	TestimonialsProps,
 	WhyUsProps,
 } from "./types";
@@ -351,7 +351,7 @@ export const testimonials: TestimonialsProps[] = [
 	},
 ];
 
-export const jobRequirements: jobRequirementsProps = [
+export const jobRequirements: JobRequirementsProps[] = [
 	{
 		id: 1,
 		title: "2+ years of CDL-A Experience",

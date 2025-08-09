@@ -178,6 +178,7 @@ export default function Home() {
 			<WhyUsSection />
 			<TestimonialsSectionWhite />
 			<RequirementsSection />
+			<section className="py-16"></section>
 		</main>
 	);
 }

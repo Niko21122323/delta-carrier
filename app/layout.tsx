@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "swiper/css";
 import "swiper/css/navigation";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
