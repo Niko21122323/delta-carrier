@@ -26,6 +26,7 @@ const TestimonialsSectionWhite = () => {
 						standard.
 					</p>
 				</div>
+
 				<div className="">
 					<Swiper
 						className="!overflow-visible"
