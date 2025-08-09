@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FaqSection from "@/components/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PrimaryButton from "@/components/PrimaryButton";
 import RequirementsSection from "@/components/RequirementsSection";
@@ -178,7 +179,7 @@ export default function Home() {
 			<WhyUsSection />
 			<TestimonialsSectionWhite />
 			<RequirementsSection />
-			<section className="py-16"></section>
+			<FaqSection />
 		</main>
 	);
 }

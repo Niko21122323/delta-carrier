@@ -47,7 +47,7 @@ const Navbar = () => {
 			label: "Home",
 		},
 		{
-			href: "/about",
+			href: "/about-us",
 			label: "About Us",
 		},
 		{

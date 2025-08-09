@@ -43,3 +43,10 @@ export interface JobRequirementsProps {
 	title: string;
 	text: string;
 }
+
+export interface FaqProps {
+	id: number;
+	number: string;
+	title: string;
+	text: string;
+}

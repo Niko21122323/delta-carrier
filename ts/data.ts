@@ -13,6 +13,7 @@ import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
 import type {
+	FaqProps,
 	FooterLinkProps,
 	JobRequirementsProps,
 	TestimonialsProps,
@@ -376,5 +377,44 @@ export const jobRequirements: JobRequirementsProps[] = [
 		id: 5,
 		title: "Operate Across the Lower 48 States",
 		text: "Must be willing to run loads across all 48 states.",
+	},
+];
+
+export const faqs: FaqProps[] = [
+	{
+		id: 1,
+		number: "01.",
+		title: "What experience do I need to join Delta?",
+		text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+	},
+	{
+		id: 2,
+		number: "02.",
+		title: "Is there a minimum age requirement?",
+		text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+	},
+	{
+		id: 3,
+		number: "03.",
+		title: "Where does Delta operate?",
+		text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+	},
+	{
+		id: 4,
+		number: "04.",
+		title: "How many miles will I typically drive per day?",
+		text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+	},
+	{
+		id: 5,
+		number: "05.",
+		title: "Is Delta ELD compliant?",
+		text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+	},
+	{
+		id: 6,
+		number: "06.",
+		title: "How much time do I have to spend on the road?",
+		text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
 	},
 ];

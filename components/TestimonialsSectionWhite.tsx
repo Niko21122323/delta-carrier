@@ -49,6 +49,9 @@ const TestimonialsSectionWhite = () => {
 								slidesPerView: 4,
 							},
 						}}
+						autoplay={{
+							delay: 3000,
+						}}
 					>
 						{testimonials.map((testimonial: TestimonialsProps) => (
 							<SwiperSlide

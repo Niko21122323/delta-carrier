@@ -78,3 +78,12 @@ p {
 		rgba(0, 0, 0, 0.75) 88%
 	);
 }
+
+.accordion-gradient {
+	background: #e24854;
+	background: linear-gradient(
+		90deg,
+		rgba(226, 72, 84, 1) 0%,
+		rgba(209, 60, 72, 1) 100%
+	);
+}
