@@ -55,3 +55,10 @@ export interface BannerProps {
 	title: string;
 	text: string;
 }
+
+export interface DifferencesProps {
+	id: number;
+	number?: string;
+	title?: string;
+	text?: string;
+}

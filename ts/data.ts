@@ -13,6 +13,7 @@ import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
 import type {
+	DifferencesProps,
 	FaqProps,
 	FooterLinkProps,
 	JobRequirementsProps,
@@ -416,5 +417,36 @@ export const faqs: FaqProps[] = [
 		number: "06.",
 		title: "How much time do I have to spend on the road?",
 		text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+	},
+];
+
+export const differences: DifferencesProps[] = [
+	{
+		id: 1,
+		number: "01",
+		title: "People First, Always",
+		text: "At Delta Carrier Group, it all starts with people. As a family-owned business, we believe strong relationships lead to better results—for drivers, customers, and our team.",
+	},
+	{ id: 2 },
+	{
+		id: 3,
+		number: "03",
+		title: "Built Around Owner-Operators",
+		text: "Owner-operators are the backbone of what we do. That’s why we focus entirely on supporting independent drivers with the tools, respect, and freedom they deserve.",
+	},
+	{ id: 4 },
+	{ id: 5 },
+	{
+		id: 6,
+		number: "02",
+		title: "Freedom to Run Your Way",
+		text: "No forced dispatch. No hidden fees. Our drivers choose their loads, their routes, and their schedules—with full control over how they run their business.",
+	},
+	{ id: 7 },
+	{
+		id: 8,
+		number: "04",
+		title: "Support That’s Always There",
+		text: "From dispatch and logistics to compliance and maintenance, we’re hands-on and ready to help. Our goal is to make sure every partner is equipped for success on the road.",
 	},
 ];
