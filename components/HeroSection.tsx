@@ -20,7 +20,7 @@ const HeroSection = () => {
 				</div>
 				<div className="absolute top-0 left-0 w-full h-full hero-gradient z-10"></div>
 				<div className="relative container mx-auto px-4 lg:px-6 z-20">
-					<div className="flex flex-col gap-12 pt-[233px] lg::pt-[390px] 2xl:pt-[490px] pb-4 sm:pb-10 lg:pb-20 2xl:pb-[100px]">
+					<div className="flex flex-col gap-12 pt-[233px] lg:pt-[390px] 2xl:pt-[490px] pb-4 sm:pb-10 lg:pb-20 2xl:pb-[100px]">
 						<div className="flex flex-col lg:flex-row gap-y-5 lg:items-end lg:justify-between">
 							<div>
 								<div className="flex gap-2">

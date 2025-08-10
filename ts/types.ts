@@ -50,3 +50,8 @@ export interface FaqProps {
 	title: string;
 	text: string;
 }
+
+export interface BannerProps {
+	title: string;
+	text: string;
+}
