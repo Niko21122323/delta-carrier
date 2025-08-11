@@ -13,6 +13,7 @@ import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
 import type {
+	ContactDetailProps,
 	DifferencesProps,
 	FaqProps,
 	FooterLinkProps,
@@ -448,5 +449,26 @@ export const differences: DifferencesProps[] = [
 		number: "04",
 		title: "Support That’s Always There",
 		text: "From dispatch and logistics to compliance and maintenance, we’re hands-on and ready to help. Our goal is to make sure every partner is equipped for success on the road.",
+	},
+];
+
+export const contactDetails: ContactDetailProps[] = [
+	{
+		id: 1,
+		lagel: "Our Address",
+		info: "1032 Moen Ave (2nd Floor) Suite# 2, Rockdale, IL 60436",
+		link: "",
+		target: "_blank",
+	},
+	{
+		id: 2,
+		lagel: "Phone Number",
+		info: "1-708-746-4448",
+		link: "tel:17087464448",
+	},
+	{
+		id: 3,
+		lagel: "Working Hours",
+		info: "Mon - Fri : 07:00 - 17:00",
 	},
 ];

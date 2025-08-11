@@ -53,7 +53,7 @@ export interface FaqProps {
 
 export interface BannerProps {
 	title: string;
-	text: string;
+	text?: string;
 }
 
 export interface DifferencesProps {
@@ -61,4 +61,12 @@ export interface DifferencesProps {
 	number?: string;
 	title?: string;
 	text?: string;
+}
+
+export interface ContactDetailProps {
+	id: number;
+	lagel: string;
+	info: string;
+	link?: string;
+	target?: string;
 }

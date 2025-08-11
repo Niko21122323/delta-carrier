@@ -6,7 +6,7 @@ import TitleComponent from "./TitleComponent";
 
 const CtaSection = () => {
 	return (
-		<section className="relative overflow-hidden rounded-2xl max-md:pt-6 md:py-16 z-30">
+		<section className="relative overflow-hidden md:rounded-2xl max-md:pt-6 md:py-16 z-30">
 			<div className="absolute left-0 top-0 w-full h-full z-10 cta-gradient max-md:hidden"></div>
 			<div className="absolute top-0 left-0 h-full w-full max-md:hidden">
 				<Image

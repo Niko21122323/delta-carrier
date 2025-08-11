@@ -30,21 +30,23 @@ const BannerComponent = ({ title, text }: BannerProps) => {
 								{title}
 							</h1>
 						</div>
-						<div className="flex flex-col gap-6 lg:gap-8">
-							<p className="text-white/90 max-w-[608px]">{text}</p>
-							<div className="flex max-[450px]:flex-col gap-3 sm:gap-4">
-								<div className="w-full sm:w-fit">
-									<PrimaryButton text="Ship With Us" link="/contact" />
-								</div>
-								<div className="w-full sm:w-fit">
-									<SecondaryButton
-										text="Learn More"
-										link="/about"
-										color="light"
-									/>
+						{text && (
+							<div className="flex flex-col gap-6 lg:gap-8">
+								<p className="text-white/90 max-w-[608px]">{text}</p>
+								<div className="flex max-[450px]:flex-col gap-3 sm:gap-4">
+									<div className="w-full sm:w-fit">
+										<PrimaryButton text="Ship With Us" link="/contact" />
+									</div>
+									<div className="w-full sm:w-fit">
+										<SecondaryButton
+											text="Learn More"
+											link="/about"
+											color="light"
+										/>
+									</div>
 								</div>
 							</div>
-						</div>
+						)}
 					</div>
 				</div>
 

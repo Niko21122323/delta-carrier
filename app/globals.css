@@ -87,3 +87,12 @@ p {
 		rgba(209, 60, 72, 1) 100%
 	);
 }
+
+.contact-gradient {
+	background: #000000;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.67) 100%
+	);
+}
