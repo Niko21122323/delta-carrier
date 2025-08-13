@@ -70,3 +70,9 @@ export interface ContactDetailProps {
 	link?: string;
 	target?: string;
 }
+
+export interface SolutionsDataProps {
+	id: number;
+	elementId: string;
+	image: StaticImageData;
+}

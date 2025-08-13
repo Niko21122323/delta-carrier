@@ -7,6 +7,9 @@ import igIcon from "../public/assets/icons/ig.svg";
 import liIcon from "../public/assets/icons/in.svg";
 import xIcon from "../public/assets/icons/x.svg";
 import ytIcon from "../public/assets/icons/yt.svg";
+import solutionsData1Img1 from "../public/assets/pohots/divisions/2.jpg";
+import solutionsData1Img2 from "../public/assets/pohots/divisions/3.jpg";
+import solutionsData1Img3 from "../public/assets/pohots/divisions/4.jpg";
 import serviceImg1 from "../public/assets/pohots/home/02.jpg";
 import serviceImg2 from "../public/assets/pohots/home/03.jpg";
 import serviceImg3 from "../public/assets/pohots/home/04.jpg";
@@ -18,6 +21,7 @@ import type {
 	FaqProps,
 	FooterLinkProps,
 	JobRequirementsProps,
+	SolutionsDataProps,
 	TestimonialsProps,
 	WhyUsProps,
 } from "./types";
@@ -470,5 +474,23 @@ export const contactDetails: ContactDetailProps[] = [
 		id: 3,
 		lagel: "Working Hours",
 		info: "Mon - Fri : 07:00 - 17:00",
+	},
+];
+
+export const solutionsData1: SolutionsDataProps[] = [
+	{
+		id: 1,
+		elementId: "grid1-img1",
+		image: solutionsData1Img1,
+	},
+	{
+		id: 2,
+		elementId: "grid1-img2",
+		image: solutionsData1Img2,
+	},
+	{
+		id: 3,
+		elementId: "grid1-img3",
+		image: solutionsData1Img3,
 	},
 ];
