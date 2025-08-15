@@ -77,3 +77,9 @@ export interface SolutionsDataProps {
 	mobileId: string;
 	image: StaticImageData;
 }
+
+export interface VideoProps {
+	id: number;
+	videoLink: string;
+	videoThumbnail: StaticImageData;
+}

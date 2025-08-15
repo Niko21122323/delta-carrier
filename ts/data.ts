@@ -20,6 +20,15 @@ import serviceImg1 from "../public/assets/pohots/home/02.jpg";
 import serviceImg2 from "../public/assets/pohots/home/03.jpg";
 import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
+import video1 from "../public/assets/pohots/videos/video-1.jpg";
+import video2 from "../public/assets/pohots/videos/video-2.jpg";
+import video3 from "../public/assets/pohots/videos/video-3.jpg";
+import video4 from "../public/assets/pohots/videos/video-4.jpg";
+import video5 from "../public/assets/pohots/videos/video-5.jpg";
+import video6 from "../public/assets/pohots/videos/video-6.jpg";
+import video7 from "../public/assets/pohots/videos/video-7.jpg";
+import video8 from "../public/assets/pohots/videos/video-8.jpg";
+import video9 from "../public/assets/pohots/videos/video-9.jpg";
 
 import type {
 	ContactDetailProps,
@@ -29,6 +38,7 @@ import type {
 	JobRequirementsProps,
 	SolutionsDataProps,
 	TestimonialsProps,
+	VideoProps,
 	WhyUsProps,
 } from "./types";
 
@@ -541,5 +551,52 @@ export const solutionsData3: SolutionsDataProps[] = [
 		elementId: "grid3-img3",
 		mobileId: "mobile3-img3",
 		image: solutionsData3Img3,
+	},
+];
+export const videos: VideoProps[] = [
+	{
+		id: 1,
+		videoLink: "",
+		videoThumbnail: video1,
+	},
+	{
+		id: 2,
+		videoLink: "",
+		videoThumbnail: video2,
+	},
+	{
+		id: 3,
+		videoLink: "",
+		videoThumbnail: video3,
+	},
+	{
+		id: 4,
+		videoLink: "",
+		videoThumbnail: video4,
+	},
+	{
+		id: 5,
+		videoLink: "",
+		videoThumbnail: video5,
+	},
+	{
+		id: 6,
+		videoLink: "",
+		videoThumbnail: video6,
+	},
+	{
+		id: 7,
+		videoLink: "",
+		videoThumbnail: video7,
+	},
+	{
+		id: 8,
+		videoLink: "",
+		videoThumbnail: video8,
+	},
+	{
+		id: 9,
+		videoLink: "",
+		videoThumbnail: video9,
 	},
 ];
