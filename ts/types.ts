@@ -74,5 +74,6 @@ export interface ContactDetailProps {
 export interface SolutionsDataProps {
 	id: number;
 	elementId: string;
+	mobileId: string;
 	image: StaticImageData;
 }

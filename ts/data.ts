@@ -10,6 +10,12 @@ import ytIcon from "../public/assets/icons/yt.svg";
 import solutionsData1Img1 from "../public/assets/pohots/divisions/2.jpg";
 import solutionsData1Img2 from "../public/assets/pohots/divisions/3.jpg";
 import solutionsData1Img3 from "../public/assets/pohots/divisions/4.jpg";
+import solutionsData2Img1 from "../public/assets/pohots/divisions/5.jpg";
+import solutionsData2Img2 from "../public/assets/pohots/divisions/6.jpg";
+import solutionsData2Img3 from "../public/assets/pohots/divisions/7.jpg";
+import solutionsData3Img1 from "../public/assets/pohots/divisions/8.jpg";
+import solutionsData3Img2 from "../public/assets/pohots/divisions/9.jpg";
+import solutionsData3Img3 from "../public/assets/pohots/divisions/10.jpg";
 import serviceImg1 from "../public/assets/pohots/home/02.jpg";
 import serviceImg2 from "../public/assets/pohots/home/03.jpg";
 import serviceImg3 from "../public/assets/pohots/home/04.jpg";
@@ -481,16 +487,59 @@ export const solutionsData1: SolutionsDataProps[] = [
 	{
 		id: 1,
 		elementId: "grid1-img1",
+		mobileId: "mobile1-img1",
 		image: solutionsData1Img1,
 	},
 	{
 		id: 2,
 		elementId: "grid1-img2",
+		mobileId: "mobile1-img2",
 		image: solutionsData1Img2,
 	},
 	{
 		id: 3,
 		elementId: "grid1-img3",
+		mobileId: "mobile1-img3",
 		image: solutionsData1Img3,
+	},
+];
+export const solutionsData2: SolutionsDataProps[] = [
+	{
+		id: 1,
+		elementId: "grid2-img1",
+		mobileId: "mobile2-img1",
+		image: solutionsData2Img1,
+	},
+	{
+		id: 2,
+		elementId: "grid2-img2",
+		mobileId: "mobile2-img2",
+		image: solutionsData2Img2,
+	},
+	{
+		id: 3,
+		elementId: "grid2-img3",
+		mobileId: "mobile2-img3",
+		image: solutionsData2Img3,
+	},
+];
+export const solutionsData3: SolutionsDataProps[] = [
+	{
+		id: 1,
+		elementId: "grid3-img1",
+		mobileId: "mobile3-img1",
+		image: solutionsData3Img1,
+	},
+	{
+		id: 2,
+		elementId: "grid3-img2",
+		mobileId: "mobile3-img2",
+		image: solutionsData3Img2,
+	},
+	{
+		id: 3,
+		elementId: "grid3-img3",
+		mobileId: "mobile3-img3",
+		image: solutionsData3Img3,
 	},
 ];
