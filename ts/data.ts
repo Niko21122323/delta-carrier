@@ -514,6 +514,7 @@ export const solutionsData1: SolutionsDataProps[] = [
 		image: solutionsData1Img3,
 	},
 ];
+
 export const solutionsData2: SolutionsDataProps[] = [
 	{
 		id: 1,
@@ -534,6 +535,7 @@ export const solutionsData2: SolutionsDataProps[] = [
 		image: solutionsData2Img3,
 	},
 ];
+
 export const solutionsData3: SolutionsDataProps[] = [
 	{
 		id: 1,
@@ -554,6 +556,7 @@ export const solutionsData3: SolutionsDataProps[] = [
 		image: solutionsData3Img3,
 	},
 ];
+
 export const videos: VideoProps[] = [
 	{
 		id: 1,
@@ -601,6 +604,7 @@ export const videos: VideoProps[] = [
 		videoThumbnail: video9,
 	},
 ];
+
 export const jobs: JobProps[] = [
 	{
 		id: 1,
@@ -609,6 +613,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 2,
@@ -617,6 +622,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 3,
@@ -625,6 +631,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 4,
@@ -633,6 +640,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 5,
@@ -641,6 +649,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 6,
@@ -649,6 +658,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 7,
@@ -657,6 +667,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 8,
@@ -665,6 +676,7 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
 	},
 	{
 		id: 9,
@@ -673,5 +685,60 @@ export const jobs: JobProps[] = [
 		text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
 		applyLink: "",
 		link: "",
+		variant: "in-office",
+	},
+	{
+		id: 1,
+		title: "Fleet Maintenance Technician",
+		subtitle: "Maintenance",
+		text: "Join our mobile maintenance team and keep our fleet running smoothly. Work with state-of-the-art equipment and enjoy competitive pay:",
+		applyLink: "",
+		link: "",
+		variant: "other",
+	},
+	{
+		id: 2,
+		title: "Route Planning Specialist",
+		subtitle: "Logistics",
+		text: "Help optimize delivery routes and maximize efficiency for our owner-operators. Work remotely with flexible scheduling options:",
+		applyLink: "",
+		link: "",
+		variant: "other",
+	},
+	{
+		id: 3,
+		title: "Safety Compliance Officer",
+		subtitle: "Safety & Compliance",
+		text: "Ensure our operations meet all DOT regulations and safety standards. Travel to various locations and work with diverse teams:",
+		applyLink: "",
+		link: "",
+		variant: "other",
+	},
+	{
+		id: 4,
+		title: "Customer Relations Manager",
+		subtitle: "Client Services",
+		text: "Build strong relationships with our clients and ensure exceptional service delivery. Hybrid work model with competitive benefits:",
+		applyLink: "",
+		link: "",
+		variant: "other",
+	},
+	{
+		id: 5,
+		title: "Freight Coordinator",
+		subtitle: "Operations",
+		text: "Coordinate freight assignments and manage load dispatch for maximum efficiency. Fast-paced environment with growth opportunities:",
+		applyLink: "",
+		link: "",
+		variant: "other",
+	},
+	{
+		id: 6,
+		title: "Training & Development Specialist",
+		subtitle: "Human Resources",
+		text: "Design and implement training programs for new drivers and staff. Work across multiple locations with excellent travel benefits:",
+		applyLink: "",
+		link: "",
+		variant: "other",
 	},
 ];

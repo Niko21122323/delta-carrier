@@ -91,4 +91,5 @@ export interface JobProps {
 	text: string;
 	applyLink: string;
 	link: string;
+	variant: string;
 }
