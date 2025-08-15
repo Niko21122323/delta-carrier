@@ -83,3 +83,12 @@ export interface VideoProps {
 	videoLink: string;
 	videoThumbnail: StaticImageData;
 }
+
+export interface JobProps {
+	id: number;
+	title: string;
+	subtitle: string;
+	text: string;
+	applyLink: string;
+	link: string;
+}
