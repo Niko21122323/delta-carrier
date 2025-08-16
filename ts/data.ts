@@ -765,7 +765,7 @@ export const blogs: BlogProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: blogImg1,
 	},
 	{
@@ -774,7 +774,7 @@ export const blogs: BlogProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: blogImg2,
 	},
 	{
@@ -782,7 +782,7 @@ export const blogs: BlogProps[] = [
 		name: "Marko Trpeski",
 		read: "5 min read",
 		title: "Lorem ipsum dolor sit amet consectetur. Faucibus mauris phasel",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: blogImg3,
 	},
 	{
@@ -790,7 +790,7 @@ export const blogs: BlogProps[] = [
 		name: "Marko Trpeski",
 		read: "5 min read",
 		title: "Lorem ipsum dolor sit amet consectetur. Faucibus mauris phasel",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: blogImg4,
 	},
 	{
@@ -798,11 +798,10 @@ export const blogs: BlogProps[] = [
 		name: "5 min read",
 		read: "Marko Trpeski",
 		title: "Lorem ipsum dolor sit amet consectetur. Faucibus mauris phasel",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: blogImg5,
 	},
 ];
-
 export const articles: ArticleProps[] = [
 	{
 		id: 1,
@@ -810,7 +809,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg1,
 	},
 	{
@@ -819,7 +818,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg2,
 	},
 	{
@@ -828,7 +827,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg3,
 	},
 	{
@@ -837,7 +836,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg4,
 	},
 	{
@@ -846,7 +845,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg5,
 	},
 	{
@@ -855,7 +854,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg6,
 	},
 	{
@@ -864,7 +863,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg7,
 	},
 	{
@@ -873,7 +872,7 @@ export const articles: ArticleProps[] = [
 		read: "5 min read",
 		title: "How Delta Carrier Keeps Freight Moving Across America",
 		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
-		link: "/",
+		link: "/blogs/fright-moving-across-america",
 		image: articleImg8,
 	},
 ];
