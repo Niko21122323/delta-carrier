@@ -7,6 +7,19 @@ import igIcon from "../public/assets/icons/ig.svg";
 import liIcon from "../public/assets/icons/in.svg";
 import xIcon from "../public/assets/icons/x.svg";
 import ytIcon from "../public/assets/icons/yt.svg";
+import blogImg1 from "../public/assets/pohots/blog/01.jpg";
+import blogImg2 from "../public/assets/pohots/blog/02.jpg";
+import blogImg3 from "../public/assets/pohots/blog/03.jpg";
+import blogImg4 from "../public/assets/pohots/blog/04.jpg";
+import blogImg5 from "../public/assets/pohots/blog/05.jpg";
+import articleImg1 from "../public/assets/pohots/blog/06.jpg";
+import articleImg2 from "../public/assets/pohots/blog/07.jpg";
+import articleImg3 from "../public/assets/pohots/blog/08.jpg";
+import articleImg4 from "../public/assets/pohots/blog/09.jpg";
+import articleImg5 from "../public/assets/pohots/blog/10.jpg";
+import articleImg6 from "../public/assets/pohots/blog/11.jpg";
+import articleImg7 from "../public/assets/pohots/blog/12.jpg";
+import articleImg8 from "../public/assets/pohots/blog/13.jpg";
 import solutionsData1Img1 from "../public/assets/pohots/divisions/2.jpg";
 import solutionsData1Img2 from "../public/assets/pohots/divisions/3.jpg";
 import solutionsData1Img3 from "../public/assets/pohots/divisions/4.jpg";
@@ -31,6 +44,8 @@ import video8 from "../public/assets/pohots/videos/video-8.jpg";
 import video9 from "../public/assets/pohots/videos/video-9.jpg";
 
 import type {
+	ArticleProps,
+	BlogProps,
 	ContactDetailProps,
 	DifferencesProps,
 	FaqProps,
@@ -740,5 +755,125 @@ export const jobs: JobProps[] = [
 		applyLink: "",
 		link: "",
 		variant: "other",
+	},
+];
+
+export const blogs: BlogProps[] = [
+	{
+		id: 1,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: blogImg1,
+	},
+	{
+		id: 2,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: blogImg2,
+	},
+	{
+		id: 3,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "Lorem ipsum dolor sit amet consectetur. Faucibus mauris phasel",
+		link: "/",
+		image: blogImg3,
+	},
+	{
+		id: 4,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "Lorem ipsum dolor sit amet consectetur. Faucibus mauris phasel",
+		link: "/",
+		image: blogImg4,
+	},
+	{
+		id: 5,
+		name: "5 min read",
+		read: "Marko Trpeski",
+		title: "Lorem ipsum dolor sit amet consectetur. Faucibus mauris phasel",
+		link: "/",
+		image: blogImg5,
+	},
+];
+
+export const articles: ArticleProps[] = [
+	{
+		id: 1,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg1,
+	},
+	{
+		id: 2,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg2,
+	},
+	{
+		id: 3,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg3,
+	},
+	{
+		id: 4,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg4,
+	},
+	{
+		id: 5,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg5,
+	},
+	{
+		id: 6,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg6,
+	},
+	{
+		id: 7,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg7,
+	},
+	{
+		id: 8,
+		name: "Marko Trpeski",
+		read: "5 min read",
+		title: "How Delta Carrier Keeps Freight Moving Across America",
+		text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
+		link: "/",
+		image: articleImg8,
 	},
 ];

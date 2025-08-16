@@ -93,3 +93,23 @@ export interface JobProps {
 	link: string;
 	variant: string;
 }
+
+export interface BlogProps {
+	id: number;
+	name: string;
+	read: string;
+	title: string;
+	text?: string;
+	link: string;
+	image: StaticImageData;
+}
+
+export interface ArticleProps {
+	id: number;
+	name: string;
+	read: string;
+	title: string;
+	text: string;
+	link: string;
+	image: StaticImageData;
+}
