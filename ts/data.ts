@@ -2,6 +2,10 @@ import HeadsetIcon from "@/components/svgComponents/HeadsetIcon";
 import HeartIcon from "@/components/svgComponents/HeartIcon";
 import MedalIcon from "@/components/svgComponents/MedalIcon";
 import TrophyIcon from "@/components/svgComponents/TrophyIcon";
+import serviceIcon1 from "../components/svgComponents/ServiceIcon1";
+import ServiceIcon1 from "../components/svgComponents/ServiceIcon1";
+import serviceIcon2 from "../components/svgComponents/ServiceIcon2";
+import serviceIcon3 from "../components/svgComponents/ServiceIcon3";
 import fbIcon from "../public/assets/icons/fb.svg";
 import igIcon from "../public/assets/icons/ig.svg";
 import liIcon from "../public/assets/icons/in.svg";
@@ -42,7 +46,6 @@ import video6 from "../public/assets/pohots/videos/video-6.jpg";
 import video7 from "../public/assets/pohots/videos/video-7.jpg";
 import video8 from "../public/assets/pohots/videos/video-8.jpg";
 import video9 from "../public/assets/pohots/videos/video-9.jpg";
-
 import type {
 	ArticleProps,
 	BlogProps,
@@ -91,18 +94,24 @@ export const services = [
 		image: serviceImg1,
 		title: "Dry Van Freight",
 		text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
+		link: "/",
+		icon: serviceIcon1,
 	},
 	{
 		id: 2,
 		image: serviceImg2,
 		title: "Flatbed Freight",
 		text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
+		link: "/",
+		icon: serviceIcon2,
 	},
 	{
 		id: 3,
 		image: serviceImg3,
 		title: "Step Deck & Conestoga",
 		text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
+		link: "/",
+		icon: serviceIcon3,
 	},
 ];
 

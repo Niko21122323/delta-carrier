@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AsideService from "@/components/AsideService";
 import BannerComponent from "@/components/BannerComponent";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
@@ -233,7 +234,9 @@ const page = () => {
 								</div>
 							</div>
 						</div>
-						<div className="max-lg:hidden lg:col-span-4 col-start-9"></div>
+						<div className="max-lg:hidden lg:col-span-3 lg:col-start-10">
+							<AsideService />
+						</div>
 					</div>
 				</div>
 			</section>
