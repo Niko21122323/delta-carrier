@@ -149,7 +149,7 @@ const Navbar = () => {
 			</nav>
 
 			<div
-				className={`h-full bg-dark absolute top-0 left-0 lg:hidden transition-all duration-300 ease-in-out z-[99999] ${isMobileMebuOpen ? "w-[420px] translate-x-0 opacity-100" : "-translate-x-full opacity-0"} overflow-hidden`}
+				className={`h-screen bg-dark fixed top-0 left-0 lg:hidden transition-all duration-300 ease-in-out z-[99999] ${isMobileMebuOpen ? "w-[90%] translate-x-0 opacity-100" : "-translate-x-full opacity-0"} overflow-hidden`}
 			>
 				<div className="flex gap-10 px-6 py-10 items-center justify-between">
 					<Image
@@ -178,7 +178,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div
-				className={`absolute left-0 top-0 w-full h-full bg-white/10 backdrop-blur-xl z-[9999] ${isMobileMebuOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-300 ease-in-out`}
+				className={`absolute pointer-events-none left-0 top-0 w-full h-full bg-white/10 backdrop-blur-xl z-[9999] ${isMobileMebuOpen ? "opacity-100" : "opacity-0"} transition-all duration-300 ease-in-out`}
 			></div>
 		</>
 	);
