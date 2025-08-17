@@ -126,12 +126,21 @@ const page = () => {
 									</h4>
 									<div className="flex flex-col gap-4">
 										{includingData.map((data) => (
-											<div key={data.id} className="flex items-center gap-3">
-												<div className="flex items-center justify-center flex-shrink-0 size-[52px] bg-light border border-black/5 rounded-lg">
-													<Image src={data.icon} alt="icon" />
+											<div
+												key={data.id}
+												className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3"
+											>
+												<div className="flex items-center gap-3">
+													<div className="flex items-center justify-center flex-shrink-0 size-8 max-sm:p-1.5 sm:size-[52px] bg-light border border-black/5 rounded-sm sm:rounded-lg">
+														<Image src={data.icon} alt="icon" />
+													</div>
+													<h6 className="sm:hidden text-base text-dark font-semibold">
+														{data.title}
+													</h6>
 												</div>
+
 												<div className="">
-													<h6 className="text-xl text-dark font-semibold pb-1">
+													<h6 className="text-xl text-dark font-semibold pb-1 max-sm:hidden">
 														{data.title}
 													</h6>
 													<p className="text-body">{data.text}</p>

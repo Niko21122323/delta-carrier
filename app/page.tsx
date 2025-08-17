@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import FaqSection from "@/components/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PrimaryButton from "@/components/PrimaryButton";
@@ -83,7 +84,8 @@ export default function Home() {
 					</div>
 					<div className="grid sm:col-span-4 lg:grid-cols-3 gap-3 xl:gap-6">
 						{services.map((service) => (
-							<div
+							<Link
+								href={service.link}
 								key={service.id}
 								className="relative overflow-hidden rounded-xl md:rounded-2xl max-lg:max-h-[344px] max-sm:last:col-span-1 max-lg:last:col-span-4 group"
 							>
@@ -113,7 +115,7 @@ export default function Home() {
 										</div>
 									</div>
 								</div>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>

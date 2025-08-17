@@ -1,46 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GoArrowRight } from "react-icons/go";
-import { services } from "@/ts/data";
-import mailIcon from "../public/assets/icons/mail-stroke.svg";
-import phoneIcon from "../public/assets/icons/phone-stroke.svg";
+import mailIcon from "../public/assets/icons/email.svg";
+import phoneIcon from "../public/assets/icons/phone.svg";
 
-const AsideService = () => {
+const AsideJobs = () => {
 	return (
 		<aside className="flex flex-col gap-6 sticky top-32">
-			<div className="bg-light p-3 xl:p-4 2xl:p-5 rounded-xl border border-dark/15">
-				<h4 className="text-dark text-3xl font-semibold pb-3">
-					Other Services
-				</h4>
-				<p className="text-body pb-5">
-					Lorem ipsum dolor sit amet consectetur. Vitae vestibulum nec nec erat.
-					Eget et diam etiam.
-				</p>
-				<div className="flex flex-col gap-2 pt-5 border-t border-[#E1E1E1]">
-					{services.map((data) => (
-						<div
-							key={data.id}
-							className="flex items-center gap-3 bg-white rounded-md p-3 overflow-hidden group"
-						>
-							<div className="flex items-center justify-center size-10 bg-light border border-black/15 rounded-sm">
-								<data.icon color="fill-body group-hover:fill-accent-light transition-colors duration-300 ease-in-out" />
-							</div>
-							<div className="">
-								<div className="text-base translate-y-1/2 text-body group-hover:translate-y-0 group-hover:text-dark group-hover:font-medium transition-all duration-300 ease-in-out">
-									{data.title}
-								</div>
-								<Link
-									href={data.link}
-									className="flex items-center gap-2 translate-y-[150%] group-hover:translate-y-0 transition-all duration-300 ease-in-out"
-								>
-									<span className="text-accent-light">View Service</span>
-									<GoArrowRight className="text-accent-light" />
-								</Link>
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
 			<div className="bg-light p-3 xl:p-4 2xl:p-5  rounded-xl border border-dark/15">
 				<h4 className="text-dark text-3xl font-semibold pb-3">
 					Ask Me a Question
@@ -139,4 +104,4 @@ const AsideService = () => {
 	);
 };
 
-export default AsideService;
+export default AsideJobs;

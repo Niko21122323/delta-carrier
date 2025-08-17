@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
+import hamburgerBg from "../public/assets/icons/hamburger-bg.svg";
 import Logo from "../public/assets/logo/logo.png";
 import PrimaryButton from "./PrimaryButton";
 
@@ -12,10 +13,23 @@ const Navbar = () => {
 	const [isVisible, setIsVisible] = useState(true);
 	const [isAtTop, setIsAtTop] = useState(true);
 	const [isMobileMebuOpen, setIsMobileMenuOpen] = useState(false);
+	const [isInitialized, setIsInitialized] = useState(false); // Add this state
 	const pathname = usePathname();
 
 	useEffect(() => {
-		let lastScrollY = window.scrollY;
+		// Check initial scroll position on mount
+		const initialScrollY = window.scrollY;
+		setIsAtTop(initialScrollY < 10);
+
+		// Set initial visibility based on scroll position
+		if (initialScrollY > 100) {
+			setIsVisible(false);
+		}
+
+		// Mark as initialized after setting initial state
+		setIsInitialized(true);
+
+		let lastScrollY = initialScrollY;
 
 		const controlNavbar = () => {
 			const currentScrollY = window.scrollY;
@@ -37,7 +51,7 @@ const Navbar = () => {
 
 	const getBackgroundClass = () => {
 		if (isAtTop) return "bg-transparent";
-		if (isVisible && !isAtTop) return "bg-dark/30 backdrop-blur-xl";
+		if (!isAtTop) return "bg-dark/30 backdrop-blur-xl";
 		return "bg-transparent";
 	};
 
@@ -63,10 +77,6 @@ const Navbar = () => {
 			label: "Jobs",
 		},
 		{
-			href: "/careers",
-			label: "Careers",
-		},
-		{
 			href: "/blogs",
 			label: "Blog",
 		},
@@ -76,11 +86,18 @@ const Navbar = () => {
 		},
 	];
 
+	// Don't render until initialized to prevent flash
+	if (!isInitialized) {
+		return null;
+	}
+
 	return (
 		<>
 			<nav
-				className={`fixed w-full transition-transform duration-300 ease-in-out z-[999] ${
-					isVisible ? "translate-y-0" : "-translate-y-full"
+				className={`fixed w-full transition-all duration-300 ease-in-out z-[999] ${
+					isVisible
+						? "translate-y-0 opacity-100"
+						: "-translate-y-full opacity-0"
 				} ${getBackgroundClass()}`}
 			>
 				<div className="container mx-auto px-4 lg:px-6">
@@ -107,10 +124,13 @@ const Navbar = () => {
 							</div>
 						</div>
 
-						<div className="lg:hidden">
+						<div className="lg:hidden relative size-10 flex items-center justify-center">
+							<div className="absolute">
+								<Image src={hamburgerBg} alt="icon" />
+							</div>
 							<button
 								type="button"
-								className="relative overflow-hidden w-[18px] h-[16px]"
+								className="relative z-10 overflow-hidden w-[18px] h-[16px]"
 								onClick={() => setIsMobileMenuOpen(!isMobileMebuOpen)}
 							>
 								<div

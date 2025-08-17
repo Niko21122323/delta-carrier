@@ -76,10 +76,14 @@ const JobsSection = () => {
 								</span>
 								<div className="flex flex-col md:flex-row gap-2 md:gap-4 pt-7">
 									<div className="w-full sm:w-fit">
-										<PrimaryButton text="Apply Now" link="" />
+										<PrimaryButton text="Apply Now" link={job.link} />
 									</div>
 									<div className="w-full sm:w-fit">
-										<SecondaryButton text="Read More" link="" color="light" />
+										<SecondaryButton
+											text="Read More"
+											link={job.link}
+											color="light"
+										/>
 									</div>
 								</div>
 							</div>
