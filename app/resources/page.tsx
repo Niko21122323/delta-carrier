@@ -13,7 +13,6 @@ export default function page() {
 						<iframe
 							className="h-full w-full aspect-square sm:aspect-video"
 							src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=4&overlay=wind&product=ecmwf&level=surface&lat=38.686&lon=-97.383"
-							frameborder="0"
 						></iframe>
 					</div>
 				</div>
