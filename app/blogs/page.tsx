@@ -28,12 +28,13 @@ const page = () => {
 
 					<div className="grid max-[550px]:grid-cols-1 grid-cols-2 xl:grid-cols-3 xl:grid-rows-3 gap-4 2xl:gap-6">
 						{blogs.map((blog: BlogProps) => (
-							<div
+							<Link
+								href={blog.link}
 								key={blog.id}
-								className={`bg-light xl:first:row-span-3 xl:nth-[2]:row-span-3 ${blog.id === 1 || blog.id === 2 ? "flex flex-col p-3 md:p-4 rounded-lg sm:rounded-xl xl:rounded-2xl" : "flex flex-col p-3 md:p-4 rounded-lg sm:rounded-xl xl:grid xl:grid-cols-12 xl:items-center xl:gap-4 xl:rounded-lg xl:p-3"}`}
+								className={`relative overflow-hidden bg-light hover:bg-light/0 transition-colors duration-300 ease-in-out xl:first:row-span-3 xl:nth-[2]:row-span-3 group ${blog.id === 1 || blog.id === 2 ? "flex flex-col p-3 md:p-4 rounded-lg sm:rounded-xl xl:rounded-2xl" : "flex flex-col p-3 md:p-4 rounded-lg sm:rounded-xl xl:grid xl:grid-cols-12 xl:items-center xl:gap-4 xl:rounded-lg xl:p-3"}`}
 							>
 								<div
-									className={`overflow-hidden max-md:max-h-[172px] ${blog.id === 1 || blog.id === 2 ? "rounded-lg sm:rounded-xl h-full w-full" : "rounded-lg sm:rounded-xl xl:rounded-lg h-full w-full xl:col-span-4"}`}
+									className={`relative z-10 overflow-hidden max-md:max-h-[172px] ${blog.id === 1 || blog.id === 2 ? "rounded-lg sm:rounded-xl h-full w-full" : "rounded-lg sm:rounded-xl xl:rounded-lg h-full w-full xl:col-span-4"}`}
 								>
 									<Image
 										src={blog.image}
@@ -42,28 +43,35 @@ const page = () => {
 									/>
 								</div>
 								<div
-									className={`${blog.id === 1 || blog.id === 2 ? "pt-6" : "pt-6 xl:pt-0 xl:col-span-8"}`}
+									className={`relative z-10 ${blog.id === 1 || blog.id === 2 ? "pt-6" : "pt-6 xl:pt-0 xl:col-span-8"}`}
 								>
 									<div className="flex items-center gap-2">
-										<span className="text-dark text-sm">{blog.name}</span>
-										<div className="size-1 bg-accent-light rounded-full"></div>
-										<span className="text-body text-sm">{blog.read}</span>
+										<span className="text-dark text-sm group-hover:text-white/90 transition-colors duration-300 ease-in-out">
+											{blog.name}
+										</span>
+										<div className="size-1 bg-accent-light rounded-full group-hover:bg-white transition-colors duration-300 ease-in-out"></div>
+										<span className="text-body text-sm group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+											{blog.read}
+										</span>
 									</div>
-									<h4 className="text-dark text-lg sm:text-xl font-semibold pt-2">
+									<h4 className="text-dark text-lg sm:text-xl font-semibold pt-2 group-hover:text-white transition-colors duration-300 ease-in-out">
 										{blog.title}
 									</h4>
-									{blog.text && <p className="text-body pt-3">{blog.text}</p>}
-									<Link
-										href={blog.link}
-										className="flex items-center gap-2 mt-4 md:mt-7"
-									>
-										<span className="text-accent-light text-lg font-semibold">
+									{blog.text && (
+										<p className="text-body pt-3 group-hover:text-white transition-colors duration-300 ease-in-out">
+											{blog.text}
+										</p>
+									)}
+									<div className="flex items-center gap-2 mt-4 md:mt-7">
+										<span className="text-accent-light text-lg font-semibold group-hover:text-white transition-colors duration-300 ease-in-out">
 											Read More
 										</span>
-										<FaChevronRight className="text-accent-light" />
-									</Link>
+										<FaChevronRight className="text-accent-light group-hover:text-white transition-colors duration-300 ease-in-out" />
+									</div>
 								</div>
-							</div>
+
+								<div className="absolute bottom-0 left-0 w-full h-0 blog-hover-gradient group-hover:h-full transition-all duration-300 ease-in-out"></div>
+							</Link>
 						))}
 					</div>
 				</div>

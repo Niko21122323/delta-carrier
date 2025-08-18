@@ -96,3 +96,12 @@ p {
 		rgba(0, 0, 0, 0.67) 100%
 	);
 }
+
+.blog-hover-gradient {
+	background: #d13c48;
+	background: linear-gradient(
+		180deg,
+		rgba(209, 60, 72, 1) 0%,
+		rgba(226, 72, 84, 1) 70%
+	);
+}
