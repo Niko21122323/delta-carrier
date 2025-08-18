@@ -92,36 +92,44 @@ const page = () => {
 					</div>
 					<div className="grid max-[550px]:grid-cols-1 grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 2xl:gap-6">
 						{articles.map((article: ArticleProps) => (
-							<div
+							<Link
+								href={article.link}
 								key={article.id}
-								className="flex flex-col rounded-lg md:rounded-xl bg-light p-3 md:p-4"
+								className="flex flex-col rounded-lg md:rounded-xl bg-light p-3 md:p-4 relative overflow-hidden hover:bg-light/0 transition-colors duration-300 ease-in-out group"
 							>
-								<div className="rounded-lg md:rounded-xl overflow-hidden">
+								<div className="relative z-10 rounded-lg md:rounded-xl overflow-hidden">
 									<Image
 										src={article.image}
 										alt={article.title}
 										className="h-full w-full object-cover"
 									/>
 								</div>
-								<div className="flex items-center gap-2 pt-5">
-									<span className="text-dark text-sm">{article.name}</span>
-									<div className="size-1 bg-accent-light rounded-full"></div>
-									<span className="text-body text-sm">{article.read}</span>
-								</div>
-								<h4 className="text-lg md:text-xl text-dark font-semibold pt-2 pb-3">
-									{article.title}
-								</h4>
-								<p className="text-body">{article.text}</p>
-								<Link
-									href={article.link}
-									className="flex items-center gap-2 mt-4 md:mt-5"
-								>
-									<span className="text-accent-light text-lg font-semibold">
-										Read More
+								<div className="relative z-10 flex items-center gap-2 pt-5">
+									<span className="text-dark text-sm group-hover:text-white/90 transition-colors duration-300 ease-in-out">
+										{article.name}
 									</span>
-									<FaChevronRight className="text-accent-light" />
-								</Link>
-							</div>
+									<div className="size-1 bg-accent-light rounded-full group-hover:bg-white transition-colors duration-300 ease-in-out"></div>
+									<span className="text-body text-sm group-hover:text-white/70 transition-colors duration-300 ease-in-out">
+										{article.read}
+									</span>
+								</div>
+								<div className="relative z-10">
+									<h4 className="text-lg md:text-xl text-dark font-semibold pt-2 pb-3 group-hover:text-white transition-colors duration-300 ease-in-out">
+										{article.title}
+									</h4>
+									<p className="text-body group-hover:text-white transition-colors duration-300 ease-in-out">
+										{article.text}
+									</p>
+									<div className="flex items-center gap-2 mt-4 md:mt-5">
+										<span className="text-accent-light text-lg font-semibold group-hover:text-white transition-colors duration-300 ease-in-out">
+											Read More
+										</span>
+										<FaChevronRight className="text-accent-light group-hover:text-white transition-colors duration-300 ease-in-out" />
+									</div>
+								</div>
+
+								<div className="absolute bottom-0 left-0 w-full h-0 blog-hover-gradient group-hover:h-full transition-all duration-300 ease-in-out"></div>
+							</Link>
 						))}
 					</div>
 				</div>
