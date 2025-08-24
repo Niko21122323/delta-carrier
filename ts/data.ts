@@ -489,31 +489,31 @@ export const faqs: FaqProps[] = [
     id: 2,
     number: "02.",
     title: "Is there a minimum age requirement?",
-    text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+    text: "Min age of req 23 god atleqse 2 years of experience",
   },
   {
     id: 3,
     number: "03.",
     title: "Where does Delta operate?",
-    text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+    text: "We provide nationwide coverage across the lower 48 states, with a strong focus on routes east of the Rockies. At the same time, we prioritize flexibility by listening to our owner-operators and accommodating their preferred lanes whenever possible.",
   },
   {
     id: 4,
     number: "04.",
     title: "How many miles will I typically drive per day?",
-    text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+    text: "As an owner-operator, you set your own daily mileage within legal limits. We maintain full ELD compliance and strictly adhere to all regulations, ensuring you are never asked to drive beyond what the law allows.",
   },
   {
     id: 5,
     number: "05.",
     title: "Is Delta ELD compliant?",
-    text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+    text: "Yes, we strictly adhere to all FMCSA regulations and maintain 100% ELD compliance. Our commitment to safety and accountability ensures that every load is moved responsibly and within federal guidelines.",
   },
   {
     id: 6,
     number: "06.",
     title: "How much time do I have to spend on the road?",
-    text: "Drivers must have at least 2 years of verifiable CDL-A experience. This helps ensure safety, efficiency, and the ability to operate independently.",
+    text: "As an owner-operator, you are in control of your time on the road. The more miles you choose to drive, the greater the opportunity to maximize your revenue—but the decision is always yours. We see you as our partner and our boss, which means you have the freedom to create a schedule that fits your lifestyle, your goals, and your priorities. Whether you prefer to stay closer to home or put in longer runs, we’re here to support you every step of the way. We stay committed to our slogan: Drive Your Own Way.",
   },
 ];
 

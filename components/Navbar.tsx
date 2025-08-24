@@ -73,6 +73,14 @@ const Navbar = () => {
       label: "About Us",
     },
     {
+      href: "/divisions",
+      label: "Divisions",
+    },
+    {
+      href: "/jobs",
+      label: "Jobs",
+    },
+    {
       dropDown: true,
       sublinks: [
         { label: "Dry Van Freight", link: "/services/dry-van-freight" },
@@ -83,24 +91,14 @@ const Navbar = () => {
       href: "#",
     },
     {
-      href: "/videos",
-      label: "Videos",
-    },
-    {
-      href: "/divisions",
-      label: "Divisions",
-    },
-    {
-      href: "/jobs",
-      label: "Jobs",
-    },
-    {
-      href: "/blogs",
-      label: "Blog",
-    },
-    {
-      href: "/resources",
+      dropDown: true,
+      sublinks: [
+        { label: "Blog", link: "/blogs" },
+        { label: "Videos", link: "/videos" },
+        { label: "Weather", link: "/weather" },
+      ],
       label: "Resources",
+      href: "#",
     },
   ];
 
@@ -130,7 +128,7 @@ const Navbar = () => {
               {navLink.map((link, index) => (
                 <div
                   key={index}
-                  className={link.dropDown ? "relative group" : ""}
+                  className={link.dropDown ? "relative group z-10" : ""}
                 >
                   {link.dropDown ? (
                     <>
