@@ -175,31 +175,26 @@ export const quickLinks: FooterLinkProps[] = [
   },
   {
     id: 7,
-    link: "/resources",
-    label: "Resources",
+    link: "/weather",
+    label: "Weather",
   },
 ];
 
 export const serviceLinksFooter: FooterLinkProps[] = [
   {
     id: 1,
-    link: "/",
+    link: "/services/dry-van-freight",
     label: "Dry Van Freight",
   },
   {
     id: 2,
-    link: "",
+    link: "/services/flatbed-trailers",
     label: "Flatbed Freight",
   },
   {
     id: 3,
-    link: "",
-    label: "Step Deck & Conestoga",
-  },
-  {
-    id: 4,
-    link: "",
-    label: "Conestoga Trailers",
+    link: "/services/conestoga",
+    label: "Conestoga",
   },
 ];
 

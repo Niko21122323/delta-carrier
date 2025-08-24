@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
               <div className="">
                 <h6 className="text-white text-xl font-medium sm:font-semibold pb-6 sm:pb-7">
-                  Services
+                  Equipment
                 </h6>
                 <ul className="flex flex-col gap-5">
                   {serviceLinksFooter.map((link: FooterLinkProps) => (

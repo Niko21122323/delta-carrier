@@ -87,7 +87,7 @@ const Navbar = () => {
         { label: "Flatbed Trailers", link: "/services/flatbed-trailers" },
         { label: "Conestoga", link: "/services/conestoga" },
       ],
-      label: "Services",
+      label: "Equipment",
       href: "#",
     },
     {
