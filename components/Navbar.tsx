@@ -84,8 +84,8 @@ const Navbar = () => {
       dropDown: true,
       sublinks: [
         { label: "Dry Van Freight", link: "/services/dry-van-freight" },
-        { label: "FlatbedFreight", link: "/services/dry-van-freight" },
-        { label: "Conestoga", link: "/services/dry-van-freight" },
+        { label: "Flatbed Trailers", link: "/services/flatbed-trailers" },
+        { label: "Conestoga", link: "/services/conestoga" },
       ],
       label: "Services",
       href: "#",

@@ -101,7 +101,7 @@ export const services = [
     image: serviceImg2,
     title: "Flatbed Freight",
     text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
-    link: "/services/dry-van-freight",
+    link: "/services/flatbed-trailers",
     icon: serviceIcon2,
   },
   {
@@ -109,7 +109,7 @@ export const services = [
     image: serviceImg3,
     title: "Conestoga",
     text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
-    link: "/services/dry-van-freight",
+    link: "/services/conestoga",
     icon: serviceIcon3,
   },
 ];
