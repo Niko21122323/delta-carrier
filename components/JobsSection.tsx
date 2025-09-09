@@ -51,7 +51,7 @@ const JobsSection = ({ type = "in-office" }: JobsSectionProps) => {
                 </span>
                 <div className="flex flex-col md:flex-row gap-2 md:gap-4 pt-7">
                   <div className="w-full sm:w-fit">
-                    <PrimaryButton text="Apply Now" link={job.link} />
+                    <PrimaryButton text="Apply Now" link={job.applyLink} />
                   </div>
                   <div className="w-full sm:w-fit">
                     <SecondaryButton

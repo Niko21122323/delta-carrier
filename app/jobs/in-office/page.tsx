@@ -16,7 +16,6 @@ export default function page() {
       <JobsSection type="in-office" />
       <TestimonialsSectionDark />
       <FaqSection />
-      <JobApplicationForm type="in-office" />
     </main>
   );
 }

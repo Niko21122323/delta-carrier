@@ -161,7 +161,7 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   id="resume"
                   name="resume"
                   type="file"
-                  className="block w-full text-sm text-body file:mr-4 file:py-3 file:px-6 file:rounded-md file:border-accent-light file:border file:text-sm file:font-semibold file:bg-accent-light file:text-white hover:file:bg-white hover:file:text-accent-light cursor-pointer file:cursor-pointer file:transition-colors file:duration-300 file:ease-in-out"
+                  className="block w-full text-sm text-body file:text-dark file:mr-4 file:py-3 file:px-6 file:rounded-md file:border-dark/10 file:border file:text-sm file:font-semibold file:bg-light hover:file:bg-white hover:file:text-accent-light cursor-pointer file:cursor-pointer file:transition-colors file:duration-300 file:ease-in-out"
                 />
               </div>
               <div className="flex flex-col gap-3 max-[500px]:col-span-1 col-span-2">

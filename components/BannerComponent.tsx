@@ -40,7 +40,7 @@ const BannerComponent = ({ title, text }: BannerProps) => {
                   <div className="w-full sm:w-fit">
                     <SecondaryButton
                       text="Learn More"
-                      link="/about"
+                      link="/about-us"
                       color="light"
                     />
                   </div>

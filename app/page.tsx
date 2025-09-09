@@ -42,7 +42,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center lg:items-start xl:items-center pt-6 lg:pt-12 sm:gap-y-3 max-lg:gap-x-2">
                 <div className="max-sm:w-full flex flex-col sm:flex-row items-center gap-x-2 xl:gap-x-4 gap-y-3 xl:pr-4 xl:border-r border-black/15 max-sm:pb-3">
                   <div className="w-full sm:w-fit">
-                    <PrimaryButton text="Learn More" link="/about" />
+                    <PrimaryButton text="Learn More" link="/about-us" />
                   </div>
                   <div className="w-full sm:w-fit">
                     <SecondaryButton text="Contact Us" link="/contact" />
