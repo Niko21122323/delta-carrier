@@ -20,7 +20,10 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
   });
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 xl:py-[100px]">
+    <section
+      className="py-12 sm:py-16 lg:py-20 xl:py-[100px]"
+      id="application-form"
+    >
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 xl:gap-10 2xl:gap-16">
           <div className="relative h-full w-full lg:rounded-2xl overflow-hidden order-2 lg:order-1">

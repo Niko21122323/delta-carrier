@@ -27,7 +27,7 @@ const responsibilities = [
     id: 1,
     icon: responsibilitieIcon1,
     title: "Versatile Freight Options",
-    text: "Haul dry van, flatbed, step deck, or Conestoga freight based on your setup and expertise.",
+    text: "Haul dry van, flatbed or step deck based on your setup and expertise.",
   },
   {
     id: 2,

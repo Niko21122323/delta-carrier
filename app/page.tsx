@@ -51,11 +51,12 @@ export default function Home() {
                 <div className="w-[60%] mx-auto sm:hidden bg-black/15 h-[1px]"></div>
                 <div className="w-full sm:w-fit xl:pl-4 max-sm:pt-3">
                   <a
-                    href="/download"
+                    href="https://deltacarriergroup.com/packet.pdf"
+                    target="_blank"
                     className="flex items-center justify-center w-full gap-3 px-5 py-2 rounded-lg border border-black/15 bg-white hover:bg-light transition-colors duration-300 ease-in-out"
                   >
                     <span className="text-lg text-body font-medium">
-                      Download PDF
+                      Our carrier packet
                     </span>
                     <Image src={downloadIcon} alt="downlaod icon" />
                   </a>
@@ -82,12 +83,12 @@ export default function Home() {
               real support, and a commitment to the people who keep us moving.
             </p>
           </div>
-          <div className="grid sm:col-span-4 lg:grid-cols-3 gap-3 xl:gap-6">
+          <div className="grid sm:col-span-4 lg:grid-cols-2 gap-3 xl:gap-6">
             {services.map((service) => (
               <Link
                 href={service.link}
                 key={service.id}
-                className="relative overflow-hidden rounded-xl md:rounded-2xl max-lg:max-h-[344px] max-sm:last:col-span-1 max-lg:last:col-span-4 group"
+                className="relative overflow-hidden rounded-xl md:rounded-2xl max-lg:max-h-[344px] max-h-[500px] group"
               >
                 <Image
                   src={service.image}
@@ -152,16 +153,7 @@ export default function Home() {
                     and on schedule—whether it’s a local run or a long haul.
                   </p>
                 </div>
-                <div className="">
-                  <h3 className="text-dark text-xl md:text-2xl font-semibold pb-3">
-                    Flatbed, Step Deck & Conestoga
-                  </h3>
-                  <p className="text-body">
-                    From oversized equipment to weather-sensitive loads, our
-                    specialized trailers handle it all. We match the right setup
-                    to your freight for safe, efficient delivery every time.
-                  </p>
-                </div>
+
                 <div className="flex flex-col sm:flex-row gap-y-3 gap-x-4 pt-2 lg:pt-3">
                   <div className="w-full sm:w-fit">
                     <PrimaryButton text="Contact Us" link="/contact" />

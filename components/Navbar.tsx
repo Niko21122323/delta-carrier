@@ -94,7 +94,6 @@ const Navbar = () => {
       sublinks: [
         { label: "Dry Van Freight", link: "/services/dry-van-freight" },
         { label: "Flatbed Trailers", link: "/services/flatbed-trailers" },
-        { label: "Conestoga", link: "/services/conestoga" },
       ],
       label: "Equipment",
       href: "#",

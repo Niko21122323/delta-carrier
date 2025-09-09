@@ -4,7 +4,6 @@ import MedalIcon from "@/components/svgComponents/MedalIcon";
 import TrophyIcon from "@/components/svgComponents/TrophyIcon";
 import serviceIcon1 from "../components/svgComponents/ServiceIcon1";
 import serviceIcon2 from "../components/svgComponents/ServiceIcon2";
-import serviceIcon3 from "../components/svgComponents/ServiceIcon3";
 import fbIcon from "../public/assets/icons/fb.svg";
 import igIcon from "../public/assets/icons/ig.svg";
 import liIcon from "../public/assets/icons/in.svg";
@@ -34,7 +33,6 @@ import solutionsData3Img2 from "../public/assets/pohots/divisions/9.jpg";
 import solutionsData3Img3 from "../public/assets/pohots/divisions/10.jpg";
 import serviceImg1 from "../public/assets/pohots/home/02.jpg";
 import serviceImg2 from "../public/assets/pohots/home/03.jpg";
-import serviceImg3 from "../public/assets/pohots/home/04.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 import video1 from "../public/assets/pohots/videos/video-1.jpg";
 import video2 from "../public/assets/pohots/videos/video-2.jpg";
@@ -110,14 +108,6 @@ export const services = [
     text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
     link: "/services/flatbed-trailers",
     icon: serviceIcon2,
-  },
-  {
-    id: 3,
-    image: serviceImg3,
-    title: "Conestoga",
-    text: "Versatile 53’ trailers built for everyday cargo—enclosed, secure, and ideal for both short and long hauls.",
-    link: "/services/conestoga",
-    icon: serviceIcon3,
   },
 ];
 
@@ -197,11 +187,6 @@ export const serviceLinksFooter: FooterLinkProps[] = [
     id: 2,
     link: "/services/flatbed-trailers",
     label: "Flatbed Freight",
-  },
-  {
-    id: 3,
-    link: "/services/conestoga",
-    label: "Conestoga",
   },
 ];
 
@@ -689,7 +674,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -698,7 +683,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -707,7 +692,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -716,7 +701,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -725,7 +710,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -734,7 +719,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -743,7 +728,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -752,7 +737,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -761,7 +746,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL‑A Owner‑Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "in-office",
   },
   {
@@ -770,7 +755,7 @@ export const jobs: JobProps[] = [
     subtitle: "Maintenance",
     text: "Join our mobile maintenance team and keep our fleet running smoothly. Work with state-of-the-art equipment and enjoy competitive pay:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "other",
   },
   {
@@ -779,7 +764,7 @@ export const jobs: JobProps[] = [
     subtitle: "Logistics",
     text: "Help optimize delivery routes and maximize efficiency for our owner-operators. Work remotely with flexible scheduling options:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "other",
   },
   {
@@ -788,7 +773,7 @@ export const jobs: JobProps[] = [
     subtitle: "Safety & Compliance",
     text: "Ensure our operations meet all DOT regulations and safety standards. Travel to various locations and work with diverse teams:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "other",
   },
   {
@@ -797,7 +782,7 @@ export const jobs: JobProps[] = [
     subtitle: "Client Services",
     text: "Build strong relationships with our clients and ensure exceptional service delivery. Hybrid work model with competitive benefits:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "other",
   },
   {
@@ -806,7 +791,7 @@ export const jobs: JobProps[] = [
     subtitle: "Operations",
     text: "Coordinate freight assignments and manage load dispatch for maximum efficiency. Fast-paced environment with growth opportunities:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "other",
   },
   {
@@ -815,7 +800,7 @@ export const jobs: JobProps[] = [
     subtitle: "Human Resources",
     text: "Design and implement training programs for new drivers and staff. Work across multiple locations with excellent travel benefits:",
     applyLink: "",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "#application-form",
     variant: "other",
   },
 ];
