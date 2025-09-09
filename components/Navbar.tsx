@@ -77,6 +77,10 @@ const Navbar = () => {
       label: "Divisions",
     },
     {
+      href: "/gallery",
+      label: "Gallery",
+    },
+    {
       dropDown: true,
       sublinks: [
         { label: "In Office", link: "/jobs/in-office" },
