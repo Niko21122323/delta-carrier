@@ -172,13 +172,14 @@ const SolutionsSection = () => {
             <div className="col-span-2 flex flex-col items-center justify-center">
               <div className="max-2xl:pl-4">
                 <h5 className="text-2xl xl:text-3xl text-white font-semibold pb-3 xl:pb-5">
-                  Dry Van Division
+                  Flatbed Division
                 </h5>
                 <p className="text-body max-w-[554px]">
-                  Our Dry Van Division handles everything from packaged goods to
-                  palletized freight. With 53' enclosed trailers and advanced
-                  tracking technology, we offer secure and flexible transport
-                  for short and long hauls across the U.S.
+                  For loads that can’t fit inside a box, our Flatbed Division
+                  offers the strength and space to get the job done. From
+                  building materials to heavy machinery, we specialize in
+                  open-deck transport with expert load securement and route
+                  planning.
                 </p>
               </div>
             </div>
@@ -268,13 +269,13 @@ const SolutionsSection = () => {
               id="mobile1-content"
             >
               <h5 className="text-2xl text-white font-semibold pb-3 text-center">
-                Dry Van Division
+                Flatbed Division
               </h5>
               <p className="text-body max-w-[554px] text-center">
-                Our Dry Van Division handles everything from packaged goods to
-                palletized freight. With 53' enclosed trailers and advanced
-                tracking technology, we offer secure and flexible transport for
-                short and long hauls across the U.S.
+                For loads that can’t fit inside a box, our Flatbed Division
+                offers the strength and space to get the job done. From building
+                materials to heavy machinery, we specialize in open-deck
+                transport with expert load securement and route planning.
               </p>
             </div>
           </div>

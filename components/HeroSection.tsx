@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { heroValues } from "@/ts/data";
 import starIconWhite from "../public/assets/icons/star-white.svg";
-import heroImage from "../public/assets/pohots/hero-cta/hero.jpg";
+import heroImage from "../public/assets/pohots/home/hero.jpg";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 
