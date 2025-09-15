@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import TitleComponent from "@/components/TitleComponent";
 import { contactDetails, jobs } from "@/ts/data";
@@ -11,6 +13,26 @@ interface JobsSectionProps {
 }
 
 const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    position: "",
+    message: "",
+  });
+
+  const [resumeFile, setResumeFile] = useState<File | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error";
+    message: string;
+  } | null>(null);
+
+  // Replace this URL with your Google Apps Script web app URL
+  const GOOGLE_SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbyXb7Dhv55eNtycZj2nhhfi6KDdKU2VA2sPPrlxJPbzCtYSRyO6uskxbNVTKjeXcq0P/exec";
+
   const filteredJobs = jobs.filter((job: JobProps) => {
     if (type === "in-office") {
       return job.variant === "in-office";
@@ -18,6 +40,115 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
       return job.variant !== "in-office";
     }
   });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setResumeFile(e.target.files[0]);
+    }
+  };
+
+  const uploadFileToCloudinary = async (file: File): Promise<string> => {
+    // You can replace this with any file upload service
+    // For now, we'll return a placeholder
+    // In production, use Cloudinary, AWS S3, etc.
+
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("upload_preset", "job_applications"); // Replace with your preset
+
+    try {
+      const response = await fetch(
+        "https://api.cloudinary.com/v1_1/dkpczs21o/upload",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const data = await response.json();
+      return data.secure_url;
+    } catch (error) {
+      console.error("File upload failed:", error);
+      return "File upload failed";
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      let resumeUrl = "";
+
+      // Upload resume if provided
+      if (resumeFile) {
+        resumeUrl = await uploadFileToCloudinary(resumeFile);
+      }
+
+      // Prepare data for Google Sheets
+      const submissionData = {
+        ...formData,
+        resumeUrl: resumeUrl,
+      };
+
+      // Submit to Google Apps Script
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus({
+          type: "success",
+          message:
+            "Application submitted successfully! We'll be in touch soon.",
+        });
+
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          phone: "",
+          email: "",
+          position: "",
+          message: "",
+        });
+        setResumeFile(null);
+
+        // Reset file input
+        const fileInput = document.getElementById("resume") as HTMLInputElement;
+        if (fileInput) fileInput.value = "";
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setSubmitStatus({
+        type: "error",
+        message: "Failed to submit application. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section
@@ -65,8 +196,22 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                 opportunities.
               </p>
             </div>
+
+            {/* Status Messages */}
+            {submitStatus && (
+              <div
+                className={`mb-6 p-4 rounded-lg ${
+                  submitStatus.type === "success"
+                    ? "bg-green-50 border border-green-200 text-green-800"
+                    : "bg-red-50 border border-red-200 text-red-800"
+                }`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
+
             <form
-              action=""
+              onSubmit={handleSubmit}
               className="grid max-[500px]:grid-cols-1 grid-cols-2 gap-5"
             >
               <div className="flex flex-col gap-3">
@@ -80,10 +225,14 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   type="text"
                   name="firstName"
                   id="firstName"
+                  value={formData.firstName}
+                  onChange={handleInputChange}
                   placeholder="eg. John"
+                  required
                   className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                 />
               </div>
+
               <div className="flex flex-col gap-3">
                 <label
                   htmlFor="lastName"
@@ -95,10 +244,14 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   type="text"
                   name="lastName"
                   id="lastName"
+                  value={formData.lastName}
+                  onChange={handleInputChange}
                   placeholder="eg. Doe"
+                  required
                   className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                 />
               </div>
+
               <div className="flex flex-col gap-3">
                 <label
                   htmlFor="phone"
@@ -110,10 +263,14 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   type="text"
                   name="phone"
                   id="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   placeholder="eg. (555) 123-4567"
+                  required
                   className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                 />
               </div>
+
               <div className="flex flex-col gap-3">
                 <label
                   htmlFor="email"
@@ -125,23 +282,31 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   type="email"
                   name="email"
                   id="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   placeholder="eg. email@example.com"
+                  required
                   className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                 />
               </div>
+
               <div className="max-[500px]:col-span-1 col-span-2 flex flex-col gap-3">
                 <label
-                  htmlFor="email"
+                  htmlFor="position"
                   className="text-dark text-lg font-semibold"
                 >
-                  Email Address
+                  Position Applied For
                 </label>
                 <div className="text-body border border-[#C4C5C8] rounded-sm px-4 py-3 w-full">
                   <select
-                    name="jobs"
-                    id="jobs"
+                    name="position"
+                    id="position"
+                    value={formData.position}
+                    onChange={handleInputChange}
+                    required
                     className="w-full focus:outline-none"
                   >
+                    <option value="">Select a position</option>
                     {filteredJobs.map((job) => (
                       <option key={job.id} value={job.title}>
                         {job.title}
@@ -150,6 +315,7 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   </select>
                 </div>
               </div>
+
               <div className="flex flex-col gap-3 max-[500px]:col-span-1 col-span-2">
                 <label
                   htmlFor="resume"
@@ -161,9 +327,12 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   id="resume"
                   name="resume"
                   type="file"
+                  onChange={handleFileChange}
+                  accept=".pdf,.doc,.docx"
                   className="block w-full text-sm text-body file:text-dark file:mr-4 file:py-3 file:px-6 file:rounded-md file:border-dark/10 file:border file:text-sm file:font-semibold file:bg-light hover:file:bg-white hover:file:text-accent-light cursor-pointer file:cursor-pointer file:transition-colors file:duration-300 file:ease-in-out"
                 />
               </div>
+
               <div className="flex flex-col gap-3 max-[500px]:col-span-1 col-span-2">
                 <label
                   htmlFor="message"
@@ -174,18 +343,24 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                 <textarea
                   name="message"
                   id="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   placeholder="Type your message here..."
                   className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 pt-3 pb-32 resize-none"
                 ></textarea>
               </div>
+
               <div className="w-full sm:w-fit">
                 <button
                   type="submit"
-                  className="relative overflow-hidden flex items-center justify-center w-full px-6 py-3 rounded-lg bg-accent-light border border-accent-dark group cursor-pointer"
+                  disabled={isSubmitting}
+                  className={`relative overflow-hidden flex items-center justify-center w-full px-6 py-3 rounded-lg bg-accent-light border border-accent-dark group cursor-pointer ${
+                    isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
                 >
                   <div className="absolute bottom-0 left-0 w-full h-0 bg-white group-hover:h-full transition-all duration-300 ease-in-out"></div>
                   <span className="relative z-10 text-white text-lg font-semibold group-hover:text-accent-light transition-colors duration-300 ease-in-out">
-                    Send Message
+                    {isSubmitting ? "Submitting..." : "Send Message"}
                   </span>
                 </button>
               </div>
