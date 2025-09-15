@@ -31,7 +31,7 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
 
   // Replace this URL with your Google Apps Script web app URL
   const GOOGLE_SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbyXb7Dhv55eNtycZj2nhhfi6KDdKU2VA2sPPrlxJPbzCtYSRyO6uskxbNVTKjeXcq0P/exec";
+    "https://script.google.com/macros/s/AKfycbznW9zXmbxyKbY-IFQDu4wIT_1i1PGW5EnTog0jL4M1b0mpNYRe5Q56pJgtg5Q4JREf/exec";
 
   const filteredJobs = jobs.filter((job: JobProps) => {
     if (type === "in-office") {
