@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ctaImg from "../public/assets/pohots/hero-cta/cta-banner.jpg";
+import ctaImg from "../public/assets/pohots/gallery/56.jpg";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import TitleComponent from "./TitleComponent";

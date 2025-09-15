@@ -4,11 +4,11 @@ import OurDriveSection from "@/components/OurDriveSection";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
 import TitleComponent from "@/components/TitleComponent";
-import deliverImg1 from "../../public/assets/pohots/about-us/1.jpg";
-import deliverImg2 from "../../public/assets/pohots/about-us/2.jpg";
-import gridImg1 from "../../public/assets/pohots/about-us/3.jpg";
-import gridImg2 from "../../public/assets/pohots/about-us/4.jpg";
-import gridImg3 from "../../public/assets/pohots/about-us/5.jpg";
+import deliverImg1 from "../../public/assets/pohots/gallery/41.jpg";
+import deliverImg2 from "../../public/assets/pohots/gallery/24.jpg";
+import gridImg1 from "../../public/assets/pohots/gallery/16.jpg";
+import gridImg2 from "../../public/assets/pohots/gallery/18.jpg";
+import gridImg3 from "../../public/assets/pohots/gallery/26.jpg";
 
 export default function About() {
   return (
@@ -68,14 +68,14 @@ export default function About() {
       <section className="py-6 sm:py-12 md:py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="grid grid-cols-2 gap-y-6 gap-x-3 lg:gap-4 2xl:gap-6">
-            <div className="h-full w-full rounded-lg lg:rounded-2xl overflow-hidden max-sm:aspect-square">
+            <div className="h-full w-full rounded-lg lg:rounded-2xl overflow-hidden max-sm:aspect-square sm:max-h-[300px]">
               <Image
                 src={gridImg1}
                 alt="image"
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="h-full w-full rounded-lg lg:rounded-2xl overflow-hidden max-sm:aspect-square">
+            <div className="h-full w-full rounded-lg lg:rounded-2xl overflow-hidden max-sm:aspect-square sm:max-h-[300px]">
               <Image
                 src={gridImg2}
                 alt="image"

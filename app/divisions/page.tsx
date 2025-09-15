@@ -4,8 +4,8 @@ import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
 import SolutionsSection from "@/components/SolutionsSection";
 import TitleComponent from "@/components/TitleComponent";
-import divisionImage1 from "../../public/assets/pohots/divisions/1.jpg";
-import divisionImage2 from "../../public/assets/pohots/divisions/11.jpg";
+import divisionImage1 from "../../public/assets/pohots/gallery/11.jpg";
+import divisionImage2 from "../../public/assets/pohots/gallery/10.jpg";
 
 export default function page() {
   return (

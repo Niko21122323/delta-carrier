@@ -12,9 +12,9 @@ import shippingIcon1 from "../../../public/assets/icons/location.svg";
 import shippingIcon2 from "../../../public/assets/icons/person.svg";
 import includingIcon3 from "../../../public/assets/icons/stac.svg";
 import shippingIcon4 from "../../../public/assets/icons/usa.svg";
-import serviceImage3 from "../../../public/assets/pohots/service/01.jpg";
-import serviceImage2 from "../../../public/assets/pohots/service/02.jpg";
-import serviceImage1 from "../../../public/assets/pohots/service/03.jpg";
+import serviceImage3 from "../../../public/assets/pohots/gallery/11.webp";
+import serviceImage2 from "../../../public/assets/pohots/gallery/14.webp";
+import serviceImage1 from "../../../public/assets/pohots/gallery/18.webp";
 
 const includingData = [
   {

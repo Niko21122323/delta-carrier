@@ -12,9 +12,9 @@ import shippingIcon1 from "../../../public/assets/icons/location.svg";
 import shippingIcon2 from "../../../public/assets/icons/person.svg";
 import includingIcon3 from "../../../public/assets/icons/stac.svg";
 import shippingIcon4 from "../../../public/assets/icons/usa.svg";
-import serviceImage3 from "../../../public/assets/pohots/service/01.jpg";
-import serviceImage2 from "../../../public/assets/pohots/service/02.jpg";
-import serviceImage1 from "../../../public/assets/pohots/service/03.jpg";
+import serviceImage3 from "../../../public/assets/pohots/gallery/42.webp";
+import serviceImage2 from "../../../public/assets/pohots/gallery/52.webp";
+import serviceImage1 from "../../../public/assets/pohots/gallery/53.webp";
 
 const includingData = [
   {
@@ -203,7 +203,7 @@ const page = () => {
                   <Image
                     src={serviceImage3}
                     alt="service image"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-bottom"
                   />
                 </div>
 

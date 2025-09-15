@@ -11,7 +11,7 @@ import TitleComponent from "@/components/TitleComponent";
 import WhyUsSection from "@/components/WhyUsSection";
 import { services } from "@/ts/data";
 import downloadIcon from "../public/assets/icons/downlaod.svg";
-import aboutImcage from "../public/assets/pohots/home/01.jpg";
+import aboutImcage from "../public/assets/pohots/gallery/01.jpg";
 
 export default function Home() {
   return (
