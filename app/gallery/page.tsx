@@ -21,6 +21,8 @@ const page = () => {
                 <Image
                   src={data.image}
                   alt="gallery image"
+                  height={300}
+                  width={300}
                   className="h-full w-full object-cover"
                 />
               </div>

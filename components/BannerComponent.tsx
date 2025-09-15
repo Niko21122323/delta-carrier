@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { BannerProps } from "@/ts/types";
 import starIconWhite from "../public/assets/icons/star-white.svg";
-import heroImage from "../public/assets/pohots/hero-cta/banner.jpg";
+import heroImage from "../public/assets/pohots/hero-cta/banner-2.jpg";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 
@@ -14,7 +14,7 @@ const BannerComponent = ({ title, text }: BannerProps) => {
             <div>
               <div className="flex gap-2">
                 <span className="flex items-center gap-2 text-white text-lg lg:text-xl font-medium py-2.5 max-[350px]:px-2.5 px-4 sm:px-6 rounded-md bg-white/10 border border-white/15 backdrop-blur-ld">
-                  Relied on Nationwide <div className="sm:hidden">4.1</div>
+                  Relied on Nationwide <div className="sm:hidden">4.2</div>
                   <Image
                     src={starIconWhite}
                     alt="star icon"

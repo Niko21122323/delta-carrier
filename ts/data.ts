@@ -31,7 +31,7 @@ import solutionsData2Img3 from "../public/assets/pohots/divisions/7.jpg";
 import solutionsData3Img1 from "../public/assets/pohots/divisions/8.jpg";
 import solutionsData3Img2 from "../public/assets/pohots/divisions/9.jpg";
 import solutionsData3Img3 from "../public/assets/pohots/divisions/10.jpg";
-import serviceImg1 from "../public/assets/pohots/home/02.jpg";
+import serviceImg1 from "../public/assets/pohots/home/dryvan.jpg";
 import serviceImg2 from "../public/assets/pohots/home/flatbed-divisons.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 import video1 from "../public/assets/pohots/videos/video-1.jpg";
@@ -43,12 +43,15 @@ import video6 from "../public/assets/pohots/videos/video-6.jpg";
 import video7 from "../public/assets/pohots/videos/video-7.jpg";
 import video8 from "../public/assets/pohots/videos/video-8.jpg";
 import video9 from "../public/assets/pohots/videos/video-9.jpg";
-import gallery1 from "../public/assets/pohots/home/02.jpg";
-import gallery2 from "../public/assets/pohots/home/03.jpg";
-import gallery3 from "../public/assets/pohots/home/05.jpg";
-import gallery4 from "../public/assets/pohots/home/05.jpg";
-import gallery5 from "../public/assets/pohots/home/06.jpg";
-import gallery6 from "../public/assets/pohots/home/07.jpg";
+
+const missing = [25]; // add more if needed
+
+export const gallery = Array.from({ length: 61 }, (_, i) => i + 1)
+  .filter((id) => !missing.includes(id))
+  .map((id) => ({
+    id,
+    image: `/assets/pohots/gallery/${String(id).padStart(2, "0")}.jpg`,
+  }));
 
 import type {
   ArticleProps,
@@ -921,32 +924,5 @@ export const articles: ArticleProps[] = [
     text: "At Delta Carrier Group, we combine experience, technology, and dedication to deliver freight safely and on time.",
     link: "/blogs/fright-moving-across-america",
     image: articleImg8,
-  },
-];
-
-export const gallery = [
-  {
-    id: 1,
-    image: gallery1,
-  },
-  {
-    id: 2,
-    image: gallery2,
-  },
-  {
-    id: 3,
-    image: gallery3,
-  },
-  {
-    id: 4,
-    image: gallery4,
-  },
-  {
-    id: 5,
-    image: gallery5,
-  },
-  {
-    id: 6,
-    image: gallery6,
   },
 ];

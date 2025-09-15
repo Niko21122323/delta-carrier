@@ -212,35 +212,6 @@ const SolutionsSection = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-5 items-center gap-2 xl:gap-4 2xl:gap-6 pt-6">
-            {solutionsData3.map((data: SolutionsDataProps) => (
-              <div
-                key={data.id}
-                className="relative h-full w-full overflow-hidden rounded-xl xl:rounded-2xl even:z-20 first:z-30 last:z-10"
-                id={data.elementId}
-              >
-                <Image
-                  src={data.image}
-                  alt="grid image"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            ))}
-            <div className="col-span-2 flex flex-col items-center justify-center">
-              <div className="max-2xl:pl-4">
-                <h5 className="text-2xl xl:text-3xl text-white font-semibold pb-3 xl:pb-5">
-                  Step Deck Division
-                </h5>
-                <p className="text-body max-w-[554px]">
-                  Need more vertical clearance? Our Step Deck Division is
-                  designed for taller freight that exceeds standard height
-                  restrictions. These trailers combine flexibility and safety,
-                  ensuring oversized loads reach their destination without delay
-                  or penalty.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -269,13 +240,13 @@ const SolutionsSection = () => {
               id="mobile1-content"
             >
               <h5 className="text-2xl text-white font-semibold pb-3 text-center">
-                Flatbed Division
+                Dry Van Division
               </h5>
               <p className="text-body max-w-[554px] text-center">
-                For loads that can’t fit inside a box, our Flatbed Division
-                offers the strength and space to get the job done. From building
-                materials to heavy machinery, we specialize in open-deck
-                transport with expert load securement and route planning.
+                Our Dry Van Division handles everything from packaged goods to
+                palletized freight. With 53’ enclosed trailers and advanced
+                tracking technology, we offer secure and flexible transport for
+                short and long hauls across the U.S.
               </p>
             </div>
           </div>
@@ -311,42 +282,6 @@ const SolutionsSection = () => {
                 offers the strength and space to get the job done. From building
                 materials to heavy machinery, we specialize in open-deck
                 transport with expert load securement and route planning.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="min-[563px]:!container mx-auto min-[563px]:!px-4 pt-6">
-          <div className="overflow-x-auto flex justify-center [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-            <div className="min-w-[531px] grid grid-cols-3 gap-3">
-              {solutionsData3.map((data: SolutionsDataProps) => (
-                <div
-                  key={data.id}
-                  className="relative h-full w-full overflow-hidden rounded-xl xl:rounded-2xl even:z-30 first:z-20 last:z-10"
-                  id={data.mobileId}
-                >
-                  <Image
-                    src={data.image}
-                    alt="grid image"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="container mx-auto px-4 pt-5">
-            <div
-              className="flex flex-col items-center justify-center py-2 overflow-hidden"
-              id="mobile3-content"
-            >
-              <h5 className="text-2xl text-white font-semibold pb-3 text-center">
-                Step Deck Division
-              </h5>
-              <p className="text-body max-w-[554px] text-center">
-                Need more vertical clearance? Our Step Deck Division is designed
-                for taller freight that exceeds standard height restrictions.
-                These trailers combine flexibility and safety, ensuring
-                oversized loads reach their destination without delay or
-                penalty.
               </p>
             </div>
           </div>

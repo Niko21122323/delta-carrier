@@ -12,7 +12,6 @@ import WhyUsSection from "@/components/WhyUsSection";
 import { services } from "@/ts/data";
 import downloadIcon from "../public/assets/icons/downlaod.svg";
 import aboutImcage from "../public/assets/pohots/home/01.jpg";
-import solutionsImg from "../public/assets/pohots/home/05.jpg";
 
 export default function Home() {
   return (
@@ -118,52 +117,6 @@ export default function Home() {
                 </div>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-      <section className="py-12 sm:py-16 xl:py-[84px]">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-7 lg:gap-6 xl:gap-10 2xl:gap-20">
-            <div className="h-full w-full overflow-hidden rounded-2xl order-2 lg:order-1">
-              <Image
-                src={solutionsImg}
-                alt="solutions image"
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <TitleComponent
-                title="What We Haul"
-                subtitle=" Solutions Built for Every Load"
-              />
-              <p className="pt-4 lg:pt-6 pb-5 lg:pb-7 border-b border-black/15 text-body">
-                We provide reliable freight solutions for everything from
-                standard cargo to complex, oversized loads delivered safely and
-                on time.
-              </p>
-
-              <div className="flex flex-col gap-4 lg:gap-6 pt-5 lg:pt-7">
-                <div className="">
-                  <h3 className="text-dark text-xl md:text-2xl font-semibold pb-3">
-                    Dry Van
-                  </h3>
-                  <p className="text-body">
-                    Flexible, 53’ dry vans ideal for general freight. Equipped
-                    with modern tracking, our trailers keep your cargo secure
-                    and on schedule—whether it’s a local run or a long haul.
-                  </p>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-y-3 gap-x-4 pt-2 lg:pt-3">
-                  <div className="w-full sm:w-fit">
-                    <PrimaryButton text="Contact Us" link="/contact" />
-                  </div>
-                  <div className="w-full sm:w-fit">
-                    <SecondaryButton text="Apply now" link="/contact" />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
