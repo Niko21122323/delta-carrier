@@ -34,15 +34,6 @@ import solutionsData3Img3 from "../public/assets/pohots/divisions/10.jpg";
 import serviceImg1 from "../public/assets/pohots/home/dryvan.jpg";
 import serviceImg2 from "../public/assets/pohots/home/flatbed-divisons.jpg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
-import video1 from "../public/assets/pohots/videos/video-1.jpg";
-import video2 from "../public/assets/pohots/videos/video-2.jpg";
-import video3 from "../public/assets/pohots/videos/video-3.jpg";
-import video4 from "../public/assets/pohots/videos/video-4.jpg";
-import video5 from "../public/assets/pohots/videos/video-5.jpg";
-import video6 from "../public/assets/pohots/videos/video-6.jpg";
-import video7 from "../public/assets/pohots/videos/video-7.jpg";
-import video8 from "../public/assets/pohots/videos/video-8.jpg";
-import video9 from "../public/assets/pohots/videos/video-9.jpg";
 
 const missing = [25]; // add more if needed
 
@@ -117,27 +108,27 @@ export const services = [
 export const socials = [
   {
     id: 1,
-    link: "",
+    link: "https://www.instagram.com/deltacarriergroup/",
     icon: igIcon,
   },
   {
     id: 2,
-    link: "",
+    link: "https://www.facebook.com/deltacarriergroup",
     icon: fbIcon,
   },
   {
     id: 3,
-    link: "",
+    link: "https://www.linkedin.com/company/deltacarriergroup/",
     icon: liIcon,
   },
   {
     id: 4,
-    link: "",
+    link: "https://x.com/deltacarrier_",
     icon: xIcon,
   },
   {
     id: 5,
-    link: "",
+    link: "https://www.youtube.com/@deltacarriergroup/shorts",
     icon: ytIcon,
   },
 ];
@@ -625,48 +616,31 @@ export const solutionsData3: SolutionsDataProps[] = [
 export const videos: VideoProps[] = [
   {
     id: 1,
-    videoLink: "",
-    videoThumbnail: video1,
+    videoLink: "https://www.youtube.com/embed/hnyTCcBpcS4",
   },
   {
     id: 2,
-    videoLink: "",
-    videoThumbnail: video2,
+    videoLink: "https://www.youtube.com/embed/8lKUaQw77fA",
   },
   {
     id: 3,
-    videoLink: "",
-    videoThumbnail: video3,
+    videoLink: "https://www.youtube.com/embed/hq4dLtipgmE",
   },
   {
     id: 4,
-    videoLink: "",
-    videoThumbnail: video4,
+    videoLink: "https://www.youtube.com/embed/czBfF8-7l0Q",
   },
   {
     id: 5,
-    videoLink: "",
-    videoThumbnail: video5,
+    videoLink: "https://www.youtube.com/embed/ENrtZZQnmdU",
   },
   {
     id: 6,
-    videoLink: "",
-    videoThumbnail: video6,
+    videoLink: "https://www.youtube.com/embed/rX9bC0DMYT8",
   },
   {
     id: 7,
-    videoLink: "",
-    videoThumbnail: video7,
-  },
-  {
-    id: 8,
-    videoLink: "",
-    videoThumbnail: video8,
-  },
-  {
-    id: 9,
-    videoLink: "",
-    videoThumbnail: video9,
+    videoLink: "https://www.youtube.com/embed/hfEMNUXraUY",
   },
 ];
 

@@ -81,7 +81,6 @@ export interface SolutionsDataProps {
 export interface VideoProps {
   id: number;
   videoLink: string;
-  videoThumbnail: StaticImageData;
 }
 
 export interface JobProps {
