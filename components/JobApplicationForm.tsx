@@ -79,12 +79,18 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
         resumeUrl: resumeInfo,
       };
 
+      // Create a hidden iframe to submit the form without page redirect
+      const iframe = document.createElement("iframe");
+      iframe.style.display = "none";
+      iframe.name = "hidden_iframe";
+      document.body.appendChild(iframe);
+
       // Use form submission method to avoid CORS issues
       const form = document.createElement("form");
       form.method = "POST";
       form.action = GOOGLE_SCRIPT_URL;
+      form.target = "hidden_iframe"; // Submit to hidden iframe
       form.style.display = "none";
-      form.target = "_blank"; // Open in new tab so user stays on page
 
       // Add form data as hidden inputs
       Object.entries(submissionData).forEach(([key, value]) => {
@@ -98,9 +104,14 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
       // Add to page, submit, then remove
       document.body.appendChild(form);
       form.submit();
-      document.body.removeChild(form);
 
-      // Since we can't get a response with this method, assume success
+      // Clean up after a short delay
+      setTimeout(() => {
+        document.body.removeChild(form);
+        document.body.removeChild(iframe);
+      }, 1000);
+
+      // Show success message
       setSubmitStatus({
         type: "success",
         message: "Application submitted successfully! We'll be in touch soon.",
@@ -243,12 +254,13 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   Phone Number
                 </label>
                 <input
-                  type="text"
+                  type="tel"
                   name="phone"
                   id="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
                   placeholder="eg. (555) 123-4567"
+                  autoComplete="tel"
                   required
                   className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                 />
