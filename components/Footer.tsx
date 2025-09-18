@@ -114,10 +114,6 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-center justify-between py-6 gap-3">
-            <span className="text-base text-white/70">
-              © All Rights Reserved Delta Carrier Group. Website Developed by:
-              Lorem ipsum
-            </span>
             <div className="flex items-center gap-3">
               <a
                 href="/privacy-policy"

@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import ctaImg from "../public/assets/pohots/gallery/56.jpg";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import TitleComponent from "./TitleComponent";
+import { usePathname } from "next/navigation";
 
 const CtaSection = () => {
+  const pathname = usePathname();
+
   return (
     <section className="relative overflow-hidden md:rounded-2xl max-md:pt-6 md:py-16 z-30 max-md:hidden">
       <div className="absolute left-0 top-0 w-full h-full z-10 cta-gradient max-md:hidden"></div>
@@ -27,14 +32,31 @@ const CtaSection = () => {
             get the freedom to run your business—backed by real support,
             transparent pay, and nationwide opportunities.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3">
+          {pathname === "/contact" || pathname === "/contact/" ? (
+            <div className="w-full sm:w-fit">
+              <PrimaryButton text="Apply Now" link="/contact" />
+            </div>
+          ) : pathname === "/in-office" ||
+            pathname === "/in-office/" ||
+            pathname === "/on-the-road" ||
+            pathname === "/on-the-road/" ? (
             <div className="w-full sm:w-fit">
               <PrimaryButton text="Contact Us" link="/contact" />
             </div>
-            <div className="w-full sm:w-fit">
-              <SecondaryButton text="Apply now" link="/contact" color="light" />
+          ) : (
+            <div className="flex flex-col sm:flex-row gap-3">
+              <div className="w-full sm:w-fit">
+                <PrimaryButton text="Contact Us" link="/contact" />
+              </div>
+              <div className="w-full sm:w-fit">
+                <SecondaryButton
+                  text="Apply now"
+                  link="/contact"
+                  color="light"
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </section>

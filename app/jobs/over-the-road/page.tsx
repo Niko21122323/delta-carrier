@@ -9,10 +9,10 @@ export default function page() {
   return (
     <main>
       <BannerComponent
-        title="In-Office Jobs That We Offer"
-        text="At Delta Carrier Group, we offer owner-operators the freedom to choose their routes, run their own schedule, and drive with confidence. Our nationwide network and dedicated support team ensure you're never alone on the road."
+        title="Over-the-Road Opportunities"
+        text="Experience the open road with Delta Carrier Group. As an over-the-road driver, you’ll enjoy the independence of long-haul routes, reliable freight, and the support of a team that keeps you moving forward every mile."
       />
-      <JobsSection type="in-office" />
+      <JobsSection type="over-the-road" />
       <TestimonialsSectionDark />
       <FaqSection />
     </main>

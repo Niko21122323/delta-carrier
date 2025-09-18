@@ -5,7 +5,7 @@ import { jobs } from "@/ts/data";
 import type { JobProps } from "@/ts/types";
 
 interface JobsSectionProps {
-  type?: "in-office" | "other";
+  type?: "in-office" | "over-the-road";
 }
 
 const JobsSection = ({ type = "in-office" }: JobsSectionProps) => {

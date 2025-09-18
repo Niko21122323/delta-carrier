@@ -83,17 +83,17 @@ const Navbar = () => {
     {
       dropDown: true,
       sublinks: [
+        { label: "Over The Road", link: "/jobs/over-the-road" },
         { label: "In Office", link: "/jobs/in-office" },
-        { label: "Other one", link: "#" },
       ],
-      label: "Jobs",
+      label: "Careers",
       href: "#",
     },
     {
       dropDown: true,
       sublinks: [
-        { label: "Dry Van Freight", link: "/services/dry-van-freight" },
-        { label: "Flatbed Trailers", link: "/services/flatbed-trailers" },
+        { label: "Dry Van", link: "/services/dry-van-freight" },
+        { label: "Flatbed", link: "/services/flatbed-trailers" },
       ],
       label: "Equipment",
       href: "#",
@@ -104,6 +104,7 @@ const Navbar = () => {
         { label: "Blog", link: "/blogs" },
         { label: "Videos", link: "/videos" },
         { label: "Weather", link: "/weather" },
+        { label: "Carrier Packet", link: "#" },
       ],
       label: "Resources",
       href: "#",
@@ -129,7 +130,7 @@ const Navbar = () => {
               <Image
                 src={Logo}
                 alt="company logo"
-                className="max-w-[52px] md:max-w-[70px] xl:max-w-[100px] h-auto"
+                className="max-w-[70px] md:max-w-[100px] xl:max-w-[150px] h-auto"
               />
             </Link>
             <div className="flex items-center gap-6 xl:gap-12 max-lg:hidden">

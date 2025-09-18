@@ -1,5 +1,4 @@
 import Image from "next/image";
-import AsideService from "@/components/AsideService";
 import BannerComponent from "@/components/BannerComponent";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
@@ -42,7 +41,6 @@ const includingData = [
     text: "We expertly load and transport goods that simply won’t fit inside a traditional dry van.",
   },
 ];
-
 const shippingData = [
   {
     id: 1,
@@ -79,8 +77,8 @@ const page = () => {
       />
       <section className="py-12 md:py-20 lg:py-24">
         <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid lg:grid-cols-12">
-            <div className="lg:col-span-7">
+          <div className="max-w-[1280px] mx-auto">
+            <div className="">
               <div className="">
                 <TitleComponent
                   title="What Is Flatbed Freight?"
@@ -235,9 +233,6 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="max-lg:hidden lg:col-span-3 lg:col-start-10">
-              <AsideService />
             </div>
           </div>
         </div>
