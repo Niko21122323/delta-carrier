@@ -13,6 +13,7 @@ import logo from "../public/assets/logo/logo.png";
 import CtaSection from "./CtaSection";
 import CtaSectionMobile from "./CtaSectionMobile";
 import PrimaryButton from "./PrimaryButton";
+import Link from "next/link";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -105,7 +106,11 @@ const Footer = () => {
                       key={link.id}
                       className={`text-base text-white/70 hover:text-white transition-colors duration-300 ease-in-out max-w-[220px]`}
                     >
-                      <a href={link.link}>{link.label}</a>
+                      {link.link ? (
+                        <Link href={link.link}>{link.label}</Link>
+                      ) : (
+                        <p>{link.label}</p>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -115,18 +120,18 @@ const Footer = () => {
 
           <div className="flex flex-col lg:flex-row lg:items-center justify-between py-6 gap-3">
             <div className="flex items-center gap-3">
-              <a
+              <Link
                 href="/privacy-policy"
                 className="text-white/70 hover:text-white transition-colors duration-300 ease-in-out"
               >
                 Privacy Policy
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/terms-and-conditions"
                 className="text-white/70 hover:text-white transition-colors duration-300 ease-in-out"
               >
                 Terms & Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

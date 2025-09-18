@@ -34,12 +34,14 @@ const CtaSection = () => {
           </p>
           {pathname === "/contact" || pathname === "/contact/" ? (
             <div className="w-full sm:w-fit">
-              <PrimaryButton text="Apply Now" link="/contact" />
+              <PrimaryButton text="Apply Now" link="/jobs/apply" />
             </div>
           ) : pathname === "/in-office" ||
             pathname === "/in-office/" ||
             pathname === "/on-the-road" ||
-            pathname === "/on-the-road/" ? (
+            pathname === "/on-the-road/" ||
+            pathname === "/jobs/apply" ||
+            pathname === "/jobs/apply/" ? (
             <div className="w-full sm:w-fit">
               <PrimaryButton text="Contact Us" link="/contact" />
             </div>
