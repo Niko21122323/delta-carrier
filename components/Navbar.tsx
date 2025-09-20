@@ -63,6 +63,10 @@ const Navbar = () => {
     return "bg-transparent";
   };
 
+  const isExternalLink = (url: string) => {
+    return url.startsWith("http://") || url.startsWith("https://");
+  };
+
   const navLink = [
     {
       href: "/",
@@ -151,15 +155,27 @@ const Navbar = () => {
 
                       {/* Desktop Dropdown Menu - Hover Effect */}
                       <div className="absolute top-full left-0 mt-2 bg-white rounded-lg shadow-lg py-2 min-w-[200px] opacity-0 invisible transform -translate-y-2 transition-all duration-200 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
-                        {link.sublinks.map((sublink, subIndex) => (
-                          <Link
-                            key={subIndex}
-                            href={sublink.link}
-                            className="block px-4 py-2 text-dark/80 hover:text-accent-light transition-colors duration-300 ease-in-out"
-                          >
-                            {sublink.label}
-                          </Link>
-                        ))}
+                        {link.sublinks.map((sublink, subIndex) =>
+                          isExternalLink(sublink.link) ? (
+                            <a
+                              key={subIndex}
+                              href={sublink.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block px-4 py-2 text-dark/80 hover:text-accent-light transition-colors duration-300 ease-in-out"
+                            >
+                              {sublink.label}
+                            </a>
+                          ) : (
+                            <Link
+                              key={subIndex}
+                              href={sublink.link}
+                              className="block px-4 py-2 text-dark/80 hover:text-accent-light transition-colors duration-300 ease-in-out"
+                            >
+                              {sublink.label}
+                            </Link>
+                          )
+                        )}
                       </div>
                     </>
                   ) : (
@@ -258,16 +274,29 @@ const Navbar = () => {
                     }`}
                   >
                     <div className="pl-4 py-2 space-y-2">
-                      {link.sublinks.map((sublink, subIndex) => (
-                        <Link
-                          key={subIndex}
-                          href={sublink.link}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block text-white/80 hover:text-white text-lg py-1"
-                        >
-                          {sublink.label}
-                        </Link>
-                      ))}
+                      {link.sublinks.map((sublink, subIndex) =>
+                        isExternalLink(sublink.link) ? (
+                          <a
+                            key={subIndex}
+                            href={sublink.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block text-white/80 hover:text-white text-lg py-1"
+                          >
+                            {sublink.label}
+                          </a>
+                        ) : (
+                          <Link
+                            key={subIndex}
+                            href={sublink.link}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block text-white/80 hover:text-white text-lg py-1"
+                          >
+                            {sublink.label}
+                          </Link>
+                        )
+                      )}
                     </div>
                   </div>
                 </div>
