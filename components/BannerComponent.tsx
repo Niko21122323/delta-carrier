@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import type { BannerProps } from "@/ts/types";
 import starIconWhite from "../public/assets/icons/star-white.svg";
 import heroImage from "../public/assets/pohots/hero-cta/banner-2.jpg";
@@ -6,6 +9,8 @@ import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 
 const BannerComponent = ({ title, text }: BannerProps) => {
+  const pathname = usePathname();
+
   return (
     <section className="relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-6">
@@ -33,18 +38,22 @@ const BannerComponent = ({ title, text }: BannerProps) => {
             {text && (
               <div className="flex flex-col gap-6 lg:gap-8">
                 <p className="text-white/90 max-w-[608px]">{text}</p>
-                <div className="flex max-[450px]:flex-col gap-3 sm:gap-4">
-                  <div className="w-full sm:w-fit">
-                    <PrimaryButton text="Contact Us" link="/contact" />
+                {pathname === "/about-us" || pathname === "/about-us/" ? (
+                  ""
+                ) : (
+                  <div className="flex max-[450px]:flex-col gap-3 sm:gap-4">
+                    <div className="w-full sm:w-fit">
+                      <PrimaryButton text="Contact Us" link="/contact" />
+                    </div>
+                    <div className="w-full sm:w-fit">
+                      <SecondaryButton
+                        text="Learn More"
+                        link="/about-us"
+                        color="light"
+                      />
+                    </div>
                   </div>
-                  <div className="w-full sm:w-fit">
-                    <SecondaryButton
-                      text="Learn More"
-                      link="/about-us"
-                      color="light"
-                    />
-                  </div>
-                </div>
+                )}
               </div>
             )}
           </div>

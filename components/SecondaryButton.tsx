@@ -2,9 +2,10 @@
 
 import type { PrimaryButtonProps } from "@/ts/types";
 
-const SecondaryButton = ({ link, text, color }: PrimaryButtonProps) => {
+const SecondaryButton = ({ link, text, color, target }: PrimaryButtonProps) => {
   return (
     <a
+      target={target}
       href={link}
       className={`relative overflow-hidden px-5 py-2.5 flex items-center justify-center w-full rounded-lg border border-black/15 hover:border-accent-dark transition-colors duration-300 ease-in-out ${
         color === "light" ? "bg-white" : "bg-light"

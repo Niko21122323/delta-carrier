@@ -474,7 +474,7 @@ export const faqs: FaqProps[] = [
     id: 2,
     number: "02.",
     title: "Is there a minimum age requirement?",
-    text: "Min age of req 23 god atleqse 2 years of experience",
+    text: "Minimum age requirement: 23, with at least 2 years of experience.",
   },
   {
     id: 3,

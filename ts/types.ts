@@ -4,6 +4,7 @@ export interface PrimaryButtonProps {
   link: string;
   text?: string;
   color?: string;
+  target?: string;
 }
 
 export interface SvgProps {
