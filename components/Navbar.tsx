@@ -104,7 +104,10 @@ const Navbar = () => {
         { label: "Blog", link: "/blogs" },
         { label: "Videos", link: "/videos" },
         { label: "Weather", link: "/weather" },
-        { label: "Carrier Packet", link: "#" },
+        {
+          label: "Carrier Packet",
+          link: "https://deltacarriergroup.com/packet.pdf",
+        },
       ],
       label: "Resources",
       href: "#",
