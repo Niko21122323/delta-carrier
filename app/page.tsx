@@ -10,8 +10,8 @@ import TestimonialsSectionWhite from "@/components/TestimonialsSectionWhite";
 import TitleComponent from "@/components/TitleComponent";
 import WhyUsSection from "@/components/WhyUsSection";
 import { services } from "@/ts/data";
-import downloadIcon from "../public/assets/icons/downlaod.svg";
 import aboutImcage from "../public/assets/pohots/gallery/01.jpg";
+import { MdFileDownload } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -47,12 +47,13 @@ export default function Home() {
                     <a
                       href="https://deltacarriergroup.com/packet.pdf"
                       target="_blank"
-                      className="flex items-center justify-center w-full gap-3 px-5 py-2 rounded-lg border border-black/15 bg-white hover:bg-light transition-colors duration-300 ease-in-out"
+                      className="relative flex items-center justify-center w-full gap-3 px-5 py-3  rounded-lg border border-black/15 bg-white overflow-hidden group"
                     >
-                      <span className="text-lg text-body font-medium">
-                        Our carrier packet
+                      <span className="text-lg text-body font-medium relative z-20 group-hover:text-white transition-colors duration-300 ease-in-out">
+                        Delta Carrier Packet
                       </span>
-                      <Image src={downloadIcon} alt="downlaod icon" />
+                      <MdFileDownload className="text-body group-hover:text-white transition-colors duration-300 ease-in-out relative z-10 text-xl" />
+                      <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full transition-all duration-300 ease-in-out bg-accent-light"></div>
                     </a>
                   </div>
                 </div>
