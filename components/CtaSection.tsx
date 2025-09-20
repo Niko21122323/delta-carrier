@@ -34,7 +34,11 @@ const CtaSection = () => {
           </p>
           {pathname === "/contact" || pathname === "/contact/" ? (
             <div className="w-full sm:w-fit">
-              <PrimaryButton text="Apply Now" link="/jobs/apply" />
+              <PrimaryButton
+                text="Apply Now"
+                link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                target="_blank"
+              />
             </div>
           ) : pathname === "/in-office" ||
             pathname === "/in-office/" ||
@@ -53,7 +57,8 @@ const CtaSection = () => {
               <div className="w-full sm:w-fit">
                 <SecondaryButton
                   text="Apply now"
-                  link="/contact"
+                  link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                  target="_blank"
                   color="light"
                 />
               </div>

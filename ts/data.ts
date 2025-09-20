@@ -559,19 +559,19 @@ export const solutionsData1: SolutionsDataProps[] = [
     id: 1,
     elementId: "grid1-img1",
     mobileId: "mobile1-img1",
-    image: solutionsData1Img1,
+    image: solutionsData2Img1,
   },
   {
     id: 2,
     elementId: "grid1-img2",
     mobileId: "mobile1-img2",
-    image: solutionsData1Img2,
+    image: solutionsData2Img2,
   },
   {
     id: 3,
     elementId: "grid1-img3",
     mobileId: "mobile1-img3",
-    image: solutionsData1Img3,
+    image: solutionsData2Img3,
   },
 ];
 
@@ -580,19 +580,19 @@ export const solutionsData2: SolutionsDataProps[] = [
     id: 1,
     elementId: "grid2-img1",
     mobileId: "mobile2-img1",
-    image: solutionsData2Img1,
+    image: solutionsData1Img1,
   },
   {
     id: 2,
     elementId: "grid2-img2",
     mobileId: "mobile2-img2",
-    image: solutionsData2Img2,
+    image: solutionsData1Img2,
   },
   {
     id: 3,
     elementId: "grid2-img3",
     mobileId: "mobile2-img3",
-    image: solutionsData2Img3,
+    image: solutionsData1Img3,
   },
 ];
 
@@ -696,8 +696,8 @@ export const jobs: JobProps[] = [
   },
   {
     id: 6,
-    title: "Fleet Maintenance Technician",
-    subtitle: "Maintenance",
+    title: "CDL-A Owner-Operator",
+    subtitle: "Over The Road",
     text: "Join our mobile maintenance team and keep our fleet running smoothly. Work with state-of-the-art equipment and enjoy competitive pay:",
     applyLink:
       "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
@@ -706,39 +706,9 @@ export const jobs: JobProps[] = [
   },
   {
     id: 7,
-    title: "Route Planning Specialist",
-    subtitle: "Logistics",
+    title: "CDL-Lis Purchase",
+    subtitle: "Over The Road",
     text: "Help optimize delivery routes and maximize efficiency for our owner-operators. Work remotely with flexible scheduling options:",
-    applyLink:
-      "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
-    link: "/jobs/cdl-a-owner-operator",
-    variant: "over-the-road",
-  },
-  {
-    id: 8,
-    title: "Safety Compliance Officer",
-    subtitle: "Safety & Compliance",
-    text: "Ensure our operations meet all DOT regulations and safety standards. Travel to various locations and work with diverse teams:",
-    applyLink:
-      "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
-    link: "/jobs/cdl-a-owner-operator",
-    variant: "over-the-road",
-  },
-  {
-    id: 9,
-    title: "Customer Relations Manager",
-    subtitle: "Client Services",
-    text: "Build strong relationships with our clients and ensure exceptional service delivery. Hybrid work model with competitive benefits:",
-    applyLink:
-      "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
-    link: "/jobs/cdl-a-owner-operator",
-    variant: "over-the-road",
-  },
-  {
-    id: 10,
-    title: "Freight Coordinator",
-    subtitle: "Operations",
-    text: "Coordinate freight assignments and manage load dispatch for maximum efficiency. Fast-paced environment with growth opportunities:",
     applyLink:
       "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
     link: "/jobs/cdl-a-owner-operator",

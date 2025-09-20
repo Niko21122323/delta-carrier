@@ -128,7 +128,11 @@ export default function About() {
                   <PrimaryButton text="Contact Us" link="/contact" />
                 </div>
                 <div className="w-full sm:w-fit">
-                  <SecondaryButton text="Apply now" link="/contact" />
+                  <SecondaryButton
+                    text="Apply now"
+                    link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                    target="_blank"
+                  />
                 </div>
               </div>
             </div>

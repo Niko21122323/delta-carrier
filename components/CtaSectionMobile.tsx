@@ -23,7 +23,12 @@ const CtaSectionMobile = () => {
               <PrimaryButton text="Contact Us" link="/contact" />
             </div>
             <div className="w-full sm:w-fit">
-              <SecondaryButton text="Apply now" link="/contact" color="light" />
+              <SecondaryButton
+                text="Apply now"
+                link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                target="_blank"
+                color="light"
+              />
             </div>
           </div>
           <div className="rounded-lg sm:rounded-xl overflow-hidden mt-6">

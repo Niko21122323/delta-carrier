@@ -38,15 +38,6 @@ export default function page() {
                 built to deliver safety, reliability, and full transparency
                 every mile of the way.
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-y-3 gap-x-4 pt-12">
-                <div className="w-full sm:w-fit">
-                  <PrimaryButton text="Contact Us" link="/contact" />
-                </div>
-                <div className="w-full sm:w-fit">
-                  <SecondaryButton text="Apply now" link="/contact" />
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -80,7 +71,11 @@ export default function page() {
                   <PrimaryButton text="Contact Us" link="/contact" />
                 </div>
                 <div className="w-full sm:w-fit">
-                  <SecondaryButton text="Apply now" link="/contact" />
+                  <SecondaryButton
+                    text="Apply now"
+                    link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                    target="_blank"
+                  />
                 </div>
               </div>
             </div>
