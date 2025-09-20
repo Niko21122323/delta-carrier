@@ -12,37 +12,30 @@ const page = () => {
   return (
     <main>
       <BannerComponent
-        title="Mastering Marketing in the Digital Age"
-        text="At Delta Carrier Group, every division is tailored to handle a specific kind of freight with precision, care, and efficiency. From dry vans to Conestogas, we're structured for performance."
+        title="Tips for Efficient Trucking Operations: Boost Productivity on the Road"
+        text="Running your own trucking business efficiently is key to maximizing profit and minimizing stress. By adopting practical strategies for time management, load planning, and vehicle maintenance, you can operate smarter and achieve more every mile."
       />
       <section className="py-12 md:py-20 lg:py-24">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-[1134px] mx-auto">
-            <h3 className="text-3xl md:text-5xl text-dark font-semibold pb-4 md:pb-6">
-              Introduction
-            </h3>
+            <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pt-6 pb-4">
+              1. Plan Your Routes Ahead
+            </h4>
             <p className="text-body pb-3">
-              Let's be real—marketing today looks nothing like it did a decade
-              ago. The game has completely changed, and if you're not evolving
-              with it, you're getting left behind. The digital age has flipped
-              traditional marketing on its head, giving brands (and creators!)
-              more tools, platforms, and opportunities than ever. But with so
-              many choices, how do you even know where to start?
-            </p>
-            <p className="text-body">
-              Don't worry—we got you. Here's your quick guide to mastering
-              marketing in the digital era.
+              Mapping your routes in advance helps reduce fuel costs, avoid
+              traffic delays, and increase on-time deliveries. Incorporate rest
+              stops, refueling points, and alternate paths to handle unexpected
+              detours efficiently.
             </p>
 
             <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pt-6 pb-4">
-              Know Your Audience Like They're Your BFF
+              2. Maintain Consistent Communication
             </h4>
             <p className="text-body">
-              Gone are the days of one-size-fits-all campaigns. Today,
-              successful marketing is all about hyper-targeting. Use tools like
-              Google Analytics, Meta Insights, or even TikTok analytics to get
-              into your audience's head—what they love, what they scroll past,
-              and what makes them click.
+              Keeping in touch with dispatch, brokers, and clients ensures
+              smooth operations. Quick updates about delays or early arrivals
+              help manage expectations and maintain trust. Use messaging apps or
+              trucking platforms to streamline communications.
             </p>
 
             <Image
@@ -52,34 +45,32 @@ const page = () => {
             />
 
             <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pb-4">
-              Pick Your Platforms (And Slay Them)
+              3. Keep Your Truck in Top Shape
             </h4>
             <p className="text-body">
-              Not every brand needs to be everywhere. If your people are on
-              Instagram and TikTok, focus there. B2B brand? LinkedIn and email
-              are probably your power moves. Go deep instead of wide—create
-              platform-specific content that actually vibes with your audience.
+              Regular maintenance prevents breakdowns and costly repairs. Follow
+              a schedule for oil changes, tire inspections, and brake checks. A
+              well-maintained truck runs more efficiently and safely, saving
+              time and money.
             </p>
 
             <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pt-6 pb-4">
-              Content is King—But Authenticity is Queen
+              4. Track Your Expenses
             </h4>
             <p className="text-body">
-              Forget the hard sell. People are tired of being sold to. Instead,
-              build trust with real, valuable content that actually resonates.
-              Whether it's behind-the-scenes videos, relatable memes that hit,
-              or helpful how-tos—show up as a real human behind the brand, not
-              just another logo in their feed.
+              Record all operating costs, including fuel, tolls, and repairs.
+              Monitoring expenses allows you to identify areas to save and make
+              informed financial decisions for your business.
             </p>
 
             <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pt-6 pb-4">
-              Learn to Love the Data
+              5. Optimize Load Management
             </h4>
             <p className="text-body">
-              We know, analytics can feel like a snoozefest. But the numbers
-              tell a story. Track what's working (and what flops), then adjust.
-              A/B test your headlines, play with post timing, and tweak your
-              strategy based on real results—not vibes alone.
+              Efficiently planning loads and avoiding empty backhauls maximizes
+              revenue per mile. Coordinate with trusted brokers or logistics
+              partners to ensure steady work while reducing downtime between
+              trips.
             </p>
 
             <Image
@@ -88,28 +79,16 @@ const page = () => {
               className="h-full w-full object-cover max-h-[400px] my-6 md:my-8 rounded-lg sm:rounded-xl md:rounded-2xl"
             />
 
-            <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pb-4">
-              Use the Tools, Don't Let Them Use You
-            </h4>
-            <p className="text-body">
-              From email automation to AI-powered copywriting, there are tools
-              that can save you hours and seriously level up your workflow. Just
-              don't let automation strip the soul from your marketing. Use tech
-              to boost creativity, streamline the boring stuff, and scale
-              smarter—not to replace the human connection.
-            </p>
             <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pt-6 pb-4">
-              Final Thoughts
+              The Bottom Line
             </h4>
             <p className="text-body">
-              Mastering digital marketing isn't about doing everything—it's
-              about doing the right things for your audience, with authenticity,
-              intention, and a solid strategy. Stay curious, test often, learn
-              from the data, and don't be afraid to pivot. At the end of the
-              day, it's all about creating real value, not just adding to the
-              noise.
+              Efficient trucking operations come from careful planning,
+              consistent maintenance, and smart decision-making. By staying
+              organized, tracking costs, and optimizing routes, owner-operators
+              can boost productivity, reduce stress, and grow their business
+              sustainably.
             </p>
-            <p className="text-body pt-1">You've got this.</p>
 
             <h4 className="text-xl md:text-2xl text-dark/80 font-semibold pt-6 pb-4">
               Share
