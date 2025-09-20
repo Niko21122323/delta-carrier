@@ -655,7 +655,7 @@ export const jobs: JobProps[] = [
     subtitle: "In Office",
     text: "As a CDL-A Owner-Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "/jobs/apply",
-    link: "/jobs/dispatcher",
+    link: "/jobs/in-office-careers",
     variant: "in-office",
   },
   {
@@ -664,7 +664,7 @@ export const jobs: JobProps[] = [
     subtitle: "In Office",
     text: "As a CDL-A Owner-Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "/jobs/apply",
-    link: "/jobs/safety-department",
+    link: "/jobs/in-office-careers",
     variant: "in-office",
   },
   {
@@ -673,7 +673,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL-A Owner-Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "/jobs/apply",
-    link: "/jobs/accounting",
+    link: "/jobs/in-office-careers",
     variant: "in-office",
   },
   {
@@ -682,7 +682,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL-A Owner-Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "/jobs/apply",
-    link: "/jobs/recruiting",
+    link: "/jobs/in-office-careers",
     variant: "in-office",
   },
   {
@@ -691,7 +691,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL-A Owner-Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "/jobs/apply",
-    link: "/jobs/human-resources",
+    link: "/jobs/in-office-careers",
     variant: "in-office",
   },
   {
@@ -700,7 +700,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL-A Owner-Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "/jobs/apply",
-    link: "/jobs/it-department",
+    link: "/jobs/in-office-careers",
     variant: "in-office",
   },
   {
@@ -709,7 +709,7 @@ export const jobs: JobProps[] = [
     subtitle: "Fleet Operations",
     text: "As a CDL-A Owner-Operator with Delta, you run your own truck—your way. We deliver industry-leading support without limiting your independence:",
     applyLink: "/jobs/apply",
-    link: "/jobs/maintenance-department",
+    link: "/jobs/in-office-careers",
     variant: "in-office",
   },
   {
