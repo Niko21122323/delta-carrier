@@ -742,7 +742,7 @@ export const blogs: BlogProps[] = [
     title:
       "Maximizing Profit as an Owner-Operator: Smart Strategies for Success",
     text: "Running your own truck is rewarding—but profit doesn’t happen by chance. As an owner-operator, you wear every hat: driver, dispatcher, bookkeeper, and strategist.",
-    link: "/blogs/mazimizing-profit",
+    link: "/blogs/maximizing-profit",
     image: blogImg1,
   },
   {
