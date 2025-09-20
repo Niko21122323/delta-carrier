@@ -19,27 +19,50 @@ export default function About() {
       />
       <section className="py-6 sm:py-12 md:py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 2xl:gap-6">
-            <div className="h-full w-full rounded-2xl overflow-hidden md:col-span-4 lg:col-span-3 min-[1719px]:!col-span-4 order-2 md:order-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 2xl:gap-6">
+            <div className="h-full w-full rounded-2xl overflow-hidden order-2 md:order-1">
               <Image
                 src={deliverImg1}
                 alt="deliver image"
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="bg-light rounded-2xl p-4 lg:p-6 xl:p-8 md:col-span-8 lg:col-span-6 min-[1719px]:!col-span-4 order-1 md:order-2">
+            <div className="bg-light rounded-2xl p-4 lg:p-6 xl:p-8 order-1 md:order-2">
               <TitleComponent
-                title="Driven to Deliver, Committed to You"
+                title="Drive Your Own Way"
                 subtitle="Built for the Long Haul"
               />
               <p className="text-body pt-6">
-                Delta Carrier Group is a proudly independent, 100%
-                owner-operator transportation company based in Rockdale, IL.
-                Since 2013, we’ve specialized in delivering flexible, safe, and
-                professional freight solutions across the continental U.S. We’re
-                more than just a carrier—we’re a trusted partner built on
-                transparency, accountability, and a commitment to excellence at
-                every mile.
+                At Delta Carrier Group, trucking isn’t just about hauling
+                freight — it’s about freedom. Our motto, “Drive your own Way,”
+                reflects the foundation of everything we do: giving
+                owner-operators the independence, respect, and opportunity they
+                deserve.
+              </p>
+              <p className="text-body pt-1">
+                We know that every driver has a different vision of success.
+                Some want to chase the highest earning potential, others want
+                the flexibility to balance life on the road with life at home,
+                and many simply love the freedom of the highway. Whatever your
+                goals are, you’re in control.
+              </p>
+              <p className="text-body pt-1">
+                With Delta Carrier Group, you’re not working for us — we’re
+                working for you. You choose the lanes you want to run. You
+                decide how and when you work. You determine how much money you
+                want to make. Our job is simple: to provide the freight,
+                support, and partnership that lets you call the shots.
+              </p>
+              <p className="text-body pt-1">
+                Because we believe drivers aren’t just the backbone of this
+                industry — they’re business owners, decision-makers, and leaders
+                of their own journeys. That’s why at Delta Carrier Group, you’re
+                not a number. You’re our partner.
+              </p>
+              <p className="text-body pt-1">
+                This isn’t just trucking. This is your business, your freedom,
+                and your future. And with us by your side, you’ll always have
+                the power to Drive your own Way.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-6 lg:pt-8">
                 <div className="w-full sm:w-fit">
@@ -48,18 +71,12 @@ export default function About() {
                 <div className="w-full sm:w-fit">
                   <SecondaryButton
                     text="Apply now"
-                    link="/contact"
+                    link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
                     color="light"
+                    target="_blank"
                   />
                 </div>
               </div>
-            </div>
-            <div className="h-full w-full rounded-2xl overflow-hidden col-span-3 min-[1719px]:!col-span-4 max-lg:hidden order-3">
-              <Image
-                src={deliverImg2}
-                alt="deliver image"
-                className="h-full w-full object-cover"
-              />
             </div>
           </div>
         </div>
