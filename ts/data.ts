@@ -708,10 +708,10 @@ export const jobs: JobProps[] = [
     id: 7,
     title: "CDL-Lis Purchase",
     subtitle: "Over The Road",
-    text: "Help optimize delivery routes and maximize efficiency for our owner-operators. Work remotely with flexible scheduling options:",
+    text: "LEASE PURCHASE OFFER - 2026 & 2025 KW T680 with Cummins Engine & 2026-2025 Freightliner Cascadia DD15 Trucks and more...",
     applyLink:
       "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
-    link: "/jobs/cdl-a-owner-operator",
+    link: "/jobs/cdl-lis-purchase",
     variant: "over-the-road",
   },
 ];
