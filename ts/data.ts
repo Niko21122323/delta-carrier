@@ -32,7 +32,7 @@ import solutionsData3Img1 from "../public/assets/pohots/divisions/8.jpg";
 import solutionsData3Img2 from "../public/assets/pohots/divisions/9.jpg";
 import solutionsData3Img3 from "../public/assets/pohots/divisions/10.jpg";
 import serviceImg1 from "../public/assets/pohots/home/dryvan.jpg";
-import serviceImg2 from "../public/assets/pohots/home/flatbed-divisons.jpg";
+import serviceImg2 from "../public/assets/pohots/home/flatbet-service.jpeg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
 const missing = [25]; // add more if needed
