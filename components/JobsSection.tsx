@@ -53,13 +53,13 @@ const JobsSection = ({ type = "in-office" }: JobsSectionProps) => {
                   <div className="w-full sm:w-fit">
                     <PrimaryButton text="Apply Now" link={job.applyLink} />
                   </div>
-                  <div className="w-full sm:w-fit">
+                  {/* <div className="w-full sm:w-fit">
                     <SecondaryButton
                       text="Read More"
                       link={job.link}
                       color="light"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

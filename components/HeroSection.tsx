@@ -25,7 +25,7 @@ const HeroSection = () => {
               <div>
                 <div className="flex gap-2">
                   <span className="flex items-center gap-2 text-white text-lg lg:text-xl font-medium py-2.5 max-[350px]:px-2.5 px-4 sm:px-6 rounded-md bg-white/10 border border-white/15 backdrop-blur-ld">
-                    Relied on Nationwide <div className="sm:hidden">4.1</div>
+                    Relied on Nationwide <div className="sm:hidden">4.2</div>
                     <Image
                       src={starIconWhite}
                       alt="star icon"
