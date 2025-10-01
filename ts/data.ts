@@ -741,7 +741,7 @@ export const jobs: JobProps[] = [
     id: 8,
     title: "Owner-Operator",
     subtitle: "Over The Road",
-    text: "Take control of your career as an OTR Owner-Operator. Enjoy the freedom of running your own truck with the full support of our team.",
+    text: "Run your own truck with the freedom of an independent business owner—backed by steady freight, competitive earnings, and full support from our team.",
     applyLink:
       "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
     link: "/jobs/cdl-a-owner-operator",

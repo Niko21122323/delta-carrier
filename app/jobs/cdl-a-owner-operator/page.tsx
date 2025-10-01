@@ -27,25 +27,25 @@ const responsibilities = [
     id: 1,
     icon: responsibilitieIcon1,
     title: "Versatile Freight Options",
-    text: "Haul dry van, flatbed or step deck based on your setup and expertise.",
+    text: "Haul dry van, flatbed, or step deck freight depending on your equipment and preferences.",
   },
   {
     id: 2,
     icon: responsibilitieIcon2,
     title: "Freedom to Choose",
-    text: "Pick your own loads and plan your routes—no forced dispatch, ever.",
+    text: "Run your business your way with no forced dispatch and the ability to select your own loads.",
   },
   {
     id: 3,
     icon: responsibilitieIcon3,
-    title: "Collaborative Trip Planning",
-    text: "Work with our dispatch team when needed to optimize routes and scheduling.",
+    title: "Support When You Need It",
+    text: "Stay independent but backed by our dispatch team whenever you want help with loads or planning.",
   },
   {
     id: 4,
     icon: responsibilitieIcon4,
-    title: "Stay Compliant on the Road",
-    text: "Follow FMCSA and ELD regulations with full support to keep your operations smooth and legal.",
+    title: "Compliance Made Simple",
+    text: "Stay FMCSA and ELD compliant with guidance and tools designed to keep your business running smoothly.",
   },
 ];
 
@@ -119,7 +119,7 @@ const page = () => {
   return (
     <main>
       <BannerComponent
-        title="CDL-A Owner-Operator"
+        title="Owner-Operator"
         text="Join a team that puts you in the driver’s seat—literally. At Delta Carrier Group, you’re not just another number. You own your truck, your time, and your path to success. We’re here to support you every mile."
       />
       <section className="py-12 md:py-20 lg:py-24">
