@@ -27,7 +27,7 @@ import solutionsData1Img2 from "../public/assets/pohots/divisions/3.jpg";
 import solutionsData1Img3 from "../public/assets/pohots/divisions/4.jpg";
 import solutionsData2Img1 from "../public/assets/pohots/divisions/flatbed-divisons.jpg";
 import solutionsData2Img2 from "../public/assets/pohots/divisions/flatbed-divisons-1.jpg";
-import solutionsData2Img3 from "../public/assets/pohots/divisions/7.jpg";
+import solutionsData2Img3 from "../public/assets/pohots/gallery/14.jpg";
 import solutionsData3Img1 from "../public/assets/pohots/divisions/8.jpg";
 import solutionsData3Img2 from "../public/assets/pohots/divisions/9.jpg";
 import solutionsData3Img3 from "../public/assets/pohots/divisions/10.jpg";
@@ -739,9 +739,9 @@ export const jobs: JobProps[] = [
   },
   {
     id: 8,
-    title: "CDL-A Owner-Operator",
+    title: "Owner-Operator",
     subtitle: "Over The Road",
-    text: "Join our mobile maintenance team and keep our fleet running smoothly. Work with state-of-the-art equipment and enjoy competitive pay:",
+    text: "Take control of your career as an OTR Owner-Operator. Enjoy the freedom of running your own truck with the full support of our team.",
     applyLink:
       "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
     link: "/jobs/cdl-a-owner-operator",
@@ -749,7 +749,7 @@ export const jobs: JobProps[] = [
   },
   {
     id: 9,
-    title: "CDL-Lis Purchase",
+    title: "Lease Purchase",
     subtitle: "Over The Road",
     text: "LEASE PURCHASE OFFER - 2026 & 2025 KW T680 with Cummins Engine & 2026-2025 Freightliner Cascadia DD15 Trucks and more...",
     applyLink:

@@ -26,14 +26,14 @@ const responsibilities = [
   {
     id: 1,
     icon: responsibilitieIcon1,
-    title: "Fuel Discounts",
-    text: "Up to $0.90 per Gallon, You Can Track The Daily Real-Time Discounts via Phone Application.",
+    title: "Owner Operators",
+    text: "Run your own truck with the freedom of independence while enjoying consistent freight, competitive pay, and strong support from our team.",
   },
   {
     id: 2,
     icon: responsibilitieIcon2,
-    title: "Van & Flatber",
-    text: "Division drivers average 2800-3400 Miles weekly. ",
+    title: "Van & Flatbed",
+    text: "Drive with our Van and Flatbed division and enjoy steady freight, strong support, and an average of 2,800–3,400 miles per week.",
   },
 ];
 

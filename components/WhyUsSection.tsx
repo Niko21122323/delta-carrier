@@ -25,7 +25,7 @@ const WhyUsSection = () => {
           <div className="flex flex-row items-end max-xl:justify-between max-xl:w-full xl:items-start xl:flex-col xl:max-w-[465px] xl:m-auto px-6">
             <div className="max-xl:max-w-[500px]">
               <TitleComponent
-                title="Why Shippers Choose Delta"
+                title="Why Customers Choose Delta"
                 subtitle="Why Choose Us"
                 variant="dark"
               />
@@ -67,7 +67,7 @@ const WhyUsSection = () => {
       <div className="relative container mx-auto px-4 lg:hidden z-20">
         <div className="py-6 sm:py-12">
           <TitleComponent
-            title="Why Shippers Choose Delta"
+            title="Why Customers Choose Delta"
             subtitle="Why Choose Us"
             variant="dark"
           />

@@ -35,6 +35,7 @@ export default function page() {
                   src={video.videoLink}
                   title="Delta Carrier Group Permit Book"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
                 ></iframe>
               </div>
             ))}

@@ -156,7 +156,7 @@ const SolutionsSection = () => {
         </div>
         <div className="py-10 xl:py-16 2xl:py-20 max-md:hidden">
           <div className="grid grid-cols-5 items-center gap-2 xl:gap-4 2xl:gap-6">
-            {solutionsData1.map((data: SolutionsDataProps) => (
+            {solutionsData2.map((data: SolutionsDataProps) => (
               <div
                 key={data.id}
                 className="relative h-full w-full overflow-hidden rounded-xl xl:rounded-2xl even:z-20 first:z-30 last:z-10"
@@ -172,20 +172,19 @@ const SolutionsSection = () => {
             <div className="col-span-2 flex flex-col items-center justify-center">
               <div className="max-2xl:pl-4">
                 <h5 className="text-2xl xl:text-3xl text-white font-semibold pb-3 xl:pb-5">
-                  Flatbed Division
+                  Dry Van Division
                 </h5>
                 <p className="text-body max-w-[554px]">
-                  For loads that can’t fit inside a box, our Flatbed Division
-                  offers the strength and space to get the job done. From
-                  building materials to heavy machinery, we specialize in
-                  open-deck transport with expert load securement and route
-                  planning.
+                  Our Dry Van Division handles everything from packaged goods to
+                  palletized freight. With 53' enclosed trailers and advanced
+                  tracking technology, we offer secure and flexible transport
+                  for short and long hauls across the U.S.
                 </p>
               </div>
             </div>
           </div>
           <div className="grid grid-cols-5 items-center gap-2 xl:gap-4 2xl:gap-6 pt-6">
-            {solutionsData2.map((data: SolutionsDataProps) => (
+            {solutionsData1.map((data: SolutionsDataProps) => (
               <div
                 key={data.id}
                 className="order-2 relative h-full w-full overflow-hidden rounded-xl xl:rounded-2xl even:z-20 first:z-30 last:z-10"
@@ -201,13 +200,14 @@ const SolutionsSection = () => {
             <div className="order-1 col-span-2 flex flex-col items-center justify-center">
               <div className="max-2xl:pl-4">
                 <h5 className="text-2xl xl:text-3xl text-white font-semibold pb-3 xl:pb-5">
-                  Dry Van Division
+                  Flatbed Division
                 </h5>
                 <p className="text-body max-w-[554px]">
-                  Our Dry Van Division handles everything from packaged goods to
-                  palletized freight. With 53' enclosed trailers and advanced
-                  tracking technology, we offer secure and flexible transport
-                  for short and long hauls across the U.S.
+                  For loads that can’t fit inside a box, our Flatbed Division
+                  offers the strength and space to get the job done. From
+                  building materials to heavy machinery, we specialize in
+                  open-deck transport with expert load securement and route
+                  planning.
                 </p>
               </div>
             </div>
