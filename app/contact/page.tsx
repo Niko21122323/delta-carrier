@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import BannerComponent from "@/components/BannerComponent";
 import TitleComponent from "@/components/TitleComponent";
