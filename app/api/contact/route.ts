@@ -1,3 +1,6 @@
+// ✅ Must be the very first line
+export const runtime = "nodejs";
+
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -18,7 +21,7 @@ export async function POST(req: Request) {
     // Send the mail
     await transporter.sendMail({
       from: `"Website Contact Form" <${process.env.EMAIL_EMAIL}>`,
-      to: "nikola211223232529321@gmail.com", // where you want to receive submissions
+      to: "nikola211223232529321@gmail.com", // your inbox
       subject: "New Contact Form Submission",
       text: `
         Name: ${firstName} ${lastName}
