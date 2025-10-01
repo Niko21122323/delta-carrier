@@ -155,26 +155,6 @@ export const quickLinks: FooterLinkProps[] = [
     label: "Gallery",
   },
   {
-    id: 5,
-    link: "/over-the-road",
-    label: "Over The Road",
-  },
-  {
-    id: 6,
-    link: "/in-office",
-    label: "In Office",
-  },
-  {
-    id: 7,
-    link: "/dry-van-freight",
-    label: "Dry Van",
-  },
-  {
-    id: 8,
-    link: "/flatbed-trailers",
-    label: "Flatbed",
-  },
-  {
     id: 9,
     link: "/blogs",
     label: "Blog",

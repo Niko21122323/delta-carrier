@@ -1,5 +1,4 @@
 import PrimaryButton from "@/components/PrimaryButton";
-import SecondaryButton from "@/components/SecondaryButton";
 import TitleComponent from "@/components/TitleComponent";
 import { jobs } from "@/ts/data";
 import type { JobProps } from "@/ts/types";
@@ -70,12 +69,12 @@ const JobsSection = ({ type = "in-office" }: JobsSectionProps) => {
                     <PrimaryButton text="Apply Now" link={job.applyLink} />
                   </div>
                   {/* <div className="w-full sm:w-fit">
-          <SecondaryButton
-            text="Read More"
-            link={job.link}
-            color="light"
-          />
-        </div> */}
+                    <SecondaryButton
+                      text="Read More"
+                      link={job.link}
+                      color="light"
+                    />
+                  </div> */}
                 </div>
               </div>
             ))}
