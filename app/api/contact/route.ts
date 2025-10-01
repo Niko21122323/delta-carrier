@@ -10,14 +10,14 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: "Gmail", // or "Outlook", "Yahoo", or custom SMTP
       auth: {
-        user: process.env.EMAIL_USER, // your email
-        pass: process.env.EMAIL_PASS, // your app password
+        user: process.env.EMAIL_EMAIL, // your email
+        pass: process.env.EMAIL_PASSWORD, // your app password
       },
     });
 
     // Send the mail
     await transporter.sendMail({
-      from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
+      from: `"Website Contact Form" <${process.env.EMAIL_EMAIL}>`,
       to: "nikola211223232529321@gmail.com", // where you want to receive submissions
       subject: "New Contact Form Submission",
       text: `
