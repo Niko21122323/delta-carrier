@@ -2,27 +2,27 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-dark: #1a1919;
-  --color-light: #f4f4f5;
-  --color-body: #767676;
-  --color-accent-light: #e24854;
-  --color-accent-dark: #d13c48;
+	--color-dark: #1a1919;
+	--color-light: #f4f4f5;
+	--color-body: #767676;
+	--color-accent-light: #e24854;
+	--color-accent-dark: #d13c48;
 }
 
 @layer components {
-  @media (min-width: 1536px) {
-    .container {
-      max-width: 1720px !important;
-    }
-  }
+	@media (min-width: 1536px) {
+		.container {
+			max-width: 1720px !important;
+		}
+	}
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+	font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -31,81 +31,81 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.1;
+	line-height: 1.1;
 }
 
 p {
-  font-size: 18px;
+	font-size: 18px;
 }
 @media (max-width: 1280px) {
-  p {
-    font-size: 16px;
-  }
+	p {
+		font-size: 16px;
+	}
 }
 @media (max-width: 640px) {
-  p {
-    font-size: 14px;
-  }
+	p {
+		font-size: 14px;
+	}
 }
 
 .hero-gradient {
-  background: #000000;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 1) 80%
-  );
+	background: #000000;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(0, 0, 0, 1) 80%
+	);
 }
 .primary-button-gradient {
-  background: #e24854;
-  background: linear-gradient(
-    90deg,
-    rgba(226, 72, 84, 1) 0%,
-    rgba(209, 60, 72, 1) 90%
-  );
+	background: #e24854;
+	background: linear-gradient(
+		90deg,
+		rgba(226, 72, 84, 1) 0%,
+		rgba(209, 60, 72, 1) 90%
+	);
 }
 
 .hero-value-gradient {
-  background: #ffffff;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 75%,
-    rgba(255, 255, 255, 0.08) 100%
-  );
+	background: #ffffff;
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0) 75%,
+		rgba(255, 255, 255, 0.08) 100%
+	);
 }
 
 .cta-gradient {
-  background: #000000;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.75) 88%
-  );
+	background: #000000;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.75) 88%
+	);
 }
 
 .accordion-gradient {
-  background: #e24854;
-  background: linear-gradient(
-    90deg,
-    rgba(226, 72, 84, 1) 0%,
-    rgba(209, 60, 72, 1) 100%
-  );
+	background: #e24854;
+	background: linear-gradient(
+		90deg,
+		rgba(226, 72, 84, 1) 0%,
+		rgba(209, 60, 72, 1) 100%
+	);
 }
 
 .contact-gradient {
-  background: #000000;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.67) 100%
-  );
+	background: #000000;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.67) 100%
+	);
 }
 
 .blog-hover-gradient {
-  background: #d13c48;
-  background: linear-gradient(
-    180deg,
-    rgba(209, 60, 72, 1) 0%,
-    rgba(226, 72, 84, 1) 70%
-  );
+	background: #d13c48;
+	background: linear-gradient(
+		180deg,
+		rgba(209, 60, 72, 1) 0%,
+		rgba(226, 72, 84, 1) 70%
+	);
 }

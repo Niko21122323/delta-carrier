@@ -146,28 +146,53 @@ export const quickLinks: FooterLinkProps[] = [
   },
   {
     id: 3,
-    link: "/videos",
-    label: "Videos",
-  },
-  {
-    id: 4,
     link: "/divisions",
     label: "Divisions",
   },
   {
+    id: 4,
+    link: "/gallery",
+    label: "Gallery",
+  },
+  {
     id: 5,
-    link: "/jobs",
-    label: "Jobs",
+    link: "/over-the-road",
+    label: "Over The Road",
   },
   {
     id: 6,
+    link: "/in-office",
+    label: "In Office",
+  },
+  {
+    id: 7,
+    link: "/dry-van-freight",
+    label: "Dry Van",
+  },
+  {
+    id: 8,
+    link: "/flatbed-trailers",
+    label: "Flatbed",
+  },
+  {
+    id: 9,
     link: "/blogs",
     label: "Blog",
   },
   {
-    id: 7,
+    id: 10,
+    link: "/videos",
+    label: "Videos",
+  },
+  {
+    id: 11,
     link: "/weather",
     label: "Weather",
+  },
+  {
+    id: 12,
+    link: "https://deltacarriergroup.com/packet.pdf",
+    label: "Carrier Packet",
   },
 ];
 

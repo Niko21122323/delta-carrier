@@ -4,7 +4,6 @@ import FaqSection from "@/components/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PrimaryButton from "@/components/PrimaryButton";
 import RequirementsSection from "@/components/RequirementsSection";
-import SecondaryButton from "@/components/SecondaryButton";
 import PrimaryButtonArrow from "@/components/svgComponents/PrimaryButtonArrow";
 import TestimonialsSectionWhite from "@/components/TestimonialsSectionWhite";
 import TitleComponent from "@/components/TitleComponent";
@@ -24,7 +23,7 @@ export default function Home() {
               <Image
                 src={aboutImcage}
                 alt="about section image"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-covereslinteslint"
               />
             </div>
             <div className="order-1 lg:order-2">
