@@ -53,7 +53,25 @@ export default function page() {
                 </p>
               </div>
               <form
-                action=""
+                onSubmit={async (e) => {
+                  e.preventDefault();
+
+                  const formData = new FormData(e.currentTarget);
+                  const data = Object.fromEntries(formData.entries());
+
+                  const res = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data),
+                  });
+
+                  if (res.ok) {
+                    alert("✅ Message sent successfully!");
+                    e.currentTarget.reset();
+                  } else {
+                    alert("❌ Failed to send message. Please try again.");
+                  }
+                }}
                 className="grid max-[500px]:grid-cols-1 grid-cols-2 gap-5"
               >
                 <div className="flex flex-col gap-3">
