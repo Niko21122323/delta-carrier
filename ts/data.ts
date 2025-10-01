@@ -741,7 +741,8 @@ export const jobs: JobProps[] = [
     id: 8,
     title: "Owner-Operator",
     subtitle: "Over The Road",
-    text: "Run your own truck with the freedom of an independent business owner—backed by steady freight, competitive earnings, and full support from our team.",
+    text: "Take control of your career and run your own truck with the freedom as an independent business owner. With steady freight, competitive earnings, and the full support of our team, you’ll have everything you need to stay moving and profitable.",
+    extraText: "$20,000 Sign-On Bonus – Call for details or apply now!",
     applyLink:
       "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
     link: "/jobs/cdl-a-owner-operator",

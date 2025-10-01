@@ -31,35 +31,51 @@ const JobsSection = ({ type = "in-office" }: JobsSectionProps) => {
             work. Join a team that supports your goals and rewards your
             performance.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-6 pt-6 sm:pt-8 lg:pt-10">
+          <div
+            className={`grid grid-cols-1 sm:grid-cols-2 gap-4 2xl:gap-6 pt-6 sm:pt-8 lg:pt-10 ${
+              filteredJobs.length === 2 ? "xl:grid-cols-6" : "xl:grid-cols-3"
+            }`}
+          >
             {filteredJobs.map((job: JobProps) => (
               <div
                 key={job.id}
                 id={job.variant}
-                className="p-4 2xl:p-8 rounded-xl md:rounded-2xl bg-light border border-[#D4D4D8] max-sm:max-w-[425px]"
+                className={`p-4 2xl:p-8 rounded-xl md:rounded-2xl bg-light border border-[#D4D4D8] max-sm:max-w-[425px] flex flex-col justify-between ${
+                  filteredJobs.length === 2
+                    ? "xl:first:col-start-2 xl:last:col-start-4 xl:col-span-2"
+                    : ""
+                }`}
               >
-                <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-4 pb-3">
-                  <h3 className="text-dark text-xl 2xl:text-2xl font-bold">
-                    {job.title}
-                  </h3>
-                  <span className="bg-white text-sm 2xl:text-base text-dark px-3 py-1.5 rounded-sm w-fit">
-                    {job.subtitle}
+                <div className="">
+                  <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-4 pb-3">
+                    <h3 className="text-dark text-xl 2xl:text-2xl font-bold">
+                      {job.title}
+                    </h3>
+                    <span className="bg-white text-sm 2xl:text-base text-dark px-3 py-1.5 rounded-sm w-fit">
+                      {job.subtitle}
+                    </span>
+                  </div>
+                  <span className="text-sm 2xl:text-base text-body">
+                    {job.text}
                   </span>
+                  {job.extraText && (
+                    <p className="text-body pt-3">
+                      <strong>{job.extraText}</strong>
+                    </p>
+                  )}
                 </div>
-                <span className="text-sm 2xl:text-base text-body">
-                  {job.text}
-                </span>
+
                 <div className="flex flex-col md:flex-row gap-2 md:gap-4 pt-7">
                   <div className="w-full sm:w-fit">
                     <PrimaryButton text="Apply Now" link={job.applyLink} />
                   </div>
                   {/* <div className="w-full sm:w-fit">
-                    <SecondaryButton
-                      text="Read More"
-                      link={job.link}
-                      color="light"
-                    />
-                  </div> */}
+          <SecondaryButton
+            text="Read More"
+            link={job.link}
+            color="light"
+          />
+        </div> */}
                 </div>
               </div>
             ))}

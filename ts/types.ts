@@ -92,6 +92,7 @@ export interface JobProps {
   applyLink: string;
   link: string;
   variant: string;
+  extraText?: string;
 }
 
 export interface BlogProps {
