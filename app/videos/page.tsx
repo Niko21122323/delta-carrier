@@ -9,7 +9,7 @@ export default function page() {
   return (
     <main>
       <BannerComponent
-        title="Helpful Delta Carrier Videos"
+        title="Helpful Videos"
         text="At Delta Carrier Group, every division is tailored to handle a specific kind of freight with precision, care, and efficiency. From dry vans to Conestogas, we’re structured for performance."
       />
       <section className="py-12 sm:py-16 xl:py-[84px]">
@@ -39,7 +39,7 @@ export default function page() {
               help you stay efficient, safe, and confident behind the wheel.
             </p>
           </div>
-          <div className="grid max-[425px]:grid-cols-1 grid-cols-2 sm:grid-cols-3 gap-2 lg:gap-4 xl:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-2 lg:gap-4 xl:gap-6">
             {videos.map((video: VideoProps) => (
               <div className="aspect-video" key={video.id}>
                 <iframe
