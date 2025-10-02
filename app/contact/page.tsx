@@ -1,13 +1,20 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import BannerComponent from "@/components/BannerComponent";
 import TitleComponent from "@/components/TitleComponent";
 import { contactDetails } from "@/ts/data";
 import type { ContactDetailProps } from "@/ts/types";
 import contactImage from "../../public/assets/pohots/contact/1.jpg";
 
-export default function page() {
+export default function Contact() {
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   return (
     <main>
       <BannerComponent title="Divisions That Deliver" />
@@ -57,21 +64,51 @@ export default function page() {
               <form
                 onSubmit={async (e) => {
                   e.preventDefault();
+                  setIsSubmitting(true);
+                  setSubmitStatus({ type: null, message: "" });
 
-                  const formData = new FormData(e.currentTarget);
+                  const form = e.currentTarget;
+                  const formData = new FormData(form);
                   const data = Object.fromEntries(formData.entries());
 
-                  const res = await fetch("/api/contact", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(data),
-                  });
+                  try {
+                    const res = await fetch("/api/contact", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(data),
+                    });
 
-                  if (res.ok) {
-                    alert("✅ Message sent successfully!");
-                    e.currentTarget.reset();
-                  } else {
-                    alert("❌ Failed to send message. Please try again.");
+                    if (res.ok) {
+                      setSubmitStatus({
+                        type: "success",
+                        message:
+                          "Message sent successfully! We'll get back to you soon.",
+                      });
+                      form.reset();
+
+                      // Auto-hide success message after 5 seconds
+                      setTimeout(() => {
+                        setSubmitStatus({ type: null, message: "" });
+                      }, 5000);
+                    } else {
+                      // Get the error details from the response
+                      const errorData = await res.json().catch(() => ({}));
+                      console.error("API Error:", res.status, errorData);
+
+                      setSubmitStatus({
+                        type: "error",
+                        message: `Failed to send message (${res.status}). Please try again.`,
+                      });
+                    }
+                  } catch (error) {
+                    console.error("Network Error:", error);
+
+                    setSubmitStatus({
+                      type: "error",
+                      message: "An error occurred. Please try again later.",
+                    });
+                  } finally {
+                    setIsSubmitting(false);
                   }
                 }}
                 className="grid max-[500px]:grid-cols-1 grid-cols-2 gap-5"
@@ -88,6 +125,7 @@ export default function page() {
                     name="firstName"
                     id="firstName"
                     placeholder="eg. John"
+                    required
                     className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                   />
                 </div>
@@ -103,6 +141,7 @@ export default function page() {
                     name="lastName"
                     id="lastName"
                     placeholder="eg. Doe"
+                    required
                     className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                   />
                 </div>
@@ -118,6 +157,7 @@ export default function page() {
                     name="phone"
                     id="phone"
                     placeholder="eg. (555) 123-4567"
+                    required
                     className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                   />
                 </div>
@@ -133,6 +173,7 @@ export default function page() {
                     name="email"
                     id="email"
                     placeholder="eg. email@example.com"
+                    required
                     className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                   />
                 </div>
@@ -147,17 +188,35 @@ export default function page() {
                     name="message"
                     id="message"
                     placeholder="Type your message here..."
+                    required
                     className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 pt-3 pb-32 resize-none"
                   ></textarea>
                 </div>
+
+                {/* Success/Error Message */}
+                {submitStatus.type && (
+                  <div className="max-[500px]:col-span-1 col-span-2">
+                    <div
+                      className={`p-4 rounded-lg border ${
+                        submitStatus.type === "success"
+                          ? "bg-green-50 border-green-300 text-green-800"
+                          : "bg-red-50 border-red-300 text-red-800"
+                      }`}
+                    >
+                      <p className="font-medium">{submitStatus.message}</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="w-full sm:w-fit">
                   <button
                     type="submit"
-                    className="relative overflow-hidden flex items-center justify-center w-full px-6 py-3 rounded-lg bg-accent-light border border-accent-dark group cursor-pointer"
+                    disabled={isSubmitting}
+                    className="relative overflow-hidden flex items-center justify-center w-full px-6 py-3 rounded-lg bg-accent-light border border-accent-dark group cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <div className="absolute bottom-0 left-0 w-full h-0 bg-white group-hover:h-full transition-all duration-300 ease-in-out"></div>
                     <span className="relative z-10 text-white text-lg font-semibold group-hover:text-accent-light transition-colors duration-300 ease-in-out">
-                      Send Message
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </span>
                   </button>
                 </div>
