@@ -39,7 +39,7 @@ export default function page() {
               help you stay efficient, safe, and confident behind the wheel.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-2 lg:gap-4 xl:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-2 lg:gap-4 xl:gap-6">
             {videos.map((video: VideoProps) => (
               <div className="aspect-video" key={video.id}>
                 <iframe
