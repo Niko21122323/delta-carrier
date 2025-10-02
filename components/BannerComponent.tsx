@@ -37,7 +37,7 @@ const BannerComponent = ({ title, text }: BannerProps) => {
             </div>
             {text && (
               <div className="flex flex-col gap-6 lg:gap-8">
-                <p className="text-white/90 max-w-[608px]">{text}</p>
+                {text && <p className="text-white/90 max-w-[608px]">{text}</p>}
                 {pathname === "/about-us" || pathname === "/about-us/" ? (
                   ""
                 ) : (

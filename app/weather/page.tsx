@@ -12,7 +12,7 @@ export default function page() {
           <div className="max-w-[1134px] mx-auto">
             <iframe
               className="h-full w-full aspect-square sm:aspect-video"
-              src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=rain&product=ecmwf&level=surface&lat=41.771&lon=25.4"
+              src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=4&overlay=rain&product=ecmwf&level=surface&lat=39.572&lon=-96.416"
             ></iframe>
           </div>
         </div>

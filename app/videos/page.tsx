@@ -8,10 +8,7 @@ import type { VideoProps } from "@/ts/types";
 export default function page() {
   return (
     <main>
-      <BannerComponent
-        title="Helpful Videos"
-        text="At Delta Carrier Group, every division is tailored to handle a specific kind of freight with precision, care, and efficiency. From dry vans to Conestogas, we’re structured for performance."
-      />
+      <BannerComponent title="Helpful Videos" />
       <section className="py-12 sm:py-16 xl:py-[84px]">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="flex flex-col items-center justify-center pb-6 sm:pb-8 xl:pb-12">
