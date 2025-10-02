@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: `"Website Contact Form" <${process.env.EMAIL_EMAIL}>`,
       to: "nikola211223232529321@gmail.com", // your inbox
-      subject: "New Contact Form Submission",
+      subject: "Contact Form",
       text: `
         Name: ${firstName} ${lastName}
         Phone: ${phone}
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
         Message: ${message}
       `,
       html: `
-        <h2>New Contact Form Submission</h2>
+        <h2>Contact Form</h2>
         <p><strong>Name:</strong> ${firstName} ${lastName}</p>
         <p><strong>Phone:</strong> ${phone}</p>
         <p><strong>Email:</strong> ${email}</p>
