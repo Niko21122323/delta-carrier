@@ -109,35 +109,35 @@ const page = () => {
             </h4>
             <div className="grid grid-cols-5 gap-3 sm:max-w-[288px]">
               <Link
-                href="/"
+                href="https://www.instagram.com/deltacarriergroup/"
                 target="_blank"
                 className="bg-light flex items-center justify-center aspect-square rounded-sm hover:bg-accent-light transition-colors duration-300 ease-in-out group"
               >
                 <RiInstagramFill className="text-body group-hover:text-white transition-colors duration-300 ease-in-out text-xl" />
               </Link>
               <Link
-                href="/"
+                href="https://www.facebook.com/deltacarriergroup"
                 target="_blank"
                 className="bg-light flex items-center justify-center aspect-square rounded-sm hover:bg-accent-light transition-colors duration-300 ease-in-out group"
               >
                 <FaFacebook className="text-body group-hover:text-white transition-colors duration-300 ease-in-out text-xl" />
               </Link>
               <Link
-                href="/"
+                href="https://www.linkedin.com/company/deltacarriergroup/"
                 target="_blank"
                 className="bg-light flex items-center justify-center aspect-square rounded-sm hover:bg-accent-light transition-colors duration-300 ease-in-out group"
               >
                 <FaLinkedinIn className="text-body group-hover:text-white transition-colors duration-300 ease-in-out text-xl" />
               </Link>
               <Link
-                href="/"
+                href="https://www.youtube.com/@deltacarriergroup/shorts"
                 target="_blank"
                 className="bg-light flex items-center justify-center aspect-square rounded-sm hover:bg-accent-light transition-colors duration-300 ease-in-out group"
               >
                 <IoLogoYoutube className="text-body group-hover:text-white transition-colors duration-300 ease-in-out text-xl" />
               </Link>
               <Link
-                href="/"
+                href="https://x.com/deltacarrier_"
                 target="_blank"
                 className="bg-light flex items-center justify-center aspect-square rounded-sm hover:bg-accent-light transition-colors duration-300 ease-in-out group"
               >

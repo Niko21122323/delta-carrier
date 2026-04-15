@@ -156,7 +156,7 @@ const SolutionsSection = () => {
         </div>
         <div className="py-10 xl:py-16 2xl:py-20 max-md:hidden">
           <div className="grid grid-cols-5 items-center gap-2 xl:gap-4 2xl:gap-6">
-            {solutionsData2.map((data: SolutionsDataProps) => (
+            {solutionsData1.map((data: SolutionsDataProps) => (
               <div
                 key={data.id}
                 className="relative h-full w-full overflow-hidden rounded-xl xl:rounded-2xl even:z-20 first:z-30 last:z-10"
@@ -184,7 +184,7 @@ const SolutionsSection = () => {
             </div>
           </div>
           <div className="grid grid-cols-5 items-center gap-2 xl:gap-4 2xl:gap-6 pt-6">
-            {solutionsData1.map((data: SolutionsDataProps) => (
+            {solutionsData2.map((data: SolutionsDataProps) => (
               <div
                 key={data.id}
                 className="order-2 relative h-full w-full overflow-hidden rounded-xl xl:rounded-2xl even:z-20 first:z-30 last:z-10"

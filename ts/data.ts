@@ -22,12 +22,12 @@ import articleImg5 from "../public/assets/pohots/blog/10.jpg";
 import articleImg6 from "../public/assets/pohots/blog/11.jpg";
 import articleImg7 from "../public/assets/pohots/blog/12.jpg";
 import articleImg8 from "../public/assets/pohots/blog/13.jpg";
-import solutionsData1Img1 from "../public/assets/pohots/divisions/2.jpg";
-import solutionsData1Img2 from "../public/assets/pohots/divisions/3.jpg";
-import solutionsData1Img3 from "../public/assets/pohots/divisions/4.jpg";
-import solutionsData2Img1 from "../public/assets/pohots/divisions/flatbed-divisons.jpg";
-import solutionsData2Img2 from "../public/assets/pohots/divisions/flatbed-divisons-1.jpg";
-import solutionsData2Img3 from "../public/assets/pohots/gallery/14.jpg";
+import solutionsData2Img1 from "../public/assets/pohots/divisions/2.jpg";
+import solutionsData2Img2 from "../public/assets/pohots/divisions/3.jpg";
+import solutionsData2Img3 from "../public/assets/pohots/divisions/4.jpg";
+import solutionsData1Img1 from "../public/assets/pohots/divisions/flatbed-divisons.jpg";
+import solutionsData1Img2 from "../public/assets/pohots/divisions/flatbed-divisons-1.jpg";
+import solutionsData1Img3 from "../public/assets/pohots/gallery/14.jpg";
 import solutionsData3Img1 from "../public/assets/pohots/divisions/8.jpg";
 import solutionsData3Img2 from "../public/assets/pohots/divisions/9.jpg";
 import solutionsData3Img3 from "../public/assets/pohots/divisions/10.jpg";
@@ -35,7 +35,7 @@ import serviceImg1 from "../public/assets/pohots/home/dryvan.jpg";
 import serviceImg2 from "../public/assets/pohots/home/flatbet-service.jpeg";
 import testimonialImage1 from "../public/assets/pohots/home/10.jpg";
 
-const missing = [25]; // add more if needed
+const missing = [25, 36]; // add more if needed
 
 export const gallery = Array.from({ length: 61 }, (_, i) => i + 1)
   .filter((id) => !missing.includes(id))
@@ -91,7 +91,7 @@ export const services = [
     id: 1,
     image: serviceImg1,
     title: "Dry Van",
-    text: "Dry van freight refers to fully enclosed, non-refrigerated trailers ideal for general cargo. It's the most common and cost-effective option for protecting goods from weather, debris, and theft during transport.",
+    text: "All of our van trailers are 53' 2022 or newer, plated, and equipped with air-ride suspension and wooden floors.",
     link: "/services/dry-van-freight",
     icon: serviceIcon1,
   },
@@ -675,7 +675,7 @@ export const jobs: JobProps[] = [
   {
     id: 3,
     title: "Accounting",
-    subtitle: "Fleet Operations",
+    subtitle: "In Office",
     text: "Handles invoicing, payroll, and financial recordkeeping. Detail-oriented, organized, and experienced in bookkeeping; trucking industry experience is a plus.",
     applyLink: "/jobs/apply",
     link: "/jobs/in-office-careers",
@@ -684,7 +684,7 @@ export const jobs: JobProps[] = [
   {
     id: 4,
     title: "Recruiting",
-    subtitle: "Fleet Operations",
+    subtitle: "In Office",
     text: "Responsible for sourcing, screening, and onboarding qualified drivers. Recruiting experience, strong communication skills, and knowledge of DOT hiring requirements required.",
     applyLink: "/jobs/apply",
     link: "/jobs/in-office-careers",
@@ -693,7 +693,7 @@ export const jobs: JobProps[] = [
   {
     id: 5,
     title: "Human Resources",
-    subtitle: "Fleet Operations",
+    subtitle: "In Office",
     text: "Manages employee relations, onboarding, and compliance with company policies. Strong communication, organizational, and people skills required.",
     applyLink: "/jobs/apply",
     link: "/jobs/in-office-careers",
@@ -702,7 +702,7 @@ export const jobs: JobProps[] = [
   {
     id: 6,
     title: "IT Department",
-    subtitle: "Fleet Operations",
+    subtitle: "In Office",
     text: "Supports and maintains systems, software, and communications. Experience in troubleshooting, network management, and providing technical support required.",
     applyLink: "/jobs/apply",
     link: "/jobs/in-office-careers",
@@ -711,7 +711,7 @@ export const jobs: JobProps[] = [
   {
     id: 7,
     title: "Maintenance Department",
-    subtitle: "Fleet Operations",
+    subtitle: "In Office",
     text: "Ensures trucks and equipment are safe and road-ready through inspections, repairs, and preventive maintenance. Experience in diesel mechanics preferred.",
     applyLink: "/jobs/apply",
     link: "/jobs/in-office-careers",
@@ -724,7 +724,7 @@ export const jobs: JobProps[] = [
     text: "Take control of your career and run your own truck with the freedom as an independent business owner. With steady freight, competitive earnings, and the full support of our team, you’ll have everything you need to stay moving and profitable.",
     extraText: "$20,000 Sign-On Bonus – Call for details or apply now!",
     applyLink:
-      "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
+      "https://intelliapp.driverapponline.com/c/deltacarriergroup?r=DeltaJobs=DeltaJobs&uri_b=ia_deltacarriergroup_8636911",
     link: "/jobs/cdl-a-owner-operator",
     variant: "over-the-road",
   },
@@ -734,7 +734,7 @@ export const jobs: JobProps[] = [
     subtitle: "Over The Road",
     text: "LEASE PURCHASE OFFER - 2026 & 2025 KW T680 with Cummins Engine & 2026-2025 Freightliner Cascadia DD15 Trucks and more...",
     applyLink:
-      "https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_1667164099",
+      "https://intelliapp.driverapponline.com/c/deltacarriergroup?r=DeltaJobs=DeltaJobs&uri_b=ia_deltacarriergroup_8636911",
     link: "/jobs/cdl-lis-purchase",
     variant: "over-the-road",
   },

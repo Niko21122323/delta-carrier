@@ -18,6 +18,8 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
     lastName: "",
     phone: "",
     email: "",
+    currentCity: "",
+    cityForWork: "",
     position: "",
     message: "",
   });
@@ -29,9 +31,9 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
     message: string;
   } | null>(null);
 
-  // Replace this URL with your Google Apps Script web app URL
+  // ✅ Replace this with your own Google Apps Script URL
   const GOOGLE_SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbz_UYksqNE1xn6CBgXP5_Bld7L22xdnW9Q1MINjc1x67tZChApjsFUIXOGaOKrYKyZt/exec";
+    "https://script.google.com/macros/s/AKfycbzMKYEVLqPcuEtENKQp4ArYpnb16SQRbvCFagiHxUymz5LDyg9M6SvYFfIcQx8Y-_wQ/exec";
 
   const filteredJobs = jobs.filter((job: JobProps) => {
     if (type === "in-office") {
@@ -59,37 +61,53 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
     }
   };
 
+  // ✅ Updated handleSubmit (uploads to Google Drive)
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
 
     try {
-      // For now, just note the resume filename (skip Cloudinary to avoid errors)
-      let resumeInfo = "";
+      let resumeBase64 = "";
+      let resumeType = "";
+      let resumeName = "";
+
       if (resumeFile) {
-        resumeInfo = `Resume file: ${resumeFile.name} (${(
-          resumeFile.size / 1024
-        ).toFixed(1)}KB)`;
+        resumeName = resumeFile.name;
+        resumeType = resumeFile.type;
+
+        // Convert file to Base64
+        const reader = new FileReader();
+        const fileReadPromise = new Promise<string>((resolve, reject) => {
+          reader.onload = () => {
+            const result = reader.result as string;
+            const base64Data = result.split(",")[1]; // remove data prefix
+            resolve(base64Data);
+          };
+          reader.onerror = reject;
+        });
+        reader.readAsDataURL(resumeFile);
+        resumeBase64 = await fileReadPromise;
       }
 
-      // Prepare data for Google Sheets
-      const submissionData = {
+      // Prepare data for Google Apps Script
+      const submissionData: Record<string, string> = {
         ...formData,
-        resumeUrl: resumeInfo,
+        resume: resumeBase64,
+        resumeName,
+        resumeType,
       };
 
-      // Create a hidden iframe to submit the form without page redirect
+      // Create a hidden iframe for submission
       const iframe = document.createElement("iframe");
       iframe.style.display = "none";
       iframe.name = "hidden_iframe";
       document.body.appendChild(iframe);
 
-      // Use form submission method to avoid CORS issues
       const form = document.createElement("form");
       form.method = "POST";
       form.action = GOOGLE_SCRIPT_URL;
-      form.target = "hidden_iframe"; // Submit to hidden iframe
+      form.target = "hidden_iframe";
       form.style.display = "none";
 
       // Add form data as hidden inputs
@@ -97,39 +115,37 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
         const input = document.createElement("input");
         input.type = "hidden";
         input.name = key;
-        input.value = value as string;
+        input.value = value;
         form.appendChild(input);
       });
 
-      // Add to page, submit, then remove
       document.body.appendChild(form);
       form.submit();
 
-      // Clean up after a short delay
+      // Clean up
       setTimeout(() => {
         document.body.removeChild(form);
         document.body.removeChild(iframe);
       }, 1000);
 
-      // Show success message
       setSubmitStatus({
         type: "success",
         message: "Application submitted successfully! We'll be in touch soon.",
       });
 
-      // Reset form after a short delay
+      // Reset form
       setTimeout(() => {
         setFormData({
           firstName: "",
           lastName: "",
           phone: "",
           email: "",
+          currentCity: "",
+          cityForWork: "",
           position: "",
           message: "",
         });
         setResumeFile(null);
-
-        // Reset file input
         const fileInput = document.getElementById("resume") as HTMLInputElement;
         if (fileInput) fileInput.value = "";
       }, 1000);
@@ -151,13 +167,13 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
     >
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 xl:gap-10 2xl:gap-16">
+          {/* Left section */}
           <div className="relative h-full w-full lg:rounded-2xl overflow-hidden order-2 lg:order-1">
             <Image
               src={contactImage}
               alt="contact image"
               className="h-full w-full object-cover max-lg:hidden"
             />
-
             <div className="absolute top-0 left-0 w-full h-full contact-gradient max-lg:hidden"></div>
 
             <div className="relative lg:absolute bottom-0 left-0 w-full z-20">
@@ -182,6 +198,7 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
             </div>
           </div>
 
+          {/* Right section - form */}
           <div className="order-1 lg:order-2">
             <TitleComponent title="Join Our Team" subtitle="Apply" />
             <div className="pb-7">
@@ -280,6 +297,46 @@ const JobApplicationForm = ({ type = "in-office" }: JobsSectionProps) => {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="eg. email@example.com"
+                  required
+                  className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
+                />
+              </div>
+
+              {/* Current City */}
+              <div className="flex flex-col gap-3">
+                <label
+                  htmlFor="currentCity"
+                  className="text-dark text-lg font-semibold"
+                >
+                  City Where You Currently Reside
+                </label>
+                <input
+                  type="text"
+                  name="currentCity"
+                  id="currentCity"
+                  value={formData.currentCity}
+                  onChange={handleInputChange}
+                  placeholder="eg. Skopje"
+                  required
+                  className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
+                />
+              </div>
+
+              {/* City For Work */}
+              <div className="flex flex-col gap-3">
+                <label
+                  htmlFor="cityForWork"
+                  className="text-dark text-lg font-semibold"
+                >
+                  City Where You Are Applying For Work
+                </label>
+                <input
+                  type="text"
+                  name="cityForWork"
+                  id="cityForWork"
+                  value={formData.cityForWork}
+                  onChange={handleInputChange}
+                  placeholder="eg. Rockdale"
                   required
                   className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                 />

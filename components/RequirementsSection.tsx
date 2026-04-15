@@ -131,7 +131,7 @@ const RequirementsSection = () => {
               <div className="w-full sm:w-fit">
                 <SecondaryButton
                   text="Apply now"
-                  link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                  link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_136072037&r=DeltaWeb"
                   color="light"
                   target="_blank"
                 />

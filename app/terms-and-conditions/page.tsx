@@ -26,7 +26,7 @@ const page = () => {
                   href="/"
                   className="text-dark underline hover:text-accent-light transition-colors duration-300 ease-in-out"
                 >
-                  delta-carrier.netlify.app
+                  deltacarriergroup.com
                 </Link>
                 , you agree to these Terms. If you do not agree, do not use the
                 Site.

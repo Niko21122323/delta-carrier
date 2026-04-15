@@ -33,7 +33,7 @@ const WhyUsSection = () => {
 
             <div className="">
               <p className="text-white/70 pt-6 max-xl:max-w-[500px]">
-                Shippers choose Delta for reliability, clear updates, and
+                Customers choose Delta for reliability, clear updates, and
                 hands-on support—delivered with every load.
               </p>
               <div className="w-fit pt-8">
@@ -72,7 +72,7 @@ const WhyUsSection = () => {
             variant="dark"
           />
           <p className="text-white/70 pt-4">
-            Shippers choose Delta for reliability, clear updates, and hands-on
+            Customers choose Delta for reliability, clear updates, and hands-on
             support—delivered with every load.
           </p>
           <div className="w-full sm:w-fit pt-6">

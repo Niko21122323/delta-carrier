@@ -4,7 +4,7 @@ import OurDriveSection from "@/components/OurDriveSection";
 import PrimaryButton from "@/components/PrimaryButton";
 import SecondaryButton from "@/components/SecondaryButton";
 import TitleComponent from "@/components/TitleComponent";
-import deliverImg1 from "../../public/assets/pohots/gallery/41.jpg";
+import deliverImg1 from "../../public/assets/pohots/gallery/01.jpg";
 import deliverImg2 from "../../public/assets/pohots/gallery/24.jpg";
 import gridImg1 from "../../public/assets/pohots/gallery/16.jpg";
 import gridImg2 from "../../public/assets/pohots/gallery/18.jpg";
@@ -71,7 +71,7 @@ export default function About() {
                 <div className="w-full sm:w-fit">
                   <SecondaryButton
                     text="Apply now"
-                    link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                    link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_136072037&r=DeltaWeb"
                     color="light"
                     target="_blank"
                   />
@@ -130,7 +130,7 @@ export default function About() {
                 <div className="w-full sm:w-fit">
                   <SecondaryButton
                     text="Apply now"
-                    link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_584214130"
+                    link="https://intelliapp.driverapponline.com/c/deltacarriergroup?uri_b=ia_deltacarriergroup_136072037&r=DeltaWeb"
                     target="_blank"
                   />
                 </div>

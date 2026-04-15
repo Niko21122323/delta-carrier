@@ -8,6 +8,13 @@ import { contactDetails } from "@/ts/data";
 import type { ContactDetailProps } from "@/ts/types";
 import contactImage from "../../public/assets/pohots/contact/1.jpg";
 
+const jobDropdown = [
+  { id: 1, title: "Recruiting" },
+  { id: 2, title: "Safety" },
+  { id: 3, title: "Load Offerings" },
+  { id: 4, title: "Operations" },
+];
+
 export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState<{
     type: "success" | "error" | null;
@@ -56,9 +63,10 @@ export default function Contact() {
               <TitleComponent title="Get In Touch" subtitle="Contact" />
               <div className="pb-7">
                 <p className="text-body pt-3 lg:pt-6">
-                  Lorem ipsum dolor sit amet consectetur. Tincidunt in enim eu
-                  lacus sapien id nec dui. Vitae nunc sit dignissim condimentum
-                  est risus.
+                  Have questions about partnering with Delta Carrier Group? Want
+                  to learn more about our lanes, pay, or support programs? Send
+                  us a message and our team will connect with you to help you
+                  find the freedom you're looking for.
                 </p>
               </div>
               <form
@@ -68,44 +76,77 @@ export default function Contact() {
                   setSubmitStatus({ type: null, message: "" });
 
                   const form = e.currentTarget;
-                  const formData = new FormData(form);
-                  const data = Object.fromEntries(formData.entries());
+                  const formData = {
+                    firstName: (
+                      form.elements.namedItem("firstName") as HTMLInputElement
+                    ).value,
+                    lastName: (
+                      form.elements.namedItem("lastName") as HTMLInputElement
+                    ).value,
+                    phone: (
+                      form.elements.namedItem("phone") as HTMLInputElement
+                    ).value,
+                    email: (
+                      form.elements.namedItem("email") as HTMLInputElement
+                    ).value,
+                    department: (
+                      form.elements.namedItem("department") as HTMLSelectElement
+                    ).value,
+                    message: (
+                      form.elements.namedItem("message") as HTMLTextAreaElement
+                    ).value,
+                  };
 
                   try {
-                    const res = await fetch("/api/contact", {
-                      method: "POST",
-                      headers: { "Content-Type": "application/json" },
-                      body: JSON.stringify(data),
-                    });
+                    const res = await fetch(
+                      "https://deltacarriergroup.com/contact-form.php",
+                      {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(formData),
+                      }
+                    );
+                    // Log raw response first
+                    const rawText = await res.text();
+                    // Try to parse JSON
+                    let data;
+                    try {
+                      data = JSON.parse(rawText);
+                    } catch (err) {
+                      console.error("Failed to parse JSON:", err);
+                      setSubmitStatus({
+                        type: "error",
+                        message: "Server returned invalid JSON. Check console.",
+                      });
+                      return;
+                    }
 
-                    if (res.ok) {
+                    if (data.success) {
                       setSubmitStatus({
                         type: "success",
                         message:
                           "Message sent successfully! We'll get back to you soon.",
                       });
                       form.reset();
-
-                      // Auto-hide success message after 5 seconds
-                      setTimeout(() => {
-                        setSubmitStatus({ type: null, message: "" });
-                      }, 5000);
+                      setTimeout(
+                        () => setSubmitStatus({ type: null, message: "" }),
+                        5000
+                      );
                     } else {
-                      // Get the error details from the response
-                      const errorData = await res.json().catch(() => ({}));
-                      console.error("API Error:", res.status, errorData);
-
                       setSubmitStatus({
                         type: "error",
-                        message: `Failed to send message (${res.status}). Please try again.`,
+                        message:
+                          data.message ||
+                          "Failed to send message. Check console.",
                       });
                     }
                   } catch (error) {
-                    console.error("Network Error:", error);
-
+                    console.error("Fetch error:", error);
                     setSubmitStatus({
                       type: "error",
-                      message: "An error occurred. Please try again later.",
+                      message: "An error occurred. Check console for details.",
                     });
                   } finally {
                     setIsSubmitting(false);
@@ -153,7 +194,7 @@ export default function Contact() {
                     Phone Number
                   </label>
                   <input
-                    type="text"
+                    type="tel"
                     name="phone"
                     id="phone"
                     placeholder="eg. (555) 123-4567"
@@ -177,6 +218,29 @@ export default function Contact() {
                     className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3"
                   />
                 </div>
+                <div className="max-[500px]:col-span-1 col-span-2 flex flex-col gap-3">
+                  <label
+                    htmlFor="department"
+                    className="text-dark text-lg font-semibold"
+                  >
+                    Which department are you trying to reach?
+                  </label>
+                  <div className="text-body border border-[#C4C5C8] rounded-sm px-4 py-3 w-full">
+                    <select
+                      name="department"
+                      id="department"
+                      required
+                      className="w-full focus:outline-none"
+                    >
+                      <option value="">Select a position</option>
+                      {jobDropdown.map((job) => (
+                        <option key={job.id} value={job.title}>
+                          {job.title}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
                 <div className="flex flex-col gap-3 max-[500px]:col-span-1 col-span-2">
                   <label
                     htmlFor="message"
@@ -189,11 +253,11 @@ export default function Contact() {
                     id="message"
                     placeholder="Type your message here..."
                     required
-                    className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 pt-3 pb-32 resize-none"
+                    rows={8}
+                    className="text-body placeholder:text-body outline-accent-light focus:outline-1 border border-[#C4C5C8] rounded-sm px-4 py-3 resize-none"
                   ></textarea>
                 </div>
 
-                {/* Success/Error Message */}
                 {submitStatus.type && (
                   <div className="max-[500px]:col-span-1 col-span-2">
                     <div

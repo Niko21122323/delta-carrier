@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { IoClose, IoChevronDown } from "react-icons/io5";
 import hamburgerBg from "../public/assets/icons/hamburger-bg.svg";
-import Logo from "../public/assets/logo/logo.png";
+import Logo from "../public/assets/logo/delta-logo.png";
 import PrimaryButton from "./PrimaryButton";
 
 const Navbar = () => {
@@ -137,7 +137,7 @@ const Navbar = () => {
               <Image
                 src={Logo}
                 alt="company logo"
-                className="max-w-[70px] md:max-w-[100px] xl:max-w-[150px] h-auto"
+                className="max-w-[100px] xl:max-w-[200px] h-auto"
               />
             </Link>
             <div className="flex items-center gap-6 xl:gap-12 max-lg:hidden">

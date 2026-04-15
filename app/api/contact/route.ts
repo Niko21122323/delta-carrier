@@ -13,15 +13,15 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: "Gmail", // or "Outlook", "Yahoo", or custom SMTP
       auth: {
-        user: process.env.EMAIL_EMAIL, // your email
-        pass: process.env.EMAIL_PASSWORD, // your app password
+        user: "deltawebforward@gmail.com", // your email
+        pass: "rpfcuseoofmpyknv", // your app password
       },
     });
 
     // Send the mail
     await transporter.sendMail({
-      from: `"Website Contact Form" <${process.env.EMAIL_EMAIL}>`,
-      to: "nikola211223232529321@gmail.com", // your inbox
+      from: `"Website Contact Form" <deltawebforward@gmail.com>`,
+      to: "deltawebforward@gmail.com", // your inbox
       subject: "Contact Form",
       text: `
         Name: ${firstName} ${lastName}

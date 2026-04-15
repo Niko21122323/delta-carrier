@@ -9,7 +9,7 @@ import {
   socials,
 } from "@/ts/data";
 import type { FooterLinkProps } from "@/ts/types";
-import logo from "../public/assets/logo/logo.png";
+import logo from "../public/assets/logo/delta-logo.png";
 import CtaSection from "./CtaSection";
 import CtaSectionMobile from "./CtaSectionMobile";
 import PrimaryButton from "./PrimaryButton";
